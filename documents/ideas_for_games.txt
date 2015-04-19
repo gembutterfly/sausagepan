@@ -14,3 +14,5 @@ Informationen. Ziel ist es die Datenbank des Schiffes zu 100% zu füllen.
 Das Spiel soll als klassischer Weltraum-Sidescroller oder Top-Down-Scroller
 mit Comic-Rahmen, wo Boardcomputer und Außerirdischer dargestellt werden,
 umgesetzt werden.
+
+Zielgruppe: 5. und 6. Klasse and Realschulen und Gymnasien
