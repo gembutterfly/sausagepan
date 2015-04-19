@@ -1,0 +1,16 @@
+Sonnensystem
+============
+
+Ein Außerirdischer Weltenreisender wird aus dem Kryoschlaf geweckt und vom
+Bordcomputer seines Schiffs auf ein nahe liegendes Sonnensystem mit einem
+bewohnten Planeten hingewiesen. Die Informationssysteme des Planeten wurden
+bereits angezapft und erste Informationen werden dem Astronauten präsentiert.
+Er durchquert die Oortsche Wolke und passiert nach und nach die Planeten.
+Nach Zerstörung eines Planeten und der zugehörigen Monde, werden ihm
+verschiedene Informationen zu diesen angezeigt. Die verbleibende Entfernung zur
+Sonne wird ständig angezeigt. Der Spieler lernt so den groben Aufbau des
+Sonnensystems und erlangt durch Zerstörung von Monden und Kometen extra
+Informationen. Ziel ist es die Datenbank des Schiffes zu 100% zu füllen.
+Das Spiel soll als klassischer Weltraum-Sidescroller oder Top-Down-Scroller
+mit Comic-Rahmen, wo Boardcomputer und Außerirdischer dargestellt werden,
+umgesetzt werden.
