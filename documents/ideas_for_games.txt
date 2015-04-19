@@ -15,4 +15,30 @@ Das Spiel soll als klassischer Weltraum-Sidescroller oder Top-Down-Scroller
 mit Comic-Rahmen, wo Boardcomputer und Außerirdischer dargestellt werden,
 umgesetzt werden.
 
-Zielgruppe: 5. und 6. Klasse and Realschulen und Gymnasien
+Zielgruppe: 5. und 6. Klasse an Realschulen und Gymnasien
+
+
+
+Farbabenteuer
+=============
+
+In diesem Lernspiel soll es um grundlegendes Verständnis zur Farbenlehre gehen. 
+
+In einer Welt ohne Farbe herrschen Monotonie und drückende Stille, als eines Tages 
+fremdartige Fragmente vom Himmel fallen. Eines dieser landet vor den Füßen unseres 
+Protagonisten und strahlt in leuchtenden Farben. Auf der Suche nach den restlichen 
+Puzzlestücken macht der Spieler sich auf eine Reise durch die bunte Farbenwelt an 
+deren Ende die Zusammensetzung eines strahlenden Regenbogens steht.
+
+Der Spieler erkundet eine an ein Jump n Run angelehnte Welt, in welcher er nur 
+durch den Einsatz von Farben verschiedene Hindernisse und Gegner beseitigen kann. 
+Dabei sollen Farbkonzepte angewandt werden, denkbar wäre hierbei beispielsweise 
+der Einsatz von Komplementärfarben um sich Angreifern entgegen zu stellen oder 
+auch die Färbung von Türen in der Umgebungsfarbe (-> Farbmischung) um sie passieren 
+zu können. Werkzeug stellen die Grundfarben dar, die der Spieler beliebig nutzen kann, 
+um die Spielwelt zu erkunden. 
+
+Das Spiel soll optimaler Weise ohne Text gestaltet werden, um eine möglichst junge 
+Zielgruppe ansprechen zu können. 
+
+Zielgruppe: Schulanfänger
