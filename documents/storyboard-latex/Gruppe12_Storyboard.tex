@@ -1,0 +1,197 @@
+\documentclass[10pt,a4paper,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
+\pagestyle{empty} %keine Kopf-/Fußzeile
+\author{Sausage Pan}
+\begin{document}
+	%Farbdefinierung
+	\definecolor{orange}{HTML}{F67800}
+	\definecolor{hellorange}{HTML}{FFAD41}
+	\definecolor{schwarz}{rgb}{0,0,0}
+	%Stildefinitionen!!Wichtig!!
+	\newcommand{\Eins}[1]{\color{orange}\textbf{{\Large#1}}} %Überschrift 1. Ordnung
+	\newcommand{\Zwei}[1]{\color{orange}\textbf{{\large#1}}} %Überschrift 2. Ordnung
+	\newcommand{\Drei}[1]{\color{orange}{\normalsize#1}} %Überschrift 3. Ordnung
+	\newcommand{\Text}{\color{schwarz}} %normaler Fließtext
+	\newcommand{\Fusszeile}
+	{\textit{{\footnotesize Eckert, Georg - Roscher, Philipp - Krien, Alexandra - Sinakow, Sergej - Blasberg, Bettina - Groß, Stephanie Sara}}} %Fußzeile immer am Ende der Seite einfügen!
+	%Randstreifen
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	%Header-Bild
+	\begin{center}
+		\includegraphics[width=160mm]{header2}
+	\end{center}
+	%Eigentlicher Inhalt :D
+	\color{orange} \textit{Gruppenname:} \color{schwarz}sausage pan \color{orange} \textit{Gruppenleiter:} \color{schwarz}Georg Eckert   \color{orange} \textit{Protokollant:} \color{schwarz}Philipp Roscher\\
+	\\
+	\\
+	\Eins{Storyboard}\\
+	\\
+	\Zwei{Titel:} \Text{Prisma}\\
+	\\
+	\Zwei{Thema:} \Text{Farbenlehre}\\
+	\\
+	\Zwei{Zielgruppe:} \Text{Schüler der fünften Klasse}\\
+	\\
+	\Zwei{1. Grundlegender Aufbau des Spiels}\\
+	\\
+	\Drei{1.1 Setting}\\
+	\Text
+		Das Spiel bewegt sich in einer fiktiven Welt. Der Spieler übernimmt dabei die Rolle eines namenlosen Helden, 
+	welcher weder hinsichtlich des Alters, Geschlechts etc. spezifiziert wird.\\\\
+	Ausgangssituation für das Spiel ist, dass in Folge eines Missgeschickes der Regenbogen in Fragmente zerspringt.
+	Als Resultat wird die Welt in ein einheitliches Grau getaucht.\\\\
+	Aufgabe ist es nun, diese Fragmente wieder einzusammeln um letztendlich den Regenbogen neu zusammensetzen zu können. 
+	Diese Fragmente finden sich in den einzelnen Level wieder, die als Jump'n'Run angelegt werden.\\\\
+	Der Spieler soll dabei ein grundlegendes Verständnis für die Farbenlehre erhalten. Jedes Level fokussiert sich dabei auf ein anderes Teilthema.\\\\
+	Als unterstützende Hilfe steht dem Spieler stets eine Art Mentor zur Verfügung, welcher um Hilfe gebeten werden kann. 
+	So wollen wir möglicherweise aufkommenden Frust eindämpfen.\\\\
+	Gerne würden wir einige Zwischenlevel einbauen, die andere Spielmechaniken nutzen. 
+	Denkbar wären hier kleinere Puzzle oder Quiz, um das Wissen zu festigen. \\\\
+	Dies haben wir bisher allerdings als optionalen Inhalt deklariert und wollen uns zunächst um die Hauptlevel kümmern. 
+	Je nach verbleibender Zeit werden danach die Zwischenlevel konzipiert.
+	\\
+	\\
+	\clearpage\
+	\\
+	\Drei{1.2. Spielmechaniken}\\
+	\\
+	\Text
+		Das Spiel wird mit 9 Grundmechaniken auskommen. Die ersten zwei sind genretypisch laufen und springen. 
+	Dazu kommt das Verschieben von Gegenständen. Die Farblehre wird durch die Prinzipien der additiven und subtraktiven Farbmischung, 
+	sowie der Brechung von Licht vermittelt.\\
+	\\
+	Das erfordert folgende Spielmechanik:\\
+	\begin{itemize}
+	\item Einfärben des zu Beginn schwarzen Charakters bei Kontakt mit einer Lichtfarbe in dieselbe\\
+	\item additive Farbmischung bei aufeinanderfolgendem Kontakt mit verschiedenen Lichtfarben
+	\item Einfärben des Charakters bei Kontakt mit farblichen Flüssigkeiten in dieselbe
+	\item subtraktive Farbmischung bei Kontakt mit verschiedenen Flüssigkeiten
+	\item Entfernung von Farbpigmenten bei Kontakt mit farbloser Flüssigkeiten
+	\item Aufspaltung von Lichtstrahlen in ihr Farbspektrum durch Prismen
+	\item Besiegen von Gegnern durch Sprünge bei vorherigem Einfärben mit der Komplementärfarbe
+	\item Verdeckung durch Gegenstände, welche vor Lichtstrahlen geschoben werden
+	\end{itemize}\
+	\\
+	\Drei{1.3. Steuerung}\\
+	\\
+	\Text
+		Gespielt wird mit Maus und Tastatur.\\
+	Innerhalb der Level kann sich der Spieler über die Pfeiltasten bewegen.
+	\clearpage\
+	\\
+	\Zwei{2. Ablauf}\
+	\\
+	\\
+	\Text
+	\underline{Animation 1 - Introsequenz}\
+	\\
+	\\
+		Grundlegende Story:\\
+	\begin{flushright}
+	\textit{Eine kleine Motte träumt davon einst so schön wie die strahlend bunten Schmetterlinge zu sein. Gedankenversunken bemerkt sie 
+	die Ähnlichkeit zwischen den Schmetterlingen und den bunten Farben des Regenbogens. Überzeugt dass dieser auch ihr prächtige Flügel verleihen könnte, 
+	fliegt sie zu ihm hinauf. Durch ein Versehen jedoch zerfällt der Regenbogen in Einzelteile und stürzt zu Boden. \\
+	Die Welt wird in ein tristes Grau getaucht. Bewusstlos stürzt die Motte gemeinsam mit einem Regenbogenfragment vor die Füße unseres Protagonisten.}
+	\end{flushright}\
+	\\
+	\underline{Level 1}\\\\\
+	\textbf{Thema:}\
+	Subtraktive Farbmischung
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\\\
+	\underline{Animation 2}\
+	\\
+	\begin{flushright}
+	\textit{Die Motte schließt sich dem Protagonisten an und weist ihn zum nächsten Teil, da sie selbst ihr Missgeschick nicht beseitigen kann.\\
+	Einführung der Motte als Symbol am unteren Bildschirmrand. Über dieses können von nun an kurze Hilfestellungen abgerufen werden.\\
+	Hauptbildschirm als Navigationsfläche. Hier können nun das nächste Level angewählt, eventuelle Achievements angesehen und einige 
+	Informationen abgerufen werden.}
+	\end{flushright}\
+	\\\\
+	\underline{Level 2}\\\\\
+	\textbf{Thema:}\
+	Additive Farbmischung
+	\\\\
+	\textbf{Aufgabe:}\
+	Protagonist befindet sich wieder in einem optisch ähnlichen Jump n Run Level.\\
+	Verschiedene Lichtkegel die in Grundfarben leuchten, befinden sich in Sichtweite, ebenso ein Tor in einer Mischfarbe.
+	 Der Spieler muss nun die Figur so durch das Level lotsen, dass sich die Figur in der gleichen Farbe wie das Tor einfärbt. 
+	Dazu muss er die Figur durch die unterschiedlichen Lichtkegel führen, so dass die Mischfarbe der betretenen Lichtfarben die Gesuchte ergibt.\\
+	\\\\
+	\underline{Level 3}\\\\\
+	\textbf{Thema:}\
+	Absorption
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\\\
+	\underline{Level 4}\\\\\
+	\textbf{Thema:}\
+	Komplementärfarben
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\\\
+	\underline{Level 5}\\\\\
+	\textbf{Thema:}\
+	Warme/Kalte Farben
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\\\
+	\underline{Level 6}\\\\\
+	\textbf{Thema:}\
+	Lichtbrechung
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\\\
+	\underline{Level 7}\\\\\
+	\textbf{Thema:}\
+	Helligkeit
+	\\\\
+	\textbf{Aufgabe:}\
+	missing
+	\\
+	\clearpage\
+	\\
+	\Zwei{3. Optionale Inhalte}\
+	\\\\
+	\Text
+		Da wir noch nicht wirklich abschätzen können, wie viel Zeit unser Projekt tatsächlich in Anspruch nehmen wird, 
+	beschränken wir uns bisher nur auf die wirklich nötigen Spielfunktionen. \\
+	Gerne würden wir diese später aber um einige Features erweitern.
+	\\\\
+	\Drei{3.1. Minigames}\
+	\\\\
+	\Text
+		Um das Erlernte zu festigen, noch einmal anzuwenden oder vielleicht auch erst verständlich zu machen, wäre es denkbar einige Minigames einzubauen.\\ 
+	Bei diesen soll es sich um von der Motte gestellte Aufgaben handeln, die mit fortschreitendem Handlungsbogen freigeschaltet werden 
+	und thematisch gleich mit den Level sind.\\
+	Im Gegensatz zu den Jump n Run Level soll hier weniger Intuition gefragt sein. Der Spieler hat die Möglichkeit sich Themen von der Motte 
+	erklären zu lassen und kann dieses Wissen schließlich auch in den regulären Level anwenden.\\
+	Denkbare Spielprinzipien wären Quizfragen, kleinere Rätsel, Zuordnungen per Drag n Drop etc.\\
+	Für das Lösen aller Minigames wird schließlich das letzte Level freigegeben.\\
+	\\
+	\Drei{3.2. Achievements}\
+	\\\\
+	\Text
+		Um einen Anreiz für das erfolgreiche Beenden des Spiels zu schaffen könnte man Achievements anlegen.\\
+	Diese können dann teilweise durch den regulären Spielverlauf, aber auch durch besondere Aktionen freigeschaltet werden.\\
+	\\
+	\Drei{3.3. Eastereggs}
+	\\\\
+	\Text
+		Um auch selbst ein bisschen Spaß an dem Spiel zu haben, wäre es toll einige Spielereien einzubauen sofern uns die Zeit dafür bleibt.\\
+	\\
+	\Fusszeile
+\end{document}
