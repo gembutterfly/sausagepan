@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  3 MAY 2015 15:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  3 MAY 2015 16:30
 entering extended mode
-**C:/Users/Alexandra/Documents/latex-design/Gruppe12_Storyboard.tex
-(C:/Users/Alexandra/Documents/latex-design/Gruppe12_Storyboard.tex
+**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/Gru
+ppe12_Storyboard.tex
+
+(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/Grup
+pe12_Storyboard.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -393,32 +396,79 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks22
 
 ("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Alexandra\Documents\latex-design\Gruppe12_Storyboard.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+("C:\Program Files\MiKTeX 2.9\tex\latex\picins\picins.sty"
+Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
+\@BILD=\box28
+\@TEXT=\box29
+\d@breite=\dimen122
+\d@hoehe=\dimen123
+\d@xoff=\dimen124
+\d@yoff=\dimen125
+\d@shad=\dimen126
+\d@dash=\dimen127
+\d@boxl=\dimen128
+\d@pichskip=\dimen129
+\d@tmp=\dimen130
+\d@tmpa=\dimen131
+\d@bskip=\dimen132
+\hsiz@=\dimen133
+\p@getot@l=\dimen134
+\c@breite=\count104
+\c@hoehe=\count105
+\c@xoff=\count106
+\c@yoff=\count107
+\c@pos=\count108
+\c@shad=\count109
+\c@dash=\count110
+\c@boxl=\count111
+\c@zeilen=\count112
+\@changemode=\count113
+\c@piccaption=\count114
+\c@piccaptionpos=\count115
+\c@picpos=\count116
+\c@whole=\count117
+\c@half=\count118
+\c@tmp=\count119
+\c@tmpa=\count120
+\c@tmpb=\count121
+\c@tmpc=\count122
+\c@tmpd=\count123
+\d@leftskip=\skip46
+\ptoti=\dimen135
+\ptotii=\dimen136
+\env@box=\box30
+\d@envdp=\dimen137
+\c@hsize=\count124
+\c@envdp=\count125
+\d@envb=\dimen138
+)
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\storyboard-latex\Grup
+pe12_Storyboard.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchcounter=\count126
+\scratchdimen=\dimen139
+\scratchbox=\box31
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen123
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen140
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks24
 )
 *geometry* driver: auto-detecting
@@ -458,332 +508,364 @@ LaTeX Font Info:    ... okay on input line 12.
 <header2.jpg, id=1, 512.1534pt x 170.5572pt>
 File: header2.jpg Graphic file (type jpg)
  <use header2.jpg>
-Package pdftex.def Info: header2.jpg used on input line 28.
+Package pdftex.def Info: header2.jpg used on input line 29.
 (pdftex.def)             Requested size: 455.24408pt x 151.61325pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 32--48
+
+ []
+
+<maincharacter.png, id=2, 170.6375pt x 240.9pt>
+File: maincharacter.png Graphic file (type png)
+ <use maincharacter.png>
+Package pdftex.def Info: maincharacter.png used on input line 48.
+(pdftex.def)             Requested size: 91.04742pt x 128.5402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Overfull \hbox (1.75668pt too wide) in paragraph at lines 31--61
+Overfull \hbox (1.75668pt too wide) in paragraph at lines 49--64
 \OT1/cmr/m/n/10 Dies haben wir bisher allerd-ings als op-tionalen In-halt dekla
 r-i-ert und wollen uns zunachst um die Hauptlevel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--64
 
  []
 
 [1
 
 {C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/Documents/latex-design/header2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 61--71
+s/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/header2.jpg>
+ <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/mai
+ncharacter.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--71
+Underfull \hbox (badness 10000) in paragraph at lines 64--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--71
+Underfull \hbox (badness 10000) in paragraph at lines 64--74
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 ("C:\Program Files (x86)\MikTex\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--87
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 93.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
  ("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 93.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
 ("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 87--97
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--97
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--97
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
+Underfull \hbox (badness 10000) in paragraph at lines 105--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
+Underfull \hbox (badness 10000) in paragraph at lines 105--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
+Underfull \hbox (badness 10000) in paragraph at lines 105--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
+Underfull \hbox (badness 10000) in paragraph at lines 105--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 121--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 121--126
+
+ []
+
+<level2.png, id=14, 3520.15125pt x 2489.3pt>
+File: level2.png Graphic file (type png)
+ <use level2.png>
+Package pdftex.def Info: level2.png used on input line 126.
+(pdftex.def)             Requested size: 182.09486pt x 128.76443pt.
+
+Overfull \hbox (3.53174pt too wide) in paragraph at lines 126--169
+\OT1/cmr/m/n/10 Verschiedene Lichtkegel die in Grund-far-ben leuchten, befinden
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Overfull \hbox (8.26782pt too wide) in paragraph at lines 126--169
+\OT1/cmr/m/n/10 muss er die Figur durch die un-ter-schiedlichen Lichtkegel fuh
+ren,
+ []
+
+
+Overfull \hbox (5.5039pt too wide) in paragraph at lines 126--169
+\OT1/cmr/m/n/10 so dass die Mis-ch-farbe der be-trete-nen Licht-far-ben die Ges
+uchte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--165
+Underfull \hbox (badness 10000) in paragraph at lines 126--169
 
  []
 
 [3
 
-] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+ <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/lev
+el2.png (PNG copy)>] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--197
+Underfull \hbox (badness 10000) in paragraph at lines 169--201
 
  []
 
 [5
 
-] (C:\Users\Alexandra\Documents\latex-design\Gruppe12_Storyboard.aux) ) 
+]
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\storyboard-latex\Grup
+pe12_Storyboard.aux) ) 
 Here is how much of TeX's memory you used:
- 3217 strings out of 493921
- 39893 string characters out of 3146469
- 107622 words of memory out of 3000000
- 6481 multiletter control sequences out of 15000+200000
+ 3332 strings out of 493921
+ 41308 string characters out of 3146469
+ 111573 words of memory out of 3000000
+ 6589 multiletter control sequences out of 15000+200000
  6959 words of font info for 27 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,5n,35p,292b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Prog
-ram Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
-les (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x
-86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MikTex/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MikTex/fonts/ty
-pe1/public/amsfonts/cm/cmti8.pfb>
-Output written on Gruppe12_Storyboard.pdf (5 pages, 290437 bytes).
+ 27i,5n,35p,324b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progr
+am Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on Gruppe12_Storyboard.pdf (5 pages, 1218909 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
