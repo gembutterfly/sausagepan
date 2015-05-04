@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  4 MAY 2015 19:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  4 MAY 2015 20:07
 entering extended mode
-**C:/Users/Alexandra/Documents/timetable-latex/timetable-latex.tex
-(C:/Users/Alexandra/Documents/timetable-latex/timetable-latex.tex
+**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/time
+table-latex.tex
+
+(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/timet
+able-latex.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -393,7 +396,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks22
 
 ("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Alexandra\Documents\timetable-latex\timetable-latex.aux)
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\timetable-latex\timet
+able-latex.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
@@ -406,8 +410,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen122
@@ -470,67 +473,75 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 ("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
+Underfull \hbox (badness 10000) in paragraph at lines 31--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
+Underfull \hbox (badness 10000) in paragraph at lines 31--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--66
+Underfull \hbox (badness 10000) in paragraph at lines 31--58
 
  []
 
 [1
 
 {C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/Documents/timetable-latex/header2.jpg>]
-(C:\Users\Alexandra\Documents\timetable-latex\timetable-latex.aux) ) 
+s/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/header2.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--105
+
+ []
+
+
+Overfull \hbox (6.9929pt too wide) in paragraph at lines 58--105
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--105
+
+ []
+
+[2
+
+]
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\timetable-latex\timet
+able-latex.aux) ) 
 Here is how much of TeX's memory you used:
  3196 strings out of 493921
- 39543 string characters out of 3146469
- 107622 words of memory out of 3000000
+ 39739 string characters out of 3146469
+ 111622 words of memory out of 3000000
  6463 multiletter control sequences out of 15000+200000
  6652 words of font info for 26 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,7n,35p,291b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program
- Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
- (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
-/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MikTex
-/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MikTex/fonts
-/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on timetable-latex.pdf (1 page, 265408 bytes).
+ 27i,7n,35p,319b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
+ram Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on timetable-latex.pdf (2 pages, 270685 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
