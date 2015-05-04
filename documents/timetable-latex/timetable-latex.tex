@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
+\pagestyle{empty} %keine Kopf-/Fußzeile
+\author{Sausage Pan}
+\begin{document}
+	%Farbdefinierung
+	\definecolor{orange}{HTML}{F67800}
+	\definecolor{hellorange}{HTML}{FFAD41}
+	\definecolor{schwarz}{rgb}{0,0,0}
+	%Stildefinitionen!!Wichtig!!
+	\newcommand{\Eins}[1]{\color{orange}\textbf{{\Large#1}}} %Überschrift 1. Ordnung
+	\newcommand{\Zwei}[1]{\color{orange}\textbf{{\large#1}}} %Überschrift 2. Ordnung
+	\newcommand{\Drei}[1]{\color{orange}{\normalsize#1}} %Überschrift 3. Ordnung
+	\newcommand{\Text}{\color{schwarz}} %normaler Fließtext
+	\newcommand{\Fusszeile}
+	{\textit{{\footnotesize Eckert, Georg - Roscher, Philipp - Krien, Alexandra - Sinakow, Sergej - Blasberg, Bettina - Groß, Stephanie Sara}}} %Fußzeile immer am Ende der Seite einfügen!
+	%Randstreifen
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	%Header-Bild
+	\begin{center}
+		\includegraphics[width=160mm]{header2}
+	\end{center}
+	%Eigentlicher Inhalt :D
+	\color{orange} \textit{Gruppenname:} \color{schwarz}sausage pan \color{orange} \textit{Gruppenleiter:} \color{schwarz}Georg Eckert   \color{orange} \textit{Protokollant:} \color{schwarz}Philipp Roscher\\
+	\\
+	\\
+	\Eins{Zeitplan}\
+	\\\\
+	\Text
+	\begin{tabular}{l|l|l}\hline
+ 	 KW & Datum & Ziele\\\hline
+	17 & 22.04. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\
+	& 24.05. & Zeitplan, Corporate Design, erste Entwürfe\\\hline
+	18 & 29.04. (3.DS) &  Storyboard, Arbeitspakete, Spieltitel\\\hline
+	19 & 05.05. & \textbf{Abgabe Teilziel 2}\\
+	& 08.05. & Layoutvorschlag, Struktur\\\hline
+	20 & 13.05. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\
+	& 15.05. & erste Inhalte\\
+	& 17.05. & \textbf{Abgabe Teilziel 3}\\\hline
+	21 & 20.05. & Feedback zum Layout\\
+	& 22.05. & Layout, Hauptfunktionalitäten\\\hline
+	22 & 29.05. & Prototyp-Design\\\hline
+	23 & 05.06. & erstes Level fertig, Aufgabenbeispiel\\
+	& 07.06. & \textbf{Abgabe Teilziel 4}\\\hline
+	24 & 10.06. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\\hline
+	25 & & individuelles Arbeiten\\\hline
+	26 & & individuelles Arbeiten\\\hline
+	27 & & Dokumentation, Erklärung\\\hline
+	28 & & Vorbereitung Präsentation und Abgabe\\
+	 \end{tabular}
+	\\
+	\Eins{Arbeitspakete}\\
+	\\
+	\\
+	\\
+	\\
+	\\
+	\Fusszeile
+\end{document}
