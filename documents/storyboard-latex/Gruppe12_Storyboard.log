@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  4 MAY 2015 20:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.5)  5 MAY 2015 14:37
 entering extended mode
-**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/Gru
-ppe12_Storyboard.tex
+**C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/Gruppe12_Storybo
+ard.tex
 
-(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/Grup
-pe12_Storyboard.tex
+(C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/Gruppe12_Storyboa
+rd.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -351,7 +351,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Program Files (x86)\MikTex\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MikTex\tex\latex\00miktex\color.cfg"
@@ -396,7 +396,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks22
 
 ("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\picins\picins.sty"
+("C:\Program Files (x86)\MikTex\tex\latex\picins\picins.sty"
 Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \@BILD=\box28
 \@TEXT=\box29
@@ -442,8 +442,8 @@ Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \c@envdp=\count125
 \d@envb=\dimen138
 )
-(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\storyboard-latex\Grup
-pe12_Storyboard.aux)
+(C:\Users\Alexandra\git\sausagepan\documents\storyboard-latex\Gruppe12_Storyboa
+rd.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
@@ -456,8 +456,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MikTex\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count126
 \scratchdimen=\dimen139
@@ -604,9 +603,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--66
 [1
 
 {C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/header2.jpg>
- <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/mai
-ncharacter.png (PNG copy)>]
+s/Alexandra/git/sausagepan/documents/storyboard-latex/header2.jpg> <C:/Users/Al
+exandra/git/sausagepan/documents/storyboard-latex/maincharacter.png (PNG copy)>
+]
 Underfull \hbox (badness 10000) in paragraph at lines 66--77
 
  []
@@ -738,8 +737,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--142
 
 [3
 
- <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/lev
-el2.png (PNG copy)>]
+ <C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/level2.png (PNG 
+copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 142--177
 
  []
@@ -841,69 +840,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--194
 
 [4
 
- <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/storyboard-latex/lic
-htbrechung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--227
+ <C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/lichtbrechung.pn
+g>]
+Underfull \hbox (badness 10000) in paragraph at lines 194--199
 
  []
 
 [5
 
 ]
-(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\storyboard-latex\Grup
-pe12_Storyboard.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--246
+
+ []
+
+[6
+
+]
+(C:\Users\Alexandra\git\sausagepan\documents\storyboard-latex\Gruppe12_Storyboa
+rd.aux) ) 
 Here is how much of TeX's memory you used:
  3337 strings out of 493921
- 41412 string characters out of 3146469
+ 41339 string characters out of 3146469
  112573 words of memory out of 3000000
  6593 multiletter control sequences out of 15000+200000
  6959 words of font info for 27 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,5n,35p,813b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progr
-am Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Gruppe12_Storyboard.pdf (5 pages, 1261138 bytes).
+ 27i,5n,35p,800b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
+)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on Gruppe12_Storyboard.pdf (6 pages, 1263039 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
