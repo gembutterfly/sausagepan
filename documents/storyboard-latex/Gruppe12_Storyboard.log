@@ -1,25 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.5)  5 MAY 2015 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.28)  5 MAY 2015 16:33
 entering extended mode
-**C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/Gruppe12_Storybo
-ard.tex
-
-(C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/Gruppe12_Storyboa
-rd.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MikTex\tex\latex\base\report.cls"
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MikTex\tex\latex\base\size10.clo"
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Gruppe12_Storyboard.tex
+(./Gruppe12_Storyboard.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(c:/texlive/2014/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -34,20 +24,20 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MikTex\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(c:/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MikTex\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MikTex\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -196,8 +186,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MikTex\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -227,8 +217,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MikTex\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -251,24 +241,24 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MikTex\tex\latex\amsmath\amsmath.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MikTex\tex\latex\amsmath\amstext.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MikTex\tex\latex\amsmath\amsgen.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
-("C:\Program Files (x86)\MikTex\tex\latex\amsmath\amsbsy.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files (x86)\MikTex\tex\latex\amsmath\amsopn.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -309,41 +299,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\amsfonts.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\amssymb.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files (x86)\MikTex\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MikTex\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-("C:\Program Files (x86)\MikTex\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MikTex\tex\latex\graphics\trig.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MikTex\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MikTex\tex\latex\pdftex-def\pdftex.def"
+(c:/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MikTex\tex\generic\oberdiek\infwarerr.sty"
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MikTex\tex\generic\oberdiek\ltxcmds.sty"
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -351,10 +341,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files (x86)\MikTex\tex\latex\xcolor\xcolor.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MikTex\tex\latex\00miktex\color.cfg"
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -368,18 +358,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.sty"
+(c:/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MikTex\tex\generic\oberdiek\ifpdf.sty"
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MikTex\tex\generic\oberdiek\ifvtex.sty"
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MikTex\tex\generic\ifxetex\ifxetex.sty"
+(c:/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count101
@@ -394,56 +384,52 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks22
-
-("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MikTex\tex\latex\picins\picins.sty"
-Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
-\@BILD=\box28
-\@TEXT=\box29
-\d@breite=\dimen122
-\d@hoehe=\dimen123
-\d@xoff=\dimen124
-\d@yoff=\dimen125
-\d@shad=\dimen126
-\d@dash=\dimen127
-\d@boxl=\dimen128
-\d@pichskip=\dimen129
-\d@tmp=\dimen130
-\d@tmpa=\dimen131
-\d@bskip=\dimen132
-\hsiz@=\dimen133
-\p@getot@l=\dimen134
-\c@breite=\count104
-\c@hoehe=\count105
-\c@xoff=\count106
-\c@yoff=\count107
-\c@pos=\count108
-\c@shad=\count109
-\c@dash=\count110
-\c@boxl=\count111
-\c@zeilen=\count112
-\@changemode=\count113
-\c@piccaption=\count114
-\c@piccaptionpos=\count115
-\c@picpos=\count116
-\c@whole=\count117
-\c@half=\count118
-\c@tmp=\count119
-\c@tmpa=\count120
-\c@tmpb=\count121
-\c@tmpc=\count122
-\c@tmpd=\count123
-\d@leftskip=\skip46
-\ptoti=\dimen135
-\ptotii=\dimen136
-\env@box=\box30
-\d@envdp=\dimen137
-\c@hsize=\count124
-\c@envdp=\count125
-\d@envb=\dimen138
 )
-(C:\Users\Alexandra\git\sausagepan\documents\storyboard-latex\Gruppe12_Storyboa
-rd.aux)
+(c:/texlive/2014/texmf-dist/tex/latex/picinpar/picinpar.sty
+Pictures in Paragraphs. Version 1.2a, July 13, 1993
+\br=\count104
+\bl=\count105
+\na=\count106
+\nb=\count107
+\tcdsav=\count108
+\tcl=\count109
+\tcd=\count110
+\tcn=\count111
+\cumtcl=\count112
+\cumpartcl=\count113
+\lftside=\dimen122
+\rtside=\dimen123
+\hpic=\dimen124
+\vpic=\dimen125
+\strutilg=\dimen126
+\picwd=\dimen127
+\topheight=\dimen128
+\ilg=\dimen129
+\lpic=\dimen130
+\lwindowsep=\dimen131
+\rwindowsep=\dimen132
+\cumpar=\dimen133
+\twa=\toks23
+\la=\toks24
+\ra=\toks25
+\ha=\toks26
+\pictoc=\toks27
+\rawtext=\box28
+\holder=\box29
+\windowbox=\box30
+\wartext=\box31
+\finaltext=\box32
+\aslice=\box33
+\bslice=\box34
+\wbox=\box35
+\wstrutbox=\box36
+\picbox=\box37
+\waslice=\box38
+\wbslice=\box39
+\fslice=\box40
+) (./Gruppe12_Storyboard.aux)
+\openout1 = `Gruppe12_Storyboard.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
@@ -456,20 +442,64 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
- ("C:\Program Files (x86)\MikTex\tex\context\base\supp-pdf.mkii"
+
+(c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen139
-\scratchbox=\box31
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen140
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count114
+\scratchdimen=\dimen134
+\scratchbox=\box41
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen135
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks29
+) (c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -510,406 +540,479 @@ File: header2.jpg Graphic file (type jpg)
 Package pdftex.def Info: header2.jpg used on input line 29.
 (pdftex.def)             Requested size: 455.24408pt x 151.61325pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
+Underfull \hbox (badness 10000) in paragraph at lines 33--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
+Underfull \hbox (badness 10000) in paragraph at lines 33--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
+Underfull \hbox (badness 10000) in paragraph at lines 33--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
+Underfull \hbox (badness 10000) in paragraph at lines 33--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--48
+Underfull \hbox (badness 10000) in paragraph at lines 33--45
 
  []
 
 <maincharacter.png, id=2, 170.6375pt x 240.9pt>
 File: maincharacter.png Graphic file (type png)
  <use maincharacter.png>
-Package pdftex.def Info: maincharacter.png used on input line 48.
+Package pdftex.def Info: maincharacter.png used on input line 45.
 (pdftex.def)             Requested size: 91.04742pt x 128.5402pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
-
- []
-
-
-Overfull \hbox (1.75668pt too wide) in paragraph at lines 49--66
-\OT1/cmr/m/n/10 Dies haben wir bisher allerd-ings als op-tionalen In-halt dekla
-r-i-ert und wollen uns zunachst um die Hauptlevel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 47--63
 
  []
 
 [1
 
-{C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/git/sausagepan/documents/storyboard-latex/header2.jpg> <C:/Users/Al
-exandra/git/sausagepan/documents/storyboard-latex/maincharacter.png (PNG copy)>
-]
-Underfull \hbox (badness 10000) in paragraph at lines 66--77
+{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./header2.jpg> 
+<./maincharacter.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--77
+Underfull \hbox (badness 10000) in paragraph at lines 64--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--77
+Underfull \hbox (badness 10000) in paragraph at lines 64--75
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
-("C:\Program Files (x86)\MikTex\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+(c:/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--93
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
  []
 
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
- ("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+ (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
-("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsb.fd"
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 93--104
+Underfull \hbox (badness 10000) in paragraph at lines 91--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--104
+Underfull \hbox (badness 10000) in paragraph at lines 91--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--104
+Underfull \hbox (badness 10000) in paragraph at lines 91--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--122
+Underfull \hbox (badness 10000) in paragraph at lines 107--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--122
+Underfull \hbox (badness 10000) in paragraph at lines 107--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--122
+Underfull \hbox (badness 10000) in paragraph at lines 107--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--122
+Underfull \hbox (badness 10000) in paragraph at lines 107--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--122
+Underfull \hbox (badness 10000) in paragraph at lines 107--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 125--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
 
 <level2.png, id=14, 3520.15125pt x 2489.3pt>
 File: level2.png Graphic file (type png)
  <use level2.png>
-Package pdftex.def Info: level2.png used on input line 132.
+Package pdftex.def Info: level2.png used on input line 135.
 (pdftex.def)             Requested size: 182.09486pt x 128.76443pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--142
+Overfull \hbox (5.86507pt too wide) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 Verschiedene Lichtkegel, die in Grund-far-ben leuchten, befinde
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Overfull \hbox (3.53174pt too wide) in paragraph at lines 132--142
-\OT1/cmr/m/n/10 Verschiedene Lichtkegel die in Grund-far-ben leuchten, befinden
-
- []
-
-
-Overfull \hbox (8.26782pt too wide) in paragraph at lines 132--142
-\OT1/cmr/m/n/10 muss er die Figur durch die un-ter-schiedlichen Lichtkegel fuh
-ren,
- []
-
-
-Overfull \hbox (5.5039pt too wide) in paragraph at lines 132--142
-\OT1/cmr/m/n/10 so dass die Mis-ch-farbe der be-trete-nen Licht-far-ben die Ges
-uchte
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--142
-
+Overfull \hbox (5.86507pt too wide) detected at line 140
+|\OT1/cmr/m/n/10 Verschiedene Lichtkegel, die in Grund-far-ben leuchten, befind
+en
  []
 
 [3
 
- <C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/level2.png (PNG 
-copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+ <./level2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 142--183
 
  []
 
-<lichtbrechung.png, id=19, 602.25pt x 451.6875pt>
+<lichtbrechung.png, id=20, 602.25pt x 451.6875pt>
 File: lichtbrechung.png Graphic file (type png)
  <use lichtbrechung.png>
-Package pdftex.def Info: lichtbrechung.png used on input line 177.
+Package pdftex.def Info: lichtbrechung.png used on input line 183.
 (pdftex.def)             Requested size: 182.09486pt x 136.56868pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--194
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--194
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
 
  []
 
 [4
 
- <C:/Users/Alexandra/git/sausagepan/documents/storyboard-latex/lichtbrechung.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
+ <./lichtbrechung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 190--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--204
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--246
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--252
 
  []
 
 [6
 
-]
-(C:\Users\Alexandra\git\sausagepan\documents\storyboard-latex\Gruppe12_Storyboa
-rd.aux) ) 
+] (./Gruppe12_Storyboard.aux) ) 
 Here is how much of TeX's memory you used:
- 3337 strings out of 493921
- 41339 string characters out of 3146469
- 112573 words of memory out of 3000000
- 6593 multiletter control sequences out of 15000+200000
- 6959 words of font info for 27 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 27i,5n,35p,800b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
-/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
-m Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
-)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Gruppe12_Storyboard.pdf (6 pages, 1263039 bytes).
+ 3639 strings out of 493109
+ 46458 string characters out of 6138586
+ 124801 words of memory out of 5000000
+ 7041 multiletter control sequences out of 15000+600000
+ 6959 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,5n,35p,739b,179s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on Gruppe12_Storyboard.pdf (6 pages, 1257881 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

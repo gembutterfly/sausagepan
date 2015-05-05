@@ -6,9 +6,9 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{geometry}
-\usepackage {picins}
+\usepackage{picinpar}
 \geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
-\pagestyle{empty} %keine Kopf-/Fußzeile
+%\pagestyle{empty} %keine Kopf-/Fußzeile
 \author{Sausage Pan}
 \begin{document}
 	%Farbdefinierung
@@ -29,9 +29,7 @@
 		\includegraphics[width=160mm]{header2}
 	\end{center}
 	%Eigentlicher Inhalt :D
-	\color{orange} \textit{Gruppenname:} \color{schwarz}sausage pan \color{orange} \textit{Gruppenleiter:} \color{schwarz}Georg Eckert   \color{orange} \textit{Protokollant:} \color{schwarz}Philipp Roscher\\
-	\\
-	\\
+
 	\Eins{Storyboard}\\
 	\\
 	\Zwei{Titel:} \Text{Prisma}\\
@@ -43,16 +41,17 @@
 	\Zwei{1. Grundlegender Aufbau des Spiels}\\
 	\\
 	\Drei{1.1 Setting}\\
-	\\
 	\Text
-	\parpic[r]{\includegraphics[width = 0.2\textwidth]{maincharacter.png}}
+	\begin{window}[0,r, \includegraphics[width = 0.2\textwidth]{maincharacter.png}, ]
+	%\parpic[r]{\includegraphics[width = 0.2\textwidth]{maincharacter.png}}
 		Das Spiel bewegt sich in einer fiktiven Welt. Der Spieler übernimmt dabei die Rolle eines namenlosen Helden, 
 	welcher weder hinsichtlich des Alters, Geschlechts etc. spezifiziert wird.\\\\
 	Ausgangssituation für das Spiel ist, dass in Folge eines Missgeschickes der Regenbogen in Fragmente zerspringt.
 	Als Resultat wird die Welt in ein einheitliches Grau getaucht.\\\\
 	Aufgabe ist es nun, diese Fragmente wieder einzusammeln um letztendlich den Regenbogen neu zusammensetzen zu können. 
 	Diese Fragmente finden sich in den einzelnen Level wieder, die als Jump'n'Run angelegt werden.\\\\
-	Der Spieler soll dabei ein grundlegendes Verständnis für die Farbenlehre erhalten. Jedes Level fokussiert sich dabei auf ein anderes Teilthema.\\\\
+	Der Spieler soll dabei ein grundlegendes Verständnis für die Farbenlehre erhalten.\\ 
+	Jedes Level fokussiert sich dabei auf ein anderes Teilthema.\\\\
 	Als unterstützende Hilfe steht dem Spieler stets eine Art Mentor zur Verfügung, welcher um Hilfe gebeten werden kann. 
 	So wollen wir möglicherweise aufkommenden Frust eindämpfen.\\\\
 	Gerne würden wir einige Zwischenlevel einbauen, die andere Spielmechaniken nutzen. 
@@ -61,8 +60,7 @@
 	Je nach verbleibender Zeit werden danach die Zwischenlevel konzipiert.\\
 	Der Spielfortschritt wird als Farbkreis angezeigt. Dieser ist am Anfang komplett grau. Nachdem eine Farbe in einem Level gewonnen wurde,
 	erscheint diese schließlich auch im Farbkreis.
-	\\
-	\\
+	\end{window}
 	\clearpage\
 	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
 	\\
@@ -129,16 +127,18 @@
 	\underline{Level 2}\\\\\
 	\textbf{Thema:}\
 	Additive Farbmischung
-	\parpic[r]{\includegraphics[width = 0.4\textwidth]{level2.png}}\
-	\\
+	%\parpic[r]{\includegraphics[width = 0.4\textwidth]{level2.png}}\
+	\\ 
 	\textbf{Farbe:} Rot\
 	\\\\
 	\textbf{Aufgabe:}\	
-	Protagonist befindet sich wieder in einem optisch ähnlichen Jump n Run Level.\\
-	Verschiedene Lichtkegel die in Grundfarben leuchten, befinden sich in Sichtweite, ebenso ein Tor in einer Mischfarbe.
-	 Der Spieler muss nun die Figur so durch das Level lotsen, dass sich die Figur in der gleichen Farbe wie das Tor einfärbt. 
-	Dazu muss er die Figur durch die unterschiedlichen Lichtkegel führen, so dass die Mischfarbe der betretenen Lichtfarben die Gesuchte ergibt.\\
-	\\\\
+	\begin{window}[0,r, \includegraphics[width = 0.4\textwidth]{level2.png}, ]
+	Der Protagonist befindet sich wieder in einem optisch ähnlichen Jump'n'Run Level.\\
+	Verschiedene Lichtkegel, die in Grundfarben leuchten, befinden sich in Sichtweite - ebenso ein Tor in einer Mischfarbe.
+	Der Spieler muss nun die Figur so durch das Level lotsen, dass sich die Figur in der gleichen Farbe wie das Tor einfärbt. 
+	Dazu muss er das Prinzip der additiven Farbmischung anwenden und die Figur so durch die unterschiedlichen Lichtkegel führen, dass die Mischfarbe der betretenen Lichtfarben, die Gesuchte ergibt.\\
+	\end{window}
+	
 	\clearpage\
 	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
 	\\
@@ -149,8 +149,11 @@
 	\textbf{Farbe:} Gelb\
 	\\\\
 	\textbf{Aufgabe:}\
-	missing
-	\\\\
+	Der Spieler lernt anhand von farbigen Wolken wie Licht/Farb-Absorbierung funktioniert.
+	Es wird erst mittels einer einzigen Wolkenschicht demonstriert wie sich diese auf das einfallende farblose oder farbige Licht auswirkt.\\
+	Danach muss der Spieler mehrere Schichten von Wolken so sortieren, dass eine bestimmte Farbe übrig bleibt und er sich gelb färben kann.\\
+	Die Wolken werden mithilfe von Schaltern gesteuert.\\
+	\\
 	\underline{Level 4}\\\\\
 	\textbf{Thema:}\
 	Komplementärfarben
@@ -174,14 +177,19 @@
 	Lichtbrechung
 	\\\\
 	\textbf{Farbe:} Magenta\
-	\parpic[r]{\includegraphics[width = 0.4\textwidth]{lichtbrechung.png}}\
+	%\parpic[r]{\includegraphics[width = 0.4\textwidth]{lichtbrechung.png}}\
 	\\
 	\textbf{Aufgabe:}\
+	\begin{window}[0,r, \includegraphics[width = 0.4\textwidth]{lichtbrechung.png}, ]
 	Der Protagonist befindet sich in einem Raum, wo es nur weiße Lichtkegel gibt. Nebenbei gibt es auch ein paar Prismen, die der Protagonist zu den Lichtkegeln 		schieben muss. Die Idee dabei ist, zu zeigen, wie das Licht anhand des Prismas bricht.\\
-	Weiß wird in verschiedene Farben geteilt und deren Strahlung verschiedene Brechungen hat. Der Spieler muss intuitiv verstehen, dass jede Farbe in 			verschiedenen Winkeln reflektiert wird, nachdem es durch das Prisma gelangt.\\
+	Weiß wird in verschiedene Farben geteilt, da deren Strahlen verschiedene Brechungen haben. Der Spieler muss intuitiv verstehen, dass jede Farbe in 			verschiedenen Winkeln reflektiert wird, nachdem es durch das Prisma gelangt.\\
 	Um das Spiel mit den Winkeln zu verstärken, werden Spiegel hinzugefügt. So kann der Spieler bestimmte Lichtstrahlen zu bestimmten Punkten lenken, 
 	nachdem das Prisma das weiße Licht in verschiedene Farben geteilt hat.
 	\\\\
+	\end{window}
+	\clearpage\
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\\
 	\underline{Level 7}\\\\\
 	\textbf{Thema:}\
 	Alles bisher gelernte
@@ -190,10 +198,7 @@
 	\\\\
 	\textbf{Aufgabe:}\
 	In diesem Level geht es um die Wiederholung und Festigung der bisher erlernten Kenntnisse. So wird durch eine Kombination 			aller Spielmechaniken neben der Erlernung der verschiedenen Elemente der Farbenlehre auch die Kombinationsgabe des 			Spielers gefördert.
-	\\
-	\clearpage\
-	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
-	\\
+	\\\\
 	\underline{Animation 3 - Endsequenz}\
 	\\
 	\begin{flushright}
@@ -242,5 +247,6 @@
 	\Text
 		Um auch selbst ein bisschen Spaß an dem Spiel zu haben, wäre es toll einige Spielereien einzubauen sofern uns die Zeit dafür bleibt.\\
 	\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	\Fusszeile
 \end{document}
