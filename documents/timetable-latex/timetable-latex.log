@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.28)  5 MAY 2015 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.28)  5 MAY 2015 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Gruppe12_Storyboard.tex
-(./Gruppe12_Storyboard.tex
+**timetable-latex.tex
+(./timetable-latex.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (c:/texlive/2014/texmf-dist/tex/latex/base/report.cls
@@ -385,77 +385,35 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks22
 )
-(c:/texlive/2014/texmf-dist/tex/latex/picinpar/picinpar.sty
-Pictures in Paragraphs. Version 1.2a, July 13, 1993
-\br=\count104
-\bl=\count105
-\na=\count106
-\nb=\count107
-\tcdsav=\count108
-\tcl=\count109
-\tcd=\count110
-\tcn=\count111
-\cumtcl=\count112
-\cumpartcl=\count113
-\lftside=\dimen122
-\rtside=\dimen123
-\hpic=\dimen124
-\vpic=\dimen125
-\strutilg=\dimen126
-\picwd=\dimen127
-\topheight=\dimen128
-\ilg=\dimen129
-\lpic=\dimen130
-\lwindowsep=\dimen131
-\rwindowsep=\dimen132
-\cumpar=\dimen133
-\twa=\toks23
-\la=\toks24
-\ra=\toks25
-\ha=\toks26
-\pictoc=\toks27
-\rawtext=\box28
-\holder=\box29
-\windowbox=\box30
-\wartext=\box31
-\finaltext=\box32
-\aslice=\box33
-\bslice=\box34
-\wbox=\box35
-\wstrutbox=\box36
-\picbox=\box37
-\waslice=\box38
-\wbslice=\box39
-\fslice=\box40
-) (./Gruppe12_Storyboard.aux)
-\openout1 = `Gruppe12_Storyboard.aux'.
+(./timetable-latex.aux)
+\openout1 = `timetable-latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen134
-\scratchbox=\box41
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen135
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count104
+\scratchdimen=\dimen122
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen123
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks24
 ) (c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -537,482 +495,160 @@ e
 <header2.jpg, id=1, 512.1534pt x 170.5572pt>
 File: header2.jpg Graphic file (type jpg)
  <use header2.jpg>
-Package pdftex.def Info: header2.jpg used on input line 29.
+Package pdftex.def Info: header2.jpg used on input line 28.
 (pdftex.def)             Requested size: 455.24408pt x 151.61325pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--45
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--45
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 31--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--45
-
- []
-
-<maincharacter.png, id=2, 170.6375pt x 240.9pt>
-File: maincharacter.png Graphic file (type png)
- <use maincharacter.png>
-Package pdftex.def Info: maincharacter.png used on input line 45.
-(pdftex.def)             Requested size: 91.04742pt x 128.5402pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--63
+Underfull \hbox (badness 10000) in paragraph at lines 31--56
 
  []
 
 [1
 
-{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./header2.jpg> 
-<./maincharacter.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--75
+{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./header2.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--75
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--75
+Overfull \hbox (6.9929pt too wide) in paragraph at lines 56--103
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
-(c:/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--103
 
  []
 
 [2
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
- (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
-
-(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 91--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--135
-
- []
-
-<level2.png, id=14, 3520.15125pt x 2489.3pt>
-File: level2.png Graphic file (type png)
- <use level2.png>
-Package pdftex.def Info: level2.png used on input line 135.
-(pdftex.def)             Requested size: 182.09486pt x 128.76443pt.
-
-Overfull \hbox (5.86507pt too wide) in paragraph at lines 136--140
-\OT1/cmr/m/n/10 Verschiedene Lichtkegel, die in Grund-far-ben leuchten, befinde
-n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
-
- []
-
-
-Overfull \hbox (5.86507pt too wide) detected at line 140
-|\OT1/cmr/m/n/10 Verschiedene Lichtkegel, die in Grund-far-ben leuchten, befind
-en
- []
-
-[3
-
- <./level2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--183
-
- []
-
-<lichtbrechung.png, id=20, 602.25pt x 451.6875pt>
-File: lichtbrechung.png Graphic file (type png)
- <use lichtbrechung.png>
-Package pdftex.def Info: lichtbrechung.png used on input line 183.
-(pdftex.def)             Requested size: 182.09486pt x 136.56868pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--189
-
- []
-
-[4
-
- <./lichtbrechung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 190--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--204
-
- []
-
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--252
-
- []
-
-[6
-
-] (./Gruppe12_Storyboard.aux) ) 
+] (./timetable-latex.aux) ) 
 Here is how much of TeX's memory you used:
- 3639 strings out of 493109
- 46458 string characters out of 6138586
- 124801 words of memory out of 5000000
- 7041 multiletter control sequences out of 15000+600000
- 6959 words of font info for 27 fonts, out of 8000000 for 9000
+ 3536 strings out of 493109
+ 45178 string characters out of 6138586
+ 125765 words of memory out of 5000000
+ 6949 multiletter control sequences out of 15000+600000
+ 6652 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,35p,739b,179s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Gruppe12_Storyboard.pdf (6 pages, 1257881 bytes).
+ 38i,7n,35p,246b,179s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on timetable-latex.pdf (2 pages, 264657 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
