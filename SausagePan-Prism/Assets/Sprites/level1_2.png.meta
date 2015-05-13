@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: ab6c553dc47c8754dad2711c09b4148b
+timeCreated: 1430770905
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skyscraper
+    21300002: goal_inner
+    21300004: goal
+    21300006: level1_3
+    21300008: black_background
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skyscraper
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 453
+        width: 320
+        height: 896
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goal_inner
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 480
+        width: 206
+        height: 397
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goal
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 480
+        width: 480
+        height: 928
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 2048
+        height: 390
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: black_background
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1477
+        width: 2048
+        height: 568
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
