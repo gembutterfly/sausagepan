@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  15 MAY 2015 14:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  17 MAY 2015 15:48
 entering extended mode
-**C:/Users/Alexandra/Documents/Leveldesign/Gruppe12_Layout_Level.tex
-(C:/Users/Alexandra/Documents/Leveldesign/Gruppe12_Layout_Level.tex
+**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/G
+ruppe12_Layout_Level.tex
+
+(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/Gr
+uppe12_Layout_Level.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -439,7 +442,8 @@ Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \c@envdp=\count125
 \d@envb=\dimen138
 )
-(C:\Users\Alexandra\Documents\Leveldesign\Gruppe12_Layout_Level.aux)
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\layout\Leveldesign\Gr
+uppe12_Layout_Level.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
@@ -507,145 +511,198 @@ File: header2.jpg Graphic file (type jpg)
 Package pdftex.def Info: header2.jpg used on input line 29.
 (pdftex.def)             Requested size: 455.24408pt x 151.61325pt.
 
-<png/screen.png, id=2, 1686.3pt x 1053.9375pt>
-File: png/screen.png Graphic file (type png)
- <use png/screen.png>
-Package pdftex.def Info: png/screen.png used on input line 40.
-(pdftex.def)             Requested size: 455.24411pt x 284.51868pt.
+<png/startbildschirm.jpg, id=2, 246.6816pt x 185.0112pt>
+File: png/startbildschirm.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+<use png/startbildschirm.jpg>
+Package pdftex.def Info: png/startbildschirm.jpg used on input line 40.
+(pdftex.def)             Requested size: 455.24411pt x 341.46643pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Overfull \hbox (12.33076pt too wide) in paragraph at lines 32--49
-[]\OT1/cmr/m/n/10 Beispielhafte Darstel-lung eines Lev-els, hier nur unter Ein-
-bindung der Licht-far-ben-mis-chung. Die tatsachlichen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--46
 
  []
 
 [1
 
 {C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/Documents/Leveldesign/header2.jpg> <C:/Users/Alexandra/Documents/Le
-veldesign/png/screen.png (PNG copy)>]
-<png/renew.png, id=10, 200.75pt x 200.75pt>
+s/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/header2.jp
+g> <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign
+/png/startbildschirm.jpg>] <png/renew.png, id=10, 200.75pt x 200.75pt>
 File: png/renew.png Graphic file (type png)
- <use png/renew.png>
-Package pdftex.def Info: png/renew.png used on input line 56.
-(pdftex.def)             Requested size: 40.97029pt x 40.97021pt.
 
-<png/sound.png, id=12, 200.75pt x 200.75pt>
+<use png/renew.png>
+Package pdftex.def Info: png/renew.png used on input line 53.
+(pdftex.def)             Requested size: 40.97029pt x 40.97021pt.
+ <png/sound.png, id=12, 200.75pt x 200.75pt>
 File: png/sound.png Graphic file (type png)
- <use png/sound.png>
-Package pdftex.def Info: png/sound.png used on input line 59.
-(pdftex.def)             Requested size: 40.97029pt x 40.97021pt.
 
-<png/quit.png, id=13, 200.75pt x 200.75pt>
+<use png/sound.png>
+Package pdftex.def Info: png/sound.png used on input line 56.
+(pdftex.def)             Requested size: 40.97029pt x 40.97021pt.
+ <png/quit.png, id=13, 200.75pt x 200.75pt>
 File: png/quit.png Graphic file (type png)
- <use png/quit.png>
-Package pdftex.def Info: png/quit.png used on input line 62.
+
+<use png/quit.png>
+Package pdftex.def Info: png/quit.png used on input line 59.
 (pdftex.def)             Requested size: 40.97029pt x 40.97021pt.
-
-<png/menu.png, id=14, 401.5pt x 301.125pt>
+ <png/menu.png, id=14, 401.5pt x 301.125pt>
 File: png/menu.png Graphic file (type png)
- <use png/menu.png>
-Package pdftex.def Info: png/menu.png used on input line 67.
-(pdftex.def)             Requested size: 91.04742pt x 68.28319pt.
 
-<png/screen_help.png, id=15, 1264.725pt x 790.45313pt>
+<use png/menu.png>
+Package pdftex.def Info: png/menu.png used on input line 64.
+(pdftex.def)             Requested size: 91.04742pt x 68.28319pt.
+ <png/screen_help.png, id=15, 1264.725pt x 790.45313pt>
 File: png/screen_help.png Graphic file (type png)
 
 <use png/screen_help.png>
-Package pdftex.def Info: png/screen_help.png used on input line 71.
+Package pdftex.def Info: png/screen_help.png used on input line 68.
 (pdftex.def)             Requested size: 455.24411pt x 284.52672pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--74
+Underfull \hbox (badness 10000) in paragraph at lines 46--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--74
+Underfull \hbox (badness 10000) in paragraph at lines 46--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--74
+Underfull \hbox (badness 10000) in paragraph at lines 46--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--74
+Underfull \hbox (badness 10000) in paragraph at lines 46--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--74
+Underfull \hbox (badness 10000) in paragraph at lines 46--70
 
  []
 
 [2
 
- <C:/Users/Alexandra/Documents/Leveldesign/png/renew.png> <C:/Users/Alexandra/D
-ocuments/Leveldesign/png/sound.png> <C:/Users/Alexandra/Documents/Leveldesign/p
-ng/quit.png> <C:/Users/Alexandra/Documents/Leveldesign/png/menu.png> <C:/Users/
-Alexandra/Documents/Leveldesign/png/screen_help.png>]
-(C:\Users\Alexandra\Documents\Leveldesign\Gruppe12_Layout_Level.aux) ) 
+ <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/p
+ng/renew.png> <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/
+Leveldesign/png/sound.png> <C:/Users/Alexandra/Documents/GitHub/sausagepan/docu
+ments/layout/Leveldesign/png/quit.png> <C:/Users/Alexandra/Documents/GitHub/sau
+sagepan/documents/layout/Leveldesign/png/menu.png> <C:/Users/Alexandra/Document
+s/GitHub/sausagepan/documents/layout/Leveldesign/png/screen_help.png>]
+<png/screen_overview.png, id=24, 1686.3pt x 1053.9375pt>
+File: png/screen_overview.png Graphic file (type png)
+
+<use png/screen_overview.png>
+Package pdftex.def Info: png/screen_overview.png used on input line 74.
+(pdftex.def)             Requested size: 455.24411pt x 284.51868pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--80
+
+ []
+
+[3
+
+ <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/p
+ng/screen_overview.png (PNG copy)>]
+<png/screen.png, id=28, 1686.3pt x 1053.9375pt>
+File: png/screen.png Graphic file (type png)
+ <use png/screen.png>
+Package pdftex.def Info: png/screen.png used on input line 84.
+(pdftex.def)             Requested size: 455.24411pt x 284.51868pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+
+Overfull \hbox (12.33076pt too wide) in paragraph at lines 80--95
+[]\OT1/cmr/m/n/10 Beispielhafte Darstel-lung eines Lev-els, hier nur unter Ein-
+bindung der Licht-far-ben-mis-chung. Die tatsachlichen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--95
+
+ []
+
+[4
+
+ <C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/layout/Leveldesign/p
+ng/screen.png (PNG copy)>]
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\layout\Leveldesign\Gr
+uppe12_Layout_Level.aux) ) 
 Here is how much of TeX's memory you used:
- 3308 strings out of 493921
- 40678 string characters out of 3146469
+ 3318 strings out of 493921
+ 41183 string characters out of 3146469
  109573 words of memory out of 3000000
- 6576 multiletter control sequences out of 15000+200000
+ 6584 multiletter control sequences out of 15000+200000
  5260 words of font info for 19 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,5n,35p,374b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progr
-am Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fil
-es (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MikT
-ex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Gruppe12_Layout_Level.pdf (2 pages, 816541 bytes).
+ 27i,5n,35p,409b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MikTex/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti
+10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+
+Output written on Gruppe12_Layout_Level.pdf (4 pages, 1409116 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
