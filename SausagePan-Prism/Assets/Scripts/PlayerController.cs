@@ -101,8 +101,8 @@ public class PlayerController : MonoBehaviour {
 			mix = newColor;
 		}
 
-		if (oldColor.Equals(newColor)) {
-			mix = oldColor;
+		if (oldColor.Equals(newColor)) {		
+			mix = oldColor;		
 		}
 
 		// He was magenta
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour {
 				mix = Color.magenta;
 			}
 
-			if (newColor.Equals( Color.green)){
+			if (newColor.Equals(Color.green)){
 				// Right color is gray
 				mix = Color.black;
 			}
@@ -168,6 +168,28 @@ public class PlayerController : MonoBehaviour {
 			if (newColor.Equals(Color.red)){
 				// Right color is brown
 				mix = Color.green;
+			}
+		}
+
+		// He was yellow
+		if (oldColor.Equals (Color.yellow)) 
+		{
+			if (newColor.Equals(Color.magenta)){
+				// Right color is brown
+				mix = Color.yellow;
+			}
+			
+			if (newColor.Equals(Color.blue)){
+				mix = Color.green;
+			}
+			
+			if (newColor.Equals(Color.green)){
+				mix = Color.green;
+			}
+			
+			if (newColor.Equals(Color.red)){
+				// Right color is orange
+				mix = Color.yellow;
 			}
 		}
 
