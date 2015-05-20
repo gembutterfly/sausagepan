@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: b53f7ef74d50f3e478cc1bd378effbe5
+timeCreated: 1431945068
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bubble
+    21300002: cloud_1
+    21300004: cloud_2
+    21300006: cloud_3
+    21300008: cloud_4
+    21300010: cloud_5
+    21300012: textures_trees_6
+    21300014: textures_trees_7
+    21300016: textures_trees_8
+    21300018: textures_trees_9
+    21300020: textures_trees_10
+    21300022: textures_trees_11
+    21300024: textures_trees_12
+    21300026: textures_trees_13
+    21300028: textures_trees_16
+    21300030: textures_trees_17
+    21300032: textures_trees_18
+    21300034: textures_trees_19
+    21300036: textures_trees_20
+    21300038: textures_trees_14
+    21300040: textures_trees_15
+    21300042: textures_trees_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bubble
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1046
+        width: 142
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1063
+        width: 145
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1085
+        width: 248
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1079
+        width: 162
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud_4
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1024
+        width: 247
+        height: 157
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud_5
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1029
+        width: 198
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 807
+        width: 92
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 748
+        width: 360
+        height: 272
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_8
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 791
+        width: 382
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_9
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 577
+        width: 253
+        height: 424
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_10
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 758
+        width: 238
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_11
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 620
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_12
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 374
+        width: 279
+        height: 275
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 391
+        width: 392
+        height: 331
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_16
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 289
+        width: 319
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 71
+        width: 372
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_18
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 36
+        width: 403
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_19
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 159
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_20
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 229
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_14
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 56
+        width: 217
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_15
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 440
+        width: 392
+        height: 282
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textures_trees_21
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 36
+        width: 430
+        height: 345
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

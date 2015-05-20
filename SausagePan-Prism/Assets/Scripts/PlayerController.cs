@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public float maxSpeed = 4;
+	public float pushPower = -550;
 	public float jumpForce = 550;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour {
 	public bool lookingRight = true;
 	private bool isGrounded = false;
 	private bool jump = false;
+	private Color oldColor;
+	private Color mixColor;
+	private Color mix;
 
 
 	// Use this for initialization
@@ -63,5 +67,139 @@ public class PlayerController : MonoBehaviour {
 		myScale.x *= -1;
 		transform.localScale = myScale;
 	}
-	
+
+	public void PaintChar(Color newColor)
+	{
+		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
+		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
+
+		// Get old color of figure
+		oldColor = sprite.color;
+		
+		// determine mixed color
+		mixColor = MixColors (oldColor, newColor);
+
+		sprite.color = mixColor;
+
+		bodypart = GameObject.Find ("blackBuddy/textures/body");
+		sprite = bodypart.GetComponent<SpriteRenderer> ();
+		sprite.color = mixColor;
+		
+		bodypart = GameObject.Find ("blackBuddy/textures/foot_back");
+		sprite = bodypart.GetComponent<SpriteRenderer> ();
+		sprite.color = mixColor;
+		
+		bodypart = GameObject.Find ("blackBuddy/textures/foot_front");
+		sprite = bodypart.GetComponent<SpriteRenderer> ();
+		sprite.color = mixColor;
+	}
+
+	public Color MixColors(Color oldColor, Color newColor)
+	{
+		// Determine first color
+		if (oldColor.Equals (Color.white) || oldColor.Equals (Color.black)) {
+			mix = newColor;
+		}
+
+		if (oldColor.Equals(newColor)) {
+			mix = oldColor;
+		}
+
+		// He was magenta
+		if (oldColor.Equals (Color.magenta)) 
+		{
+			if (newColor.Equals(Color.blue)){
+				mix = Color.magenta;
+			}
+
+			if (newColor.Equals( Color.green)){
+				// Right color is gray
+				mix = Color.black;
+			}
+
+			if (newColor.Equals(Color.yellow)){
+				// Right color is orange
+				mix = Color.red;
+			}
+
+			if (newColor.Equals(Color.red)){
+				// Right color is purple
+				mix = Color.red;
+			}
+		}
+
+		// He was blue
+		if (oldColor.Equals (Color.blue)) 
+		{
+			if (newColor.Equals(Color.magenta)){
+				mix = Color.magenta;
+			}
+
+			if (newColor.Equals(Color.green)){
+				mix = Color.green;
+			}
+
+			if (newColor.Equals(Color.yellow)){
+				mix = Color.green;
+			}
+
+			if (newColor.Equals(Color.red)){
+				// Right color is purple
+				mix = Color.magenta;
+			}
+		}
+
+		// He was green
+		if (oldColor.Equals (Color.green)) 
+		{
+			if (newColor.Equals(Color.magenta)){
+				// Right color is gray
+				mix = Color.black;
+			}
+
+			if (newColor.Equals(Color.blue)){
+				mix = Color.green;
+			}
+
+			if (newColor.Equals(Color.yellow)){
+				mix = Color.green;
+			}
+
+			if (newColor.Equals(Color.red)){
+				// Right color is brown
+				mix = Color.green;
+			}
+		}
+
+		// He was red
+		if (oldColor.Equals (Color.red)) 
+		{
+			if (newColor.Equals(Color.magenta)){
+				// Right color is purple
+				mix = Color.magenta;
+			}
+
+			if (newColor.Equals(Color.blue)){
+				mix = Color.magenta;
+			}
+
+			if (newColor.Equals(Color.green)){
+				// Right color is brown
+				mix = Color.red;
+			}
+
+			if (newColor.Equals(Color.yellow)){
+				// Right color is orange
+				mix = Color.yellow;
+			}
+		}
+
+		return mix;
+
+	}
+
+	public void PushBackPlayer()
+	{
+		char2D.AddForce(char2D.velocity * pushPower);
+	}
 }
