@@ -222,6 +222,9 @@ public class PlayerController : MonoBehaviour {
 
 	public void PushBackPlayer()
 	{
-		char2D.AddForce(char2D.velocity * pushPower);
+		int new_x_position = (int)(0.1f * char2D.position.x * pushPower);
+		int new_y_position = 0;
+
+		char2D.AddForce(new Vector2(new_x_position, new_y_position), ForceMode2D.Impulse);
 	}
 }

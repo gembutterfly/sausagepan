@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour {
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController> ();
 		SpriteRenderer sprite = GetComponent<SpriteRenderer> ();
 
-		enemyColor = "blue";
+		enemyColor = "red";
 	}
 
 	public void OnTriggerEnter2D (Collider2D other)
