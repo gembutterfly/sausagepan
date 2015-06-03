@@ -6,6 +6,7 @@ public class InkChar : MonoBehaviour {
 	public string newColor = "black";
 	private Color col = Color.black;
 	private Color oldCol;
+	private PlayerController playerController;
 
 	void Start() {
 		switch (newColor) {
@@ -17,76 +18,16 @@ public class InkChar : MonoBehaviour {
 		case "magenta": col = Color.magenta; break;
 		default: col = Color.black; break;
 		}
+		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController> ();
 	}
 
 	void OnTriggerEnter2D (Collider2D player) {
-		Debug.Log (player.name + " entered ink area");
+//		Debug.Log (player.name + " entered ink area");
 
 		if(player.name.Equals("blackBuddy")) {
 			Debug.Log ("paint him " + newColor);
-			paintChar(col);
+			playerController.PaintChar(col, false);
 		}
 	}
 
-	void paintChar(Color color) {
-		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
-		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
-
-		// Get old color of figure
-		oldCol = sprite.color;
-
-		// determine mixed color
-		color = mixColors (oldCol, color);
-
-		sprite.color = color;
-		
-		bodypart = GameObject.Find ("blackBuddy/textures/body");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = color;
-		
-		bodypart = GameObject.Find ("blackBuddy/textures/foot_back");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = color;
-		
-		bodypart = GameObject.Find ("blackBuddy/textures/foot_front");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = color;
-	}
-
-	private Color mixColors(Color col1, Color col2) {
-		Color mix = Color.black;
-
-		// determine first color
-		if (col1.Equals (Color.white) || col1.Equals (Color.black)) {
-			mix = col2;
-		}
-		// he was blue
-		if(col1.Equals (Color.blue)) {
-			if(col2.Equals(Color.yellow)) {
-				mix = Color.black;
-			}
-		}
-		// he was green
-		if(col1.Equals (Color.green)) {
-			if(col2.Equals(Color.green)) {
-				mix = Color.green;
-			}
-			if(col2.Equals(Color.magenta)) {
-				mix = Color.black;
-			}
-		}
-
-		// he was magenta
-		if(col1.Equals (Color.magenta)) {
-			if(col2.Equals(Color.green)) {
-				mix = Color.black;
-			}
-			if(col2.Equals(Color.magenta)) {
-				mix = Color.magenta;
-			}
-		}
-
-
-		return mix;
-	}
 }

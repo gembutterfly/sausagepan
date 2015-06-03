@@ -68,7 +68,13 @@ public class PlayerController : MonoBehaviour {
 		transform.localScale = myScale;
 	}
 
-	public void PaintChar(Color newColor)
+	/**
+	 * Paints the character according to its recent color.
+	 * true = additive color mixing
+	 * false = subtractive color mixing
+	 * 
+	 * */
+	public void PaintChar(Color newColor, bool additive)
 	{
 		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
 		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
@@ -77,7 +83,10 @@ public class PlayerController : MonoBehaviour {
 		oldColor = sprite.color;
 		
 		// determine mixed color
-		mixColor = MixColors (oldColor, newColor);
+		if (additive)
+			mixColor = MixColorsAdditive (oldColor, newColor);
+		else
+			mixColor = MixColorsSubtractive(oldColor, newColor);
 
 		sprite.color = mixColor;
 
@@ -93,128 +102,195 @@ public class PlayerController : MonoBehaviour {
 		sprite = bodypart.GetComponent<SpriteRenderer> ();
 		sprite.color = mixColor;
 	}
+	
 
-	public Color MixColors(Color oldColor, Color newColor)
+	public Color MixColorsSubtractive(Color col1, Color col2) {
+
+		return new Color (col1.r-(1-col2.r),
+		                  col1.g-(1-col2.g), 
+		                  col1.b-(1-col2.b),
+		                  1);
+
+//		Color mix = Color.black;
+//		
+//		// determine first color
+//		if (col1.Equals (Color.white) || col1.Equals (Color.black)) {
+//			mix = col2;
+//		}
+//		// he was blue
+//		if(col1.Equals (Color.blue)) {
+//			if(col2.Equals(Color.yellow)) {
+//				mix = Color.black;
+//			}
+//		}
+//		// he was green
+//		if(col1.Equals (Color.green)) {
+//			if(col2.Equals(Color.green)) {
+//				mix = Color.green;
+//			}
+//			if(col2.Equals(Color.magenta)) {
+//				mix = new Color(Color.green.r-Color.magenta.r,Color.green.g-Color.magenta.g, Color.green.b-Color.magenta.b,1);
+//			}
+//		}
+//		
+//		// he was magenta
+//		if(col1.Equals (Color.magenta)) {
+//			if(col2.Equals(Color.green)) {
+//				mix = Color.black;
+//			}
+//			if(col2.Equals(Color.magenta)) {
+//				mix = Color.magenta;
+//			}
+//		}
+		
+		
+		return mix;
+	}
+
+	public Color MixColorsAdditive(Color oldColor, Color newColor)
 	{
-		// Determine first color
-		if (oldColor.Equals (Color.white) || oldColor.Equals (Color.black)) {
-			mix = newColor;
-		}
+		mix = new Color ();
 
-		if (oldColor.Equals(newColor)) {		
-			mix = oldColor;		
-		}
+		mix.a = 1;
 
-		// He was magenta
-		if (oldColor.Equals (Color.magenta)) 
-		{
-			if (newColor.Equals(Color.blue)){
-				mix = Color.magenta;
-			}
+		if (oldColor.r + newColor.r > 1)
+			mix.r = 1;
+		else 
+			mix.r = oldColor.r + newColor.r;
 
-			if (newColor.Equals(Color.green)){
-				// Right color is gray
-				mix = Color.black;
-			}
+		if (oldColor.g + newColor.g > 1)
+			mix.g = 1;
+		else 
+			mix.g = oldColor.g + newColor.g;
 
-			if (newColor.Equals(Color.yellow)){
-				// Right color is orange
-				mix = Color.red;
-			}
+		if (oldColor.b + newColor.b > 1)
+			mix.b = 1;
+		else 
+			mix.b = oldColor.b + newColor.b;
 
-			if (newColor.Equals(Color.red)){
-				// Right color is purple
-				mix = Color.red;
-			}
-		}
+//		Debug.Log ("Old: " + oldColor);
+//		Debug.Log ("New: " + newColor);
+//		Debug.Log ("Mix: " + mix);
 
-		// He was blue
-		if (oldColor.Equals (Color.blue)) 
-		{
-			if (newColor.Equals(Color.magenta)){
-				mix = Color.magenta;
-			}
-
-			if (newColor.Equals(Color.green)){
-				mix = Color.green;
-			}
-
-			if (newColor.Equals(Color.yellow)){
-				mix = Color.green;
-			}
-
-			if (newColor.Equals(Color.red)){
-				// Right color is purple
-				mix = Color.magenta;
-			}
-		}
-
-		// He was green
-		if (oldColor.Equals (Color.green)) 
-		{
-			if (newColor.Equals(Color.magenta)){
-				// Right color is gray
-				mix = Color.black;
-			}
-
-			if (newColor.Equals(Color.blue)){
-				mix = Color.green;
-			}
-
-			if (newColor.Equals(Color.yellow)){
-				mix = Color.green;
-			}
-
-			if (newColor.Equals(Color.red)){
-				// Right color is brown
-				mix = Color.green;
-			}
-		}
-
-		// He was yellow
-		if (oldColor.Equals (Color.yellow)) 
-		{
-			if (newColor.Equals(Color.magenta)){
-				// Right color is brown
-				mix = Color.yellow;
-			}
-			
-			if (newColor.Equals(Color.blue)){
-				mix = Color.green;
-			}
-			
-			if (newColor.Equals(Color.green)){
-				mix = Color.green;
-			}
-			
-			if (newColor.Equals(Color.red)){
-				// Right color is orange
-				mix = Color.yellow;
-			}
-		}
-
-		// He was red
-		if (oldColor.Equals (Color.red)) 
-		{
-			if (newColor.Equals(Color.magenta)){
-				// Right color is purple
-				mix = Color.magenta;
-			}
-
-			if (newColor.Equals(Color.blue)){
-				mix = Color.magenta;
-			}
-
-			if (newColor.Equals(Color.green)){
-				// Right color is brown
-				mix = Color.red;
-			}
-
-			if (newColor.Equals(Color.yellow)){
-				// Right color is orange
-				mix = Color.yellow;
-			}
-		}
+//		// Determine first color
+//		if (oldColor.Equals (Color.white) || oldColor.Equals (Color.black)) {
+//			mix = newColor;
+//		}
+//
+//		if (oldColor.Equals(newColor)) {		
+//			mix = oldColor;		
+//		}
+//
+//		// He was magenta
+//		if (oldColor.Equals (Color.magenta)) 
+//		{
+//			if (newColor.Equals(Color.blue)){
+//				mix = Color.magenta;
+//			}
+//
+//			if (newColor.Equals(Color.green)){
+//				// Right color is gray
+//				mix = Color.white;
+//			}
+//
+//			if (newColor.Equals(Color.yellow)){
+//				// Right color is orange
+//				mix = Color.white;
+//			}
+//
+//			if (newColor.Equals(Color.red)){
+//				// Right color is purple
+//				mix = Color.magenta;
+//			}
+//		}
+//
+//		// He was blue
+//		if (oldColor.Equals (Color.blue)) 
+//		{
+//			if (newColor.Equals(Color.magenta)){
+//				mix = Color.blue;
+//			}
+//
+//			if (newColor.Equals(Color.green)){
+//				mix = Color.green;
+//			}
+//
+//			if (newColor.Equals(Color.yellow)){
+//				mix = Color.green;
+//			}
+//
+//			if (newColor.Equals(Color.red)){
+//				// Right color is purple
+//				mix = Color.magenta;
+//			}
+//		}
+//
+//		// He was green
+//		if (oldColor.Equals (Color.green)) 
+//		{
+//			if (newColor.Equals(Color.magenta)){
+//				// Right color is gray
+//				mix = Color.black;
+//			}
+//
+//			if (newColor.Equals(Color.blue)){
+//				mix = Color.green;
+//			}
+//
+//			if (newColor.Equals(Color.yellow)){
+//				mix = Color.green;
+//			}
+//
+//			if (newColor.Equals(Color.red)){
+//				// Right color is brown
+//				mix = Color.green;
+//			}
+//		}
+//
+//		// He was yellow
+//		if (oldColor.Equals (Color.yellow)) 
+//		{
+//			if (newColor.Equals(Color.magenta)){
+//				// Right color is brown
+//				mix = Color.yellow;
+//			}
+//			
+//			if (newColor.Equals(Color.blue)){
+//				mix = Color.green;
+//			}
+//			
+//			if (newColor.Equals(Color.green)){
+//				mix = Color.green;
+//			}
+//			
+//			if (newColor.Equals(Color.red)){
+//				// Right color is orange
+//				mix = Color.yellow;
+//			}
+//		}
+//
+//		// He was red
+//		if (oldColor.Equals (Color.red)) 
+//		{
+//			if (newColor.Equals(Color.magenta)){
+//				// Right color is purple
+//				mix = Color.red;
+//			}
+//
+//			if (newColor.Equals(Color.blue)){
+//				mix = Color.magenta;
+//			}
+//
+//			if (newColor.Equals(Color.green)){
+//				// Right color is brown
+//				mix = Color.yellow;
+//			}
+//
+//			if (newColor.Equals(Color.yellow)){
+//				// Right color is orange
+//				mix = new Color(0.2F, 0.3F, 0.4F);
+//			}
+//		}
 
 		return mix;
 
@@ -226,5 +302,31 @@ public class PlayerController : MonoBehaviour {
 		int new_y_position = 0;
 
 		char2D.AddForce(new Vector2(new_x_position, new_y_position), ForceMode2D.Impulse);
+	}
+
+	/**
+	 * 
+	 * */
+	public bool DamageCheckRGB(Color enemyColor) {
+		Color comp = Color.white - enemyColor;
+		comp.a = 1;
+//		Debug.Log ("Recent color: " + mix);
+//		Debug.Log ("Complementary: " + comp);
+//		Debug.Log ("Enemy: " + enemyColor);
+		if (comp.Equals (mix))
+			/* object destroyed */
+			return true;
+		else {
+			/* object not destroyed */
+			PushBackPlayer();
+			enabled = false;	
+			Invoke("PlayerControllerIsAble", 2);
+			return false;
+		}
+	}
+
+	public void PlayerControllerIsAble()
+	{
+		enabled = true;
 	}
 }

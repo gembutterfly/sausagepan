@@ -17,6 +17,6 @@ public class GodRayControl : MonoBehaviour {
 
 	public void ColorPlayer(Color lightColor)
 	{
-		playerController.PaintChar(lightColor);
+		playerController.PaintChar(lightColor, true);
 	}
 }
