@@ -104,20 +104,25 @@ public class PlayerController : MonoBehaviour {
 	
 
 	public Color MixColorsSubtractive(Color col1, Color col2) {
+		
+		if (col2.Equals (Color.white)) {
+			mix = col2;
+		}
+		else {
+			float r = col1.r - (1 - col2.r);
+			float g = col1.g - (1 - col2.g);
+			float b = col1.b - (1 - col2.b);
 
-		float r = col1.r - (1 - col2.r);
-		float g = col1.g - (1 - col2.g);
-		float b = col1.b - (1 - col2.b);
-
-		r = Mathf.Min (Mathf.Max (r, 0), 1);
-		g = Mathf.Min (Mathf.Max (g, 0), 1);
-		b = Mathf.Min (Mathf.Max (b, 0), 1);
+			r = Mathf.Min (Mathf.Max (r, 0), 1);
+			g = Mathf.Min (Mathf.Max (g, 0), 1);
+			b = Mathf.Min (Mathf.Max (b, 0), 1);
 
 //		Debug.Log (r);
 //		Debug.Log (g);
 //		Debug.Log (b);
 
-		mix = new Color (r, g, b, 1);
+			mix = new Color (r, g, b, 1);
+		}
 		return mix;
 
 //		Color mix = Color.black;
@@ -151,7 +156,6 @@ public class PlayerController : MonoBehaviour {
 //				mix = Color.magenta;
 //			}
 //		}
-//		return mix;
 	}
 
 	public Color MixColorsAdditive(Color oldColor, Color newColor)

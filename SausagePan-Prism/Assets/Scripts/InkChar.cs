@@ -16,6 +16,7 @@ public class InkChar : MonoBehaviour {
 		case "yellow": col = Color.yellow; break;
 		case "green": col = Color.green; break;
 		case "magenta": col = Color.magenta; break;
+		case "cyan": col = Color.cyan; break;
 		default: col = Color.black; break;
 		}
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController> ();
