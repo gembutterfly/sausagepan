@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
 	private Color mixColor;
 	private Color mix;
 
-
 	// Use this for initialization
 	void Start () {
 		char2D = GetComponent<Rigidbody2D>();
@@ -105,16 +104,26 @@ public class PlayerController : MonoBehaviour {
 	
 
 	public Color MixColorsSubtractive(Color col1, Color col2) {
-
+		
 		if (col2.Equals (Color.white)) {
-			Debug.Log ("white");
-			return col2;
+			mix = col2;
 		}
-		else
-			return new Color (col1.r-(1-col2.r),
-		                  col1.g-(1-col2.g), 
-		                  col1.b-(1-col2.b),
-		                  1);
+		else {
+			float r = col1.r - (1 - col2.r);
+			float g = col1.g - (1 - col2.g);
+			float b = col1.b - (1 - col2.b);
+
+			r = Mathf.Min (Mathf.Max (r, 0), 1);
+			g = Mathf.Min (Mathf.Max (g, 0), 1);
+			b = Mathf.Min (Mathf.Max (b, 0), 1);
+
+//		Debug.Log (r);
+//		Debug.Log (g);
+//		Debug.Log (b);
+
+			mix = new Color (r, g, b, 1);
+		}
+		return mix;
 
 //		Color mix = Color.black;
 //		
@@ -147,31 +156,20 @@ public class PlayerController : MonoBehaviour {
 //				mix = Color.magenta;
 //			}
 //		}
-		
-		
-//		return mix;
 	}
 
 	public Color MixColorsAdditive(Color oldColor, Color newColor)
 	{
-		mix = new Color ();
+		float r = oldColor.r + newColor.r;
+		float g = oldColor.g + newColor.g;
+		float b = oldColor.b + newColor.b;
+		
+		r = Mathf.Min (1, r);
+		g = Mathf.Min (1, g);
+		b = Mathf.Min (1, b);
 
-		mix.a = 1;
-
-		if (oldColor.r + newColor.r > 1)
-			mix.r = 1;
-		else 
-			mix.r = oldColor.r + newColor.r;
-
-		if (oldColor.g + newColor.g > 1)
-			mix.g = 1;
-		else 
-			mix.g = oldColor.g + newColor.g;
-
-		if (oldColor.b + newColor.b > 1)
-			mix.b = 1;
-		else 
-			mix.b = oldColor.b + newColor.b;
+		mix = new Color (r, g, b, 1);
+		return mix;
 
 //		Debug.Log ("Old: " + oldColor);
 //		Debug.Log ("New: " + newColor);
@@ -296,9 +294,6 @@ public class PlayerController : MonoBehaviour {
 //				mix = new Color(0.2F, 0.3F, 0.4F);
 //			}
 //		}
-
-		return mix;
-
 	}
 
 	public void PushBackPlayer()
