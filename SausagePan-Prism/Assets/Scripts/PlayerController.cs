@@ -106,7 +106,12 @@ public class PlayerController : MonoBehaviour {
 
 	public Color MixColorsSubtractive(Color col1, Color col2) {
 
-		return new Color (col1.r-(1-col2.r),
+		if (col2.Equals (Color.white)) {
+			Debug.Log ("white");
+			return col2;
+		}
+		else
+			return new Color (col1.r-(1-col2.r),
 		                  col1.g-(1-col2.g), 
 		                  col1.b-(1-col2.b),
 		                  1);
@@ -144,7 +149,7 @@ public class PlayerController : MonoBehaviour {
 //		}
 		
 		
-		return mix;
+//		return mix;
 	}
 
 	public Color MixColorsAdditive(Color oldColor, Color newColor)
