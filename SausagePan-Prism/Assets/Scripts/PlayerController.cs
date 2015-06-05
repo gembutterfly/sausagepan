@@ -20,10 +20,11 @@ public class PlayerController : MonoBehaviour {
 	private Color mix;
 
 
+
 	// Use this for initialization
 	void Start () {
 		char2D = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();	
 	}
 	
 	// Update is called once per frame
