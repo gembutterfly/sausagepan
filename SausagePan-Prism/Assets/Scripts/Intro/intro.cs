@@ -1,16 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class intro : MonoBehaviour {
 	public int introcount;
 	private int zahl;
-	private int[] time = new int[]{230, 770, 440, 500, 60, 150, 200, 300};
+	private int[] time = new int[]{230, 770, 440, 250, 500, 60, 150, 200, 300};
 
 	public GameObject colorFull;
 	private float x = 1;
 
 	public GameObject explosion;
 	private int size = 0;
+
+	public GameObject eyes;
+
+	public Image sound;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +34,12 @@ public class intro : MonoBehaviour {
 			if (size > 30)
 				nextIntro ();
 			else
-				explosionSize ();	
+				explosionSize ();
+
+		if ((introcount == 4) && (zahl == 120)) {
+			var help = eyes.GetComponent<SpriteRenderer>();
+			help.sortingOrder = -1;
+		}
 
 		if (zahl == 0)
 			nextIntro ();
@@ -40,6 +50,16 @@ public class intro : MonoBehaviour {
 
 	public void Skip(){
 		Application.LoadLevel ("Level1");
+	}
+
+	public void soundOff(){
+		AudioListener.volume = 0;
+		sound.enabled = false;
+	}
+
+	public void soundOn(){
+		AudioListener.volume = 1;
+		sound.enabled = true;
 	}
 
 	private void changeOpacity(){
@@ -60,7 +80,7 @@ public class intro : MonoBehaviour {
 
 	private void nextIntro(){
 		introcount++;
-		if (introcount > 8)
+		if (introcount > 9)
 			Application.LoadLevel ("Level1");
 		else
 			Application.LoadLevel ("intro" + introcount);

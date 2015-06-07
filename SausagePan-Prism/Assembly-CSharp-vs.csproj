@@ -52,7 +52,9 @@
      <Compile Include="Assets\Scripts\GodRayColorEvent.cs" />
      <Compile Include="Assets\Scripts\GodRayControl.cs" />
      <Compile Include="Assets\Scripts\InkChar.cs" />
+     <Compile Include="Assets\Scripts\Intro\audio_intro.cs" />
      <Compile Include="Assets\Scripts\Intro\intro.cs" />
+     <Compile Include="Assets\Scripts\Intro\stopaudio_intro.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
