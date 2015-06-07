@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  7 JUN 2015 21:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.3)  7 JUN 2015 21:20
 entering extended mode
-**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/time
-table-latex.tex
+**C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/erwartungsbild/Grupp
+e12_Erwartungsbild.tex
 
-(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/timet
-able-latex.tex
+(C:/Users/Alexandra/Documents/GitHub/sausagepan/documents/erwartungsbild/Gruppe
+12_Erwartungsbild.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -396,33 +396,77 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks22
 
 ("C:\Program Files (x86)\MikTex\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\timetable-latex\timet
-able-latex.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Program Files\MiKTeX 2.9\tex\latex\picinpar\picinpar.sty"
+Pictures in Paragraphs. Version 1.2a, July 13, 1993
+\br=\count104
+\bl=\count105
+\na=\count106
+\nb=\count107
+\tcdsav=\count108
+\tcl=\count109
+\tcd=\count110
+\tcn=\count111
+\cumtcl=\count112
+\cumpartcl=\count113
+\lftside=\dimen122
+\rtside=\dimen123
+\hpic=\dimen124
+\vpic=\dimen125
+\strutilg=\dimen126
+\picwd=\dimen127
+\topheight=\dimen128
+\ilg=\dimen129
+\lpic=\dimen130
+\lwindowsep=\dimen131
+\rwindowsep=\dimen132
+\cumpar=\dimen133
+\twa=\toks23
+\la=\toks24
+\ra=\toks25
+\ha=\toks26
+\pictoc=\toks27
+\rawtext=\box28
+\holder=\box29
+\windowbox=\box30
+\wartext=\box31
+\finaltext=\box32
+\aslice=\box33
+\bslice=\box34
+\wbox=\box35
+\wstrutbox=\box36
+\picbox=\box37
+\waslice=\box38
+\wbslice=\box39
+\fslice=\box40
+)
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\erwartungsbild\Gruppe
+12_Erwartungsbild.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen123
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count114
+\scratchdimen=\dimen134
+\scratchbox=\box41
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen135
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks29
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -461,162 +505,65 @@ LaTeX Font Info:    ... okay on input line 12.
 <header2.jpg, id=1, 512.1534pt x 170.5572pt>
 File: header2.jpg Graphic file (type jpg)
  <use header2.jpg>
-Package pdftex.def Info: header2.jpg used on input line 28.
+Package pdftex.def Info: header2.jpg used on input line 29.
 (pdftex.def)             Requested size: 455.24408pt x 151.61325pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
-("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
-
-("C:\Program Files (x86)\MikTex\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 31--56
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--56
+Overfull \hbox (6.63625pt too wide) in paragraph at lines 32--62
+[]\OT1/cmr/m/n/10 Unser Pro-to-typ beschrankt sich auf das Start-menu, die In
+-trose-quenz und das er-ste Level. Die Levelubersicht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
 
  []
 
 [1
 
 {C:/Users/Alexandra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/Alexandra/Documents/GitHub/sausagepan/documents/timetable-latex/header2.jpg>]
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Overfull \hbox (6.9929pt too wide) in paragraph at lines 56--104
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--104
-
- []
-
-[2
-
-]
-(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\timetable-latex\timet
-able-latex.aux) ) 
+s/Alexandra/Documents/GitHub/sausagepan/documents/erwartungsbild/header2.jpg>]
+(C:\Users\Alexandra\Documents\GitHub\sausagepan\documents\erwartungsbild\Gruppe
+12_Erwartungsbild.aux) ) 
 Here is how much of TeX's memory you used:
- 3196 strings out of 493921
- 39739 string characters out of 3146469
- 112628 words of memory out of 3000000
- 6463 multiletter control sequences out of 15000+200000
- 6652 words of font info for 26 fonts, out of 3000000 for 9000
+ 3237 strings out of 493921
+ 40010 string characters out of 3146469
+ 110637 words of memory out of 3000000
+ 6512 multiletter control sequences out of 15000+200000
+ 4953 words of font info for 18 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,7n,35p,319b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
-ram Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on timetable-latex.pdf (2 pages, 268941 bytes).
+ 27i,5n,35p,326b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MikTex/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmti8.
+pfb>
+Output written on Gruppe12_Erwartungsbild.pdf (1 page, 241354 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
