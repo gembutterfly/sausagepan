@@ -1,0 +1,125 @@
+\documentclass[10pt,a4paper,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{ngerman}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
+\pagestyle{empty}
+\author{Group2}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\chaptername}{}
+\usepackage{titlesec} 
+\titleformat{\chapter}{\bfseries\Huge}{\thechapter.\quad}{0em}{}
+\begin{document}
+
+\centering 	{\Huge Konzeptentwurf}\\
+		{\large Komplexpraktikum Medieninfromatik - Multimediatechnologie\\}
+\
+\\
+\centering 	07.06.2015\\\
+\\
+\centering 	Gruppe 2\\
+		Gruppenleiter: Alexandra Krien\\
+		Bettina Blasberg\\
+		Georg Eckert\\
+		Stephanie Sara Groß\\
+		Phillip Roscher\\\
+
+\tableofcontents
+\clearpage\
+\\
+\begin{flushleft}
+\chapter[Einführung]{Einführung}
+\section{Gruppe}
+\section{Aufgabe}
+
+\chapter{Spielentwurf}
+\section{Story}
+Im Labyrinth gibt es einen Schatz der durch einen Drachen beschützt wird. Das weiß die ganze Welt und versucht diesen unter ihrer Gewalt zu bekommen. Die mutigsten reisen von allen Teilen der Welt, um in das Labyrinth zu treten und Ruhm und Ehre zu erlangen. Dafür müssen sie gegen andere Spieler antreten und am Ende den Drachen besiegen.//
+\section{Setting}
+Es können bis zu fünf Spieler an dem Spiel teilnehmen. Dafür werden zwei Gruppen und ein Game Master durch Zufall entschieden.//
+Der Game Master ist der Drache und er muss den Schatz vor den anderen zwei Gruppen beschützen. Dafür hat er verschiedene Fähigkeiten: Er kann die ganze Karte sehen und an den Punkt wo er sich befindet, Schalter bestätigen, um Wände zu schieben oder durch geheime Wege gehen, die nur er sehen kann.//
+Die zwei Teams bestehen aus jeweils zwei Spielern, einen Kämpfer und einen Heiler. Nachdem diese Aufteilung entschieden wurde, können die Teilnehmer ihre Spielfigur auswählen. Dabei konzentriert dich der Kämpfer eher um den Angriff gegen die anderen Gegner und der Heiler um die Gesundheit seines Teams.//
+Nach der Auswahl fängt das Spiel im Labyrinth an. //
+Dieser wird zufällig generiert und ist somit bei jedem neuen Spielstart anders. Dort befinden sich die Gruppen an verschiedenen Stellen und laufen durch alle Wege, um den Schatz zu bekommen oder gegeneinander zu kämpfen.//
+\section{Rollenverteilung und Charaktere}
+Bei den Spielfiguren gibt es eine große Auswahl, denn sie sind nicht nur unter Heiler und Kämpfer unterteilt. Sie spezialisieren sich auch durch ihre Kampfposition: Nah-, Mittel- oder Fernkampf.//
+\subsection{Der Drache} 
+Der Beschützer des Schatzes und der Herr des Labyrinths. Als Einzelgänger ist er um einiges stärker als ein Team. Seine Verteidigung ist auch um einig höher als bei den normalen Spieler.//
+\subsection{Fernkampf}
+\subsubsection{Schamane}
+Ein Magier mit der Fähigkeit, sich von seinem Körper zu trennen und als Geist durch Wände zu gehen. Er kann sich nur bis zu einer Gewissen Distanz von seinem Körper fernhalten. Dieser kann im Spiel dennoch angegriffen werden.//
+\subsubsection{Bogenschütze}
+Seine besondere Attacke sind die brennende Pfeile. Wenn er diese schießt, entstehen Flammen auf den Weg und blockiert somit seinen Gegner für gewisse Zeit den Pfad.//
+\subsection{Nah- und Fernkampf}
+\subsubsection{Ninja}
+Neben den Angriffen mit seinen Shuriken und kurzen Schwertern, kann er sich auch für kurze Zeit unsichtbar machen. Aber das kostet ihm auch mehr Angriffspunkte.//
+\subsubsection{Hexe}
+Auch eine Magierin, die mit ihren besonderer Tränke kämpft. Gegen ihre Gegner wirft sie Gifttränke, um sie zu schwächen und für sich oder ihren Partner benutzt sie Heiltränken. Ist die Situation besonders heikel, kann sie auf ihren Besen reiten und schnell von einem Ort fliehen.//
+\subsection{Nahkampf}
+\subsubsection{Schwertkämpfer}
+Er kann mehrere Male hintereinander mit seinem Schwert angreifen und sich mit dem Schild verteidigen. Die besondere Fähigkeit ist der Kampfschrei, womit er seine Gegner für kurze Zeit verwirren und aufhalten kann.//
+\subsubsection{Kämpfer}
+Seine einzige Waffe ist seine Hände und somit für den Nahkampf besonders gut, da er auch dein einen oder anderen K.O.- Schlag verpassen kann.//
+\section{Ziel}
+Um den an den Preis zu kommen, braucht man eine Schlüssel. Dieser ist in drei  geteilt. Jedes Team und der Game Master besitzen einen Teil davon. Um an die anderen Stücke zu gelangen, müssen die Teams sich gegenseitig angreifen. Wird das eine Team besiegt, bekommt man das andere Teil. Die besiegten Spielfiguren können jedoch wiederbelebt werden und weiterhin für die Schlüsselteile kämpfen. Hat man den kompletten Schlüssel, gelangt man an den Schatz und gewinnt das Spiel.//
+
+\chapter{Design}
+\section{Welt}
+\section{Spielfiguren}
+
+\chapter{Technologie und Steuerung}
+\section{Android}
+\section{PC}
+
+\chapter{Planung}
+\section{Aufgabenverteilung}
+\subsection{Prototyp}
+
+\subsubsection{Charakterbewegung}
+Im Prototyp sollen die elementaren Bewegungsfunktionen des Charakters enthalten sein. Die Steuerung auf Android-Geräten wird durch Berührung des Touchscreens realisiert und soll intuitiv sowie verzögerungsfrei funktionieren. Durch entsprechende Sprites wird die aktuelle Bewegungsrichtung dargestellt.
+
+\subsubsection{Welt}
+Der Prototyp sollte zum Test der Bewegungsfunktionen eine vorgefertigte Spielwelt enthalten, die noch keinerlei zufälliger Erstellung bedarf.
+
+\subsubsection{Spielcharaktere (Game Master, Klassen)}
+Der Prototyp soll eine grundlegende Charakterauswahl bieten, in dem man zwischen einigen verschiedenen Charakterklassen wählen kann. Im Spiel soll dies sich zumindest durch eine entsprechende Anpassung des Sprites bemerkbar machen.
+
+\subsection{Gestaltung}
+Alle nötigen Sprites müssen entweder erstellt oder unter Beachtung entsprechender Lizenzen übernommen werden. Dazu zählen beispielsweise: Spielcharaktere (Game Master, Klassen), Welt (Boden, Wände), Items.
+
+\subsection{Programmierung}
+
+\subsubsection{Levelgenerierung + Karte}
+Das Spiel soll zufällig erstellte Welten beinhalten. Dafür ist ein entsprechender Algorithmus zu integrieren, der auch garantiert, dass das Level abgeschlossen werden kann und kein Spieler \enquote{gefangen} sein kann. An dieser Stelle ist zu beachten, dass – um das Spiel nicht zu unfair und unspaßig zu gestalten – auf das Balancing geachtet wird, also dass nicht ein Team durch die Positionierung von Spawnpoints/Items/etc. einen erheblichen Vorteil gegenüber einem anderen hat. An die Levelerstellung ist die Karte gebunden, die von den Spielern aufgerufen werden kann, um die bisher schon erforschten Gebiete darzustellen.
+
+\subsubsection{Bewegung}
+Die Steuerung sollte natürlich weiterhin den Anforderungen, die schon im Prototyp verlangt waren, genügen. An dieser Stelle ist allerdings eventuell hinsichtlich der Netzwerkübertragung noch etwas Optimierung nötig. 
+
+\subsubsection{Kampf} 
+Einen essentiellen Part des Spiels nehmen die Kämpfe ein. Hier ist beispielsweise die Implementierung der speziellen Fähigkeiten der verschiedenen Charakterklassen nötig. Ein entsprechendes Lebens-/Schadenssystem ist notwendig, um Kämpfe fair zu gestalten. Um alle Klassen am Ende mehr oder weniger gleich stark machen zu können, ist eine Umsetzung mit vielen Variablen (Leben, Angriffsschaden, …) zum Finetuning dieser Werte wünschenswert. 
+
+\subsection{Netzwerkkommunikation (Schnittstelle)}
+Einen sehr wichtigen Bestandteil des Spiels stellt das Networking da. Um eine gute User Experience zu schaffen, muss das Spiel schnell auf Geschehnisse (Bewegung, Kämpfe) reagieren. Unter Beachtung der Latenz und Zuverlässigkeit des verwendeten Netzwerks muss eine regelmäßige Synchronisation des Spielzustands stattfinden, um alle Spieler auf den aktuellen Stand zu bringen. Gut geeignet ist vermutlich eine Server-Client-Architektur, um die Spielberechnung zu zentralisieren und die Android-Geräte etwas zu entlasten. 
+
+\subsection{Charakterlogik} 
+Neben den bereits erwähnten individuellen Angriffen und Fähigkeiten werden natürlich noch andere Funktionen für die Spieler benötigt, wie z.B. ein Respawn nach Verlust aller Lebenspunkte. Weiterhin müssen die speziellen Fähigkeiten des Game Masters implementiert werden.
+
+\subsection{Gegenstände}
+Gegenstände sollen Spieler oder Teams in gewissen Aspekten verstärken. Dafür ist eine Implementierung der jeweiligen Funktionalitäten notwendig.
+
+\subsection{Menü}
+Eine simple Hauptmenüführung soll auch Spielern ohne technische Kenntnisse ermöglichen, ohne weiteres einem Spiel beitreten zu können. Es sollte nicht zu überladen und vom grafischen Stil an das Game Art angelehnt sein. Im Spiel sollte das User Interface einen möglichst geringen Anteil des Spielfensters einnehmen, um die Sicht auf das Spiel nicht zu versperren, jedoch trotzdem noch einfach bedienbar bleiben. 
+
+\subsection{Ton} 
+Eine Aufgabe für den späteren Projektverlauf ist die Unterlegung des Spiels mit Musik. An dieser Stelle kann unterschieden werden zwischen statischer Hintergrundmusik sowie Sounds, die sich am Gameplay orientieren, also beispielsweise an der Bewegung und den Kämpfen.
+\section{Arbeitsplan}
+
+
+\end{flushleft}
+\end{document}
