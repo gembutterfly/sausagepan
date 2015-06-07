@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 	
-	public Image sound;
+	Image sound;
 
 	public void Mute()
 	{
