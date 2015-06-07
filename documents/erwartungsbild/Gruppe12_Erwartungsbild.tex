@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{picinpar}
+\geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
+%\pagestyle{empty} %keine Kopf-/Fußzeile
+\author{Sausage Pan}
+\begin{document}
+	%Farbdefinierung
+	\definecolor{orange}{HTML}{F67800}
+	\definecolor{hellorange}{HTML}{FFAD41}
+	\definecolor{schwarz}{rgb}{0,0,0}
+	%Stildefinitionen!!Wichtig!!
+	\newcommand{\Eins}[1]{\color{orange}\textbf{{\Large#1}}} %Überschrift 1. Ordnung
+	\newcommand{\Zwei}[1]{\color{orange}\textbf{{\large#1}}} %Überschrift 2. Ordnung
+	\newcommand{\Drei}[1]{\color{orange}{\normalsize#1}} %Überschrift 3. Ordnung
+	\newcommand{\Text}{\color{schwarz}} %normaler Fließtext
+	\newcommand{\Fusszeile}
+	{\textit{{\footnotesize Eckert, Georg - Roscher, Philipp - Krien, Alexandra - Sinakow, Sergej - Blasberg, Bettina - Groß, Stephanie Sara}}} %Fußzeile immer am Ende der Seite einfügen!
+	%Randstreifen
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	%Header-Bild
+	\begin{center}
+		\includegraphics[width=160mm]{header2}
+	\end{center}
+	%Eigentlicher Inhalt :D
+	\Eins{Erwartungsbild}\\\
+\\
+	\Text
+	Unser Prototyp beschränkt sich auf das Startmenü, die Introsequenz und das erste Level. Die Levelübersicht wurde in Mangel der hinführenden Zwischensequenz 
+	zunächst rausgelassen. Sie ist jedoch zumindest bildlich in der Introsequenz zu sehen, als sie sich entfärbt.\\
+	\\
+	Die Introsequenz soll den Spieler an die Thematik ranführen. Die genaue Geschichte dahinter ist dem Storyboard zu entnehmen.\\
+	Es ist dabei Absicht, dass der Spieler noch nicht weiß, welche Rolle er dabei in diesem Szenario einnimmt.
+	Daher ist auch das erste Level sehr einfach gehalten. Es dient ins Besondere dazu, den Spieler an die allgemeine Steuerung heranzuführen und das erste
+	Thema 'Pigmentfarbmischung' zu vermitteln.\\
+	Es wird dabei eine gewisse Neugier vorausgesetzt, die den Spieler dazu antreibt das Szenario zu erkunden.
+	Schnell sollte er dabei erkennen, dass er seinen Charakter einfärben kann. Sollten die nötigen Kenntnisse zur Farbmischung fehlen,
+	kann weiterhin ein Hilfefenster mit einigen Hinweisen geöffnet werden. Eine geeignete Heranführung an dieses Hilfemenü
+	ist im Prototyp noch nicht enthalten.\\
+	Ziel des Levels ist den Charakter in der gleichen Farbe wie das Tor einzufärben und damit das Level zu beenden.
+	Mit Durchschreiten des Tores erhält der Spieler das erste Regenbogenfragment, an welchem sich auch die bewusstlose Motte befindet.
+	In einer anschließenden (noch fehlenden)  Animationssequenz erklärt die Motte das Ziel des Spiels: alle Regenbogenfragemente zu finden und bittet ihn damit um
+ 	seine Hilfe.\\
+	Anschließend wird auf die Levelübersicht weitergeleitet.\\
+	\\
+	Ein weiterer Aufgabentyp ist ebenfalls noch nicht integriert. Jedoch haben wir bereits begonnen ein kleines Minispiel zu entwickelen, in dem der Spieler 
+	über Lampen weiter mit der additiven Farbmischung vertraut gemacht wird. Im ähnlichen Stil würden wir gern einige Quiz und Drag'n'Drop Minispiele
+	einbauen.\\
+	Diese sollen dazu dienen das Erlernte weiter zu festigen.\\
+	\\
+	Fehlerkontrolle im klassischen Sinne findet nicht statt. Gern würden wir den Spieler beim erstmaligen Versuch das Tor zu durchschreiten darauf hinweisen,
+	dass er sich in seiner Farbe an das Tor anpassen muss. Färbt sich der Spieler allerdings im Spielverlauf zunächst falsch, wird darauf nicht hingewiesen.
+	Es soll spielerisch erlernt werden welche Farbkombination zum Ziel führt.\\
+	\\\\
+	\Fusszeile
+\end{document}
