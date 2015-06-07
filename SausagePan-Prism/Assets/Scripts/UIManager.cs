@@ -6,10 +6,6 @@ public class UIManager : MonoBehaviour {
 	
 	public Image sound;
 
-	void Start()
-	{	
-	}
-
 	public void Mute()
 	{
 		AudioListener.volume = 0;

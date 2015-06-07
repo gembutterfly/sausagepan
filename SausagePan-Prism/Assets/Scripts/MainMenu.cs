@@ -14,9 +14,9 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void Update() {
-		if (AudioSource.mute) {
-
-		}
+//		if (AudioSource.mute) {
+//
+//		}
 
 	}
 }
