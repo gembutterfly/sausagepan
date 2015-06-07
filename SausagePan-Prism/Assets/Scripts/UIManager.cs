@@ -20,5 +20,10 @@ public class UIManager : MonoBehaviour {
 
 	public void QuitGame() {
 		Application.Quit ();
+		Application.ExternalEval ("window.close();");
+	}
+
+	public void RestartLevel(int levelNr) {
+		Application.LoadLevel (levelNr);
 	}
 }

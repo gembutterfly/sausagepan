@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\GodRayColorEvent.cs" />
      <Compile Include="Assets\Scripts\GodRayControl.cs" />
      <Compile Include="Assets\Scripts\InkChar.cs" />
+     <Compile Include="Assets\Scripts\Intro\intro.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\ItemDatabase.cs" />
