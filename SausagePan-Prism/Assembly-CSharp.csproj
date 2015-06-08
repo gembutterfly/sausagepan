@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SlotScript.cs" />
+     <Compile Include="Assets\Scripts\SwitchLevel.cs" />
      <Compile Include="Assets\Scripts\SwitchOnLamps.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
