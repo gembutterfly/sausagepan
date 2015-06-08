@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{ngerman}
 \usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{picinpar}
 \usepackage{geometry}
 \geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
 \pagestyle{empty}
@@ -34,51 +35,93 @@
 \clearpage\
 \\
 \begin{flushleft}
-\chapter[Einführung]{Einführung}
-\section{Gruppe}
+\chapter{Einführung}
+Wir sind Gruppe 2, die im Rahmen des Komplexpraktikums Medieninformatik, Teilgebiet Multimediatechnologie, eine Spielsoftware entwickelt. 
+Unsere Gruppenmitglieder sind dem Titelblatt zu entnehmen.
 \section{Aufgabe}
+Aufgabe des Komplexpraktikums ist es, in einer Gruppe von fünf Studenten eine Software zu entwickeln.
+Spezifisch soll es sich dabei um ein Multiplayer-Spiel handeln, welches das Prinzip der 'Game Orchestration' einbezieht.\\
+Bei diesem Konzept handelt es sich um eine Form der Rollenverteilung innerhalb eines Spiels.
+Dabei übernimmt einer der Spieler die Rolle des Game Masters der in besonderer Art und Weise Einfluss auf das Spielgeschehen nehmen kann.\\
+Dies kann verschiedene Auswirkungen auf die Position des Game Masters gegenüber den weiteren Spielern haben. So kann er sowohl
+unterstützend, als auch als Antagonist auftreten.\\
+In unserem Spielkonzept entschieden wir uns für die Rolle des Antagonisten.\\
+Weitere Vorgaben beschränken sich lediglich auf das Framework libGDX, sowie die Nutzung einer Netzwerkkommunikation. Genauer gehen wir darauf im Bereich 'Technologie' ein.
 
 \chapter{Spielentwurf}
 \section{Story}
-Im Labyrinth gibt es einen Schatz der durch einen Drachen beschützt wird. Ein jedes Kind auf Erden weiß das und träumt davon eines Tages loszuziehen um den Schatz zu erbeuten. Die Mutigsten reisen von allen Teilen der Welt an, um in das Labyrinth zu treten und Ruhm und Ehre zu erlangen. Dafür müssen sie gegen andere Widersacher antreten und am Ende den Drachen besiegen.//
+Im Labyrinth gibt es einen Schatz, der durch einen Drachen beschützt wird. Jedes Kind auf Erden weiß das und träumt davon eines Tages loszuziehen, um den Schatz zu erbeuten. Die Mutigsten reisen von allen Teilen der Welt an, um in das Labyrinth zu treten und Ruhm und Ehre zu erlangen. Dafür müssen sie gegen andere Widersacher antreten und am Ende den Drachen besiegen.\\
 \section{Setting}
-Es nehmen 5 Spieler teil. Dafür werden zwei Gruppen und ein Game Master durch Zufall entschieden.//
-Der Game Master ist der Drache und er muss den Schatz vor den anderen zwei Gruppen beschützen. Dafür hat er verschiedene Fähigkeiten: Er kann die ganze Karte sehen und an den Punkt wo er sich befindet, Schalter bestätigen, um Wände zu schieben oder durch geheime Wege gehen, die nur er sehen kann.//
-Die zwei Teams bestehen aus jeweils zwei Spielern, einem Kämpfer und einem Heiler. Nachdem diese Aufteilung entschieden wurde, können die Teilnehmer ihre Spielfigur auswählen. Dabei konzentriert dich der Kämpfer eher auf den Angriff und der Heiler um die Gesundheit seines Teams.//
-Nach der Auswahl fängt das Spiel im Labyrinth an. //
-Dieses wird zufällig generiert und ist somit bei jedem neuen Spielstart anders. Dort befinden sich die Gruppen an verschiedenen Stellen und laufen durch alle Wege, um den Schatz zu bekommen oder gegeneinander zu kämpfen.//
+Es nehmen 5 Spieler teil. Dafür werden zwei Gruppen und ein Game Master durch Zufall entschieden.\\
+Der Game Master ist der Drache und muss den Schatz vor den anderen zwei Gruppen beschützen. Dafür hat er verschiedene Fähigkeiten: Er kann die ganze Karte sehen und an den Punkt wo er sich befindet, Schalter betätigen, um Wände zu schieben oder durch geheime Wege zu gehen, die nur er sehen kann.\\
+Die zwei Teams bestehen aus jeweils zwei Spielern, einem Kämpfer und einem Heiler. Nachdem diese Aufteilung durch Zufall entschieden wurde, können die Teilnehmer ihre Spielfigur auswählen. Dabei konzentriert sich der Kämpfer eher auf den Angriff und der Heiler auf die Gesundheit seines Teams.\\
+Nach der Auswahl fängt das Spiel im Labyrinth an. \\
+Dieses wird zufällig generiert und ist somit bei jedem neuen Spielstart anders. Dort befinden sich die Gruppen an verschiedenen Stellen und laufen durch alle Wege, um den Schatz zu bekommen oder gegeneinander zu kämpfen.\\
 \section{Rollenverteilung und Charaktere}
-Bei den Spielfiguren gibt es eine große Auswahl, denn sie sind nicht nur unter Heiler und Kämpfer unterteilt. Sie spezialisieren sich auch durch ihre Kampfposition: Nah-, Mittel- oder Fernkampf.//
+Bei den Spielfiguren gibt es eine große Auswahl, denn sie sind nicht nur in Heiler und Kämpfer unterteilt. Sie spezialisieren sich auch durch ihre Kampfposition: Nah-, Mittel- oder Fernkampf.\\
 \subsection{Der Drache} 
-Der Beschützer des Schatzes und der Herr des Labyrinths. Als Einzelgänger ist er um einiges stärker als ein Team. Seine Verteidigung ist auch um einig höher als bei den normalen Spieler.//
+Der Beschützer des Schatzes und der Herr des Labyrinths. Als Einzelgänger ist er um einiges stärker als ein einzelner Teammitglied. Seine Verteidigung ist entsprechend auch höher als bei den normalen Spieler.\\
 \subsection{Fernkampf}
 \subsubsection{Schamane}
-Ein Magier mit der Fähigkeit, sich von seinem Körper zu trennen und als Geist durch Wände zu gehen. Er kann sich nur bis zu einer Gewissen Distanz von seinem Körper fernhalten. Dieser kann im Spiel dennoch angegriffen werden.//
+Ein Magier mit der Fähigkeit, sich von seinem Körper zu trennen und als Geist durch Wände zu gehen. Er kann sich nur bis zu einer gewissen Distanz von seinem Körper entfernen. Dieser kann auch weiterhin angegriffen werden und sollte von seinem Teammitglied verteidigt werden.\\
+Schamanen haben außerdem heilende Kräfte.\\
 \subsubsection{Bogenschütze}
-Seine besondere Attacke sind die brennende Pfeile. Wenn er diese schießt, entstehen Flammen auf den Weg und blockiert somit seinen Gegner für gewisse Zeit den Pfad.//
-\subsection{Nah- und Fernkampf}
+Seine besondere Attacke sind brennende Pfeile. Wenn er diese schießt, entstehen Flammen auf dem Weg und er blockiert so seinen Gegnern für gewisse Zeit den Pfad.\\
+Bogenschützen zählen zu den Kämpfern.\\
+\subsection{Mittelfernkampf}
 \subsubsection{Ninja}
-Neben den Angriffen mit seinen Shuriken und kurzen Schwertern, kann er sich auch für kurze Zeit unsichtbar machen. Aber das kostet ihm auch mehr Angriffspunkte.//
+Neben den Angriffen mit seinen Shuriken und kurzen Schwertern, kann er sich auch für kurze Zeit unsichtbar machen. Dies kostet ihn jedoch viele Angriffspunkte.\\
+Ninjas zählen zu den Kämpfern.\\
 \subsubsection{Hexe}
-Auch eine Magierin, die mit ihren besonderer Tränke kämpft. Gegen ihre Gegner wirft sie Gifttränke, um sie zu schwächen und für sich oder ihren Partner benutzt sie Heiltränken. Ist die Situation besonders heikel, kann sie auf ihren Besen reiten und schnell von einem Ort fliehen.//
+Eine Magierin, die mit ihren besonderer Tränke kämpft. Gegen ihre Gegner wirft sie Gifttränke, um sie zu schwächen und für sich oder ihren Partner benutzt sie Heiltränke. Ist die Situation besonders heikel, kann sie auf ihrem Besen reiten und schnell von einem Ort fliehen.\\
 \subsection{Nahkampf}
 \subsubsection{Schwertkämpfer}
-Er kann mehrere Male hintereinander mit seinem Schwert angreifen und sich mit dem Schild verteidigen. Die besondere Fähigkeit ist der Kampfschrei, womit er seine Gegner für kurze Zeit verwirren und aufhalten kann.//
+Er kann mehrere Male hintereinander mit seinem Schwert angreifen und sich mit dem Schild verteidigen. Die besondere Fähigkeit ist der Kampfschrei, womit er seine Gegner für kurze Zeit verwirren und aufhalten kann.\\
 \subsubsection{Kämpfer}
-Seine einzige Waffe ist seine Hände und somit für den Nahkampf besonders gut, da er auch dein einen oder anderen K.O.- Schlag verpassen kann.//
+Seine einzigen Waffen sind seine Hände und somit ist er für den Nahkampf besonders gut geeignet. Er hat die Fähigkeit mit einem besonders festem Schlag seine Gegner für kurze Zeit K.O. zu schlagen.\\
+Außerdem trägt er immer Verbandszeug mit sich und zählt dadurch zu den Heilern.\\
 \section{Ziel}
-Um den Schatz zu erbeuten benötigt man den Schlüssel der Schatzkammer. Dieser ist in 3 Teile zerbrochen und jede Partei, also jedes Team und auch der Drache, besitzen zu Anfang genau einen davon. Wird ein Team besiegt, so erhält jenes Team bzw. der Drache, welches den entscheidenden Angriff geführt hat durch welchen die letzte Figur des besiegten Teams fiel, das Schlüsselfragment. Die besiegte Partei darf nach einer kurzen Auszeit am ursprünglichen Startpunkt von vorn beginnen und erhält somit die Gelegenheit Schlüsselteile zurück zu erbeuten. Erlangt ein Team oder der Drache alle 3 Teile und schafft es ohne zu sterben zum Schatz, so ist das Spiel gewonnen.//
+Um den Schatz zu erbeuten benötigt man den Schlüssel der Schatzkammer. Dieser ist in 3 Teile zerbrochen und jede Partei, also jedes Team und auch der Drache, besitzen zu Anfang genau einen davon. Wird ein Team besiegt, so erhält jenes Team bzw. der Drache, welches den entscheidenden Angriff geführt hat das Schlüsselfragment. Die besiegte Partei darf nach einer kurzen Auszeit am ursprünglichen Startpunkt von vorn beginnen und erhält somit die Gelegenheit Schlüsselteile zurück zu erobern. Erlangt ein Team oder der Drache alle 3 Teile und schafft es ohne zu sterben zum Schatz, so ist das Spiel gewonnen.\\
 
 \chapter{Design}
-\section{Welt}
-\section{Spielfiguren}
+Das Spiel wird ein Top-Down-Spiel in 2-D. Entsprechend wird das gesamte Design im Pixelstil gehalten.\\
+Zur Charakterauswahl werden etwas größere und detailreichere Bilder angezeigt und im Spiel selbst typische Retro-Pixelgrafik verwendet.\\
+Es soll keine Unterschiede in der Grafik zwischen PC und Android geben.\\
+Die folgenden Grafiken sind erste konzeptuelle Entwürfe und dienen lediglich einer ersten Veranschaulichung.\\
 
+\section{Welt}
+	\begin{center}
+			\includegraphics[scale=3]{Maze.jpg}\\
+		Die Spieleransicht\\
+	\end{center}
+
+\section{Spielfiguren}
+\begin{center}
+	\includegraphics[scale=3]{Drache.png}\\
+	Der Drache\\
+		
+	\includegraphics[scale=2]{Schwertkaempfer.png}
+	\includegraphics[scale=2]{Faustkaempfer.png}\\
+	Der Schwertkämpfer und der Faustkämpfer\\
+	
+	\includegraphics[scale=2]{Hexe}
+	\includegraphics[scale=2]{Ninja}\\
+	Die Hexe und der Ninja\\
+	
+	\includegraphics[scale=2]{Bogenschuetze}
+	\includegraphics[scale=2]{Schamane}\\
+	Der Bogenschütze und der Schamane\\
+
+	\end{center}
 \chapter{Technologie und Steuerung}
-Das Spiel wird sowohl auf PC als auch auf Android Endgeräten spielbar sein. Die Unterschiede werden möglichst gering und auf die Steuerung und für den Spielablauf unbedeutende Elemente, wie bestimmte Effekte, beschränkt sein. So wird die Figur auf dem Smartphone mit dem Finger bewegt und auf dem PC der Finger durch die Maus ersetzt.
-Voraussetzung für das Spiel ist ein Endgerät mit respektive Windows 7 oder höher, Linux mit Kernel 3.16 oder höher, Android 4 oder höher. Wir behalten uns vor Android als einzige Zielplattform zu setzen, falls Smartphone-Sensoren in das Bedienkonzept einfließen sollten. Das Gerät muss Open GL unterstützen und netzwerkfähig sein. Oracle Java muss mindestens in Version 1.6 installiert sein. Für ein gutes Spielerlebnis werden mindestens Geräte mit 2 Prozessorkernen > 1GHz und einer Bidlschirmauflösung von 480x800 Bildpunkten empfohlen.
+Das Spiel wird sowohl auf PC als auch auf Android Endgeräten spielbar sein.\\
+Die Unterschiede werden möglichst gering und auf die Steuerung und für den Spielablauf unbedeutende Elemente, wie bestimmte Effekte, beschränkt sein. So wird die Figur auf dem Smartphone mit dem Finger bewegt und auf dem PC der Finger durch die Maus ersetzt.\\
+Voraussetzung für das Spiel ist ein Endgerät mit respektive Windows 7 oder höher, Linux mit Kernel 3.16 oder höher, Android 4 oder höher. Wir behalten uns vor Android als einzige Zielplattform zu setzen, falls Smartphone-Sensoren in das Bedienkonzept einfließen sollten. Das Gerät muss Open GL unterstützen und netzwerkfähig sein. Oracle Java muss mindestens in Version 1.6 installiert sein. Für ein gutes Spielerlebnis werden mindestens Geräte mit 2 Prozessorkernen > 1GHz und einer Bildschirmauflösung von 480x800 Bildpunkten empfohlen.
 
 \chapter{Planung}
 \section{Aufgabenverteilung}
+Für den Prototypen soll Georg sich um den Start des Projektes in einer leeren Welt kümmern und die Spielfigur mit der Bewegungsfunktion ausstatten (5.1.1.1). Alexandra übernimmt die Erstellung einer simplen Welt (5.1.1.2.). Sara, Nathalie und Philipp kümmern sich um die verschiedenen Spielklassen (5.1.1.3.).\\
+Für die späteren Aufgaben gibt es noch keine Zuweisung. Geplant ist jedoch, für jedes Aufgabengebiet einen Hauptverantwortlichen festzulegen, der darüber einerseits besonders gut Bescheid weiß, Schnittstellen zu anderen Programmteilen festlegen und anderen helfen kann, andererseits aber auch einen Überblick über das Aufgabenfeld haben sollte und der durch Verteilung von spezifischen Aufgaben eine rechtzeitige Fertigstellung der jeweiligen Arbeitspakete garantieren soll.\\
 \subsection{Prototyp}
 
 \subsubsection{Charakterbewegung}
@@ -118,7 +161,9 @@ Eine simple Hauptmenüführung soll auch Spielern ohne technische Kenntnisse erm
 
 \subsection{Ton} 
 Eine Aufgabe für den späteren Projektverlauf ist die Unterlegung des Spiels mit Musik. An dieser Stelle kann unterschieden werden zwischen statischer Hintergrundmusik sowie Sounds, die sich am Gameplay orientieren, also beispielsweise an der Bewegung und den Kämpfen.
+
 \section{Arbeitsplan}
+Ein Arbeitsplan wurde zum jetzigen Zeitpunkt noch nicht erarbeitet.
 
 
 \end{flushleft}

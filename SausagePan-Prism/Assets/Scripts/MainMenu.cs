@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void endGame() {
 		Application.Quit();
-		Application.ExternalEval ("window.close();");
+		Application.ExternalEval ("open(location, '_self').close();");
 	}
 
 	public void Mute()

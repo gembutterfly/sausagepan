@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 	
-	Image sound;
+	public Image sound;
 
 	public void Mute()
 	{
@@ -20,10 +20,10 @@ public class UIManager : MonoBehaviour {
 
 	public void QuitGame() {
 		Application.Quit ();
-		Application.ExternalEval ("window.close();");
+		Application.ExternalEval ("open(location, '_self').close();");
 	}
 
-	public void RestartLevel(int levelNr) {
-		Application.LoadLevel (levelNr);
+	public void RestartLevel() {
+		Application.LoadLevel (Application.loadedLevel);
 	}
 }

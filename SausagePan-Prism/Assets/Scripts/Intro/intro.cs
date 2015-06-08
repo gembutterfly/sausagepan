@@ -14,12 +14,16 @@ public class intro : MonoBehaviour {
 	private int size = 0;
 
 	public GameObject eyes;
+	public GameObject hitSound;
 
 	public Image sound;
 
 	// Use this for initialization
 	void Start () {
 		zahl = time [introcount - 1];
+
+		if (AudioListener.volume.ToString ().Equals("0"))
+			sound.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +34,7 @@ public class intro : MonoBehaviour {
 			else
 				changeOpacity ();
 
-		if (explosion != null)
+		if (explosion != null && zahl < 400)
 			if (size > 30)
 				nextIntro ();
 			else
@@ -39,6 +43,9 @@ public class intro : MonoBehaviour {
 		if ((introcount == 4) && (zahl == 120)) {
 			var help = eyes.GetComponent<SpriteRenderer>();
 			help.sortingOrder = -1;
+
+			AudioSource y = hitSound.GetComponent<AudioSource>();
+			y.Play();
 		}
 
 		if (zahl == 0)

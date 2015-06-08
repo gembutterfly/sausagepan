@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class Control : MonoBehaviour {
 
 	public CanvasGroup canvasGroup;
+	public GameObject space;
+	public GameObject right;
+	public GameObject left;
 
 	private bool goLeft;
 	private bool goRight;
@@ -25,14 +28,20 @@ public class Control : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetButtonDown("Jump")) {
 			jump = true;
+			space.SetActive(false);			
+		}
 
-		if (Input.GetKeyDown(KeyCode.A))
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) {
 			goLeft = true;
-		
-		if (Input.GetKeyDown(KeyCode.D))
+			left.SetActive(false);
+		}
+
+		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
 			goRight = true;
+			right.SetActive(false);
+		}
 		
 		
 		if((jump && goLeft) && goRight)
