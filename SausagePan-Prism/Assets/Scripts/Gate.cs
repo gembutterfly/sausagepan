@@ -33,10 +33,11 @@ public class Gate : MonoBehaviour {
 			Debug.Log("Spieler hat Tor betreten");
 			Debug.Log ("Seine Farbe ist: ");
 			Debug.Log (playerBody.color);
-			if( playerBody.color.Equals (Color.blue) ) {
-				Debug.Log ("Seine Farbe ist blau");
-				Show ();
-			}
+//			if( playerBody.color.Equals (Color.blue) ) {
+//				Debug.Log ("Seine Farbe ist blau");
+//				Show ();
+//			}
+			Show ();
 		}
 	}
 
