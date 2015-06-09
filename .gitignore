@@ -11,14 +11,14 @@ sysinfo.txt
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 [Ee]xported[Oo]bj/
-SausagePan-Prism/*.userprefs
-SausagePan-Prism/*.csproj
-SausagePan-Prism/*.pidb
-SausagePan-Prism/*.suo
-SausagePan-Prism/*.sln*
-SausagePan-Prism/*.user
-SausagePan-Prism/*.unityproj
-SausagePan-Prism/*.booproj
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln*
+*.user
+*.unityproj
+*.booproj
  
 # ============ #
 # OS generated #
