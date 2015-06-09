@@ -1,35 +1,32 @@
-# Temporary files
-*~
-
 # =============== #
 # Unity generated #
 # =============== #
-Temp/
-Library/
-web-Version/
-
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+[Ll]ibrary/
+sysinfo.txt
+ 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-ExportedObj/
-obj/
-*.svd
-*.userprefs
-/*.csproj
-*.pidb
-*.suo
-*.sln
-*.user
-*.unityproj
-*.booproj
-
+[Ee]xported[Oo]bj/
+SausagePan-Prism/*.userprefs
+SausagePan-Prism/*.csproj
+SausagePan-Prism/*.pidb
+SausagePan-Prism/*.suo
+SausagePan-Prism/*.sln*
+SausagePan-Prism/*.user
+SausagePan-Prism/*.unityproj
+SausagePan-Prism/*.booproj
+ 
 # ============ #
 # OS generated #
 # ============ #
-.DS_Store
-.DS_Store?
+.DS_Store*
 ._*
 .Spotlight-V100
 .Trashes
+Icon?
 ehthumbs.db
-Thumbs.db
+[Tt]humbs.db
