@@ -17,6 +17,9 @@ public class SwitchOnLamps : MonoBehaviour {
 		case "blue": col = Color.blue;break;
 		case "red": col = Color.red;break;
 		case "green": col = Color.green;break;
+		case "cyan": col = Color.cyan;break;
+		case "magenta": col = Color.magenta;break;
+		case "yellow": col = Color.yellow;break;
 		default: col = Color.white;break;
 		}
 		col.a = 0;
