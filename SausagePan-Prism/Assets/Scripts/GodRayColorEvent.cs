@@ -3,15 +3,12 @@ using System.Collections;
 
 public class GodRayColorEvent : MonoBehaviour {
 
-	public string rayName;
-	public bool stayInColor = false;
+	public string rayColor;
+	private Color color;
 
 	public delegate void ColorHandler(Color lightColor);
 	
 	public static event ColorHandler onColorPlayer;
-
-
-	private Color rayColor;
 
 	public static void ColorPlayer(Color lightColor)
 	{
@@ -28,39 +25,39 @@ public class GodRayColorEvent : MonoBehaviour {
 	// Return color of godray
 	public Color LightColor()
 	{
-		switch (rayName) 
+		switch (rayColor) 
 		{
-			case "godray_blue":
-				rayColor = Color.blue; 
+			case "blue":
+				color = Color.blue; 
 				break;
-			case "godray_red": 
-				rayColor = Color.red; 
+			case "red": 
+				color = Color.red; 
 				break;
-			case "godray_white": 
-				rayColor = Color.white; 
+			case "white": 
+				color = Color.white; 
 				break;
-			case "godray_yellow": 
-				rayColor = Color.yellow; 
+			case "yellow": 
+				color = Color.yellow; 
 				break;
-			case "godray_green": 
-				rayColor = Color.green; 
+			case "green": 
+				color = Color.green; 
 				break;
-			case "godray_magenta": 
-				rayColor = Color.magenta; 
+			case "magenta": 
+				color = Color.magenta; 
 				break;
 			default: 
-				rayColor = Color.black;
+				color = Color.black;
 				break;
 		}
 
-		return rayColor;
+		return color;
 	}
 
 	public void Update()
 	{
 		// Find and set the name of godrays
-		SpriteRenderer godRay = GetComponent<SpriteRenderer> ();
-		rayName = godRay.name;
+//		SpriteRenderer godRay = GetComponent<SpriteRenderer> ();
+//		rayName = godRay.name;
 
 	}
 }

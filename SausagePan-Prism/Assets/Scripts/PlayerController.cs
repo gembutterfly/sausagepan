@@ -105,7 +105,8 @@ public class PlayerController : MonoBehaviour {
 
 	public Color MixColorsSubtractive(Color col1, Color col2) {
 		
-		if (col2.Equals (Color.white)) {
+		if (col2.Equals (Color.white)) 
+		{
 			mix = col2;
 		}
 		else {
@@ -170,135 +171,11 @@ public class PlayerController : MonoBehaviour {
 
 		mix = new Color (r, g, b, 1);
 		return mix;
-
-//		Debug.Log ("Old: " + oldColor);
-//		Debug.Log ("New: " + newColor);
-//		Debug.Log ("Mix: " + mix);
-
-//		// Determine first color
-//		if (oldColor.Equals (Color.white) || oldColor.Equals (Color.black)) {
-//			mix = newColor;
-//		}
-//
-//		if (oldColor.Equals(newColor)) {		
-//			mix = oldColor;		
-//		}
-//
-//		// He was magenta
-//		if (oldColor.Equals (Color.magenta)) 
-//		{
-//			if (newColor.Equals(Color.blue)){
-//				mix = Color.magenta;
-//			}
-//
-//			if (newColor.Equals(Color.green)){
-//				// Right color is gray
-//				mix = Color.white;
-//			}
-//
-//			if (newColor.Equals(Color.yellow)){
-//				// Right color is orange
-//				mix = Color.white;
-//			}
-//
-//			if (newColor.Equals(Color.red)){
-//				// Right color is purple
-//				mix = Color.magenta;
-//			}
-//		}
-//
-//		// He was blue
-//		if (oldColor.Equals (Color.blue)) 
-//		{
-//			if (newColor.Equals(Color.magenta)){
-//				mix = Color.blue;
-//			}
-//
-//			if (newColor.Equals(Color.green)){
-//				mix = Color.green;
-//			}
-//
-//			if (newColor.Equals(Color.yellow)){
-//				mix = Color.green;
-//			}
-//
-//			if (newColor.Equals(Color.red)){
-//				// Right color is purple
-//				mix = Color.magenta;
-//			}
-//		}
-//
-//		// He was green
-//		if (oldColor.Equals (Color.green)) 
-//		{
-//			if (newColor.Equals(Color.magenta)){
-//				// Right color is gray
-//				mix = Color.black;
-//			}
-//
-//			if (newColor.Equals(Color.blue)){
-//				mix = Color.green;
-//			}
-//
-//			if (newColor.Equals(Color.yellow)){
-//				mix = Color.green;
-//			}
-//
-//			if (newColor.Equals(Color.red)){
-//				// Right color is brown
-//				mix = Color.green;
-//			}
-//		}
-//
-//		// He was yellow
-//		if (oldColor.Equals (Color.yellow)) 
-//		{
-//			if (newColor.Equals(Color.magenta)){
-//				// Right color is brown
-//				mix = Color.yellow;
-//			}
-//			
-//			if (newColor.Equals(Color.blue)){
-//				mix = Color.green;
-//			}
-//			
-//			if (newColor.Equals(Color.green)){
-//				mix = Color.green;
-//			}
-//			
-//			if (newColor.Equals(Color.red)){
-//				// Right color is orange
-//				mix = Color.yellow;
-//			}
-//		}
-//
-//		// He was red
-//		if (oldColor.Equals (Color.red)) 
-//		{
-//			if (newColor.Equals(Color.magenta)){
-//				// Right color is purple
-//				mix = Color.red;
-//			}
-//
-//			if (newColor.Equals(Color.blue)){
-//				mix = Color.magenta;
-//			}
-//
-//			if (newColor.Equals(Color.green)){
-//				// Right color is brown
-//				mix = Color.yellow;
-//			}
-//
-//			if (newColor.Equals(Color.yellow)){
-//				// Right color is orange
-//				mix = new Color(0.2F, 0.3F, 0.4F);
-//			}
-//		}
 	}
 
 	public void PushBackPlayer()
 	{
-		int new_x_position = (int)(0.1f * char2D.position.x * pushPower);
+		int new_x_position = (int)(0.01f * char2D.position.x * pushPower);
 		int new_y_position = 0;
 
 		char2D.AddForce(new Vector2(new_x_position, new_y_position), ForceMode2D.Impulse);
@@ -307,16 +184,46 @@ public class PlayerController : MonoBehaviour {
 	/**
 	 * 
 	 * */
-	public bool DamageCheckRGB(Color enemyColor) {
-		Color comp = Color.white - enemyColor;
-		comp.a = 1;
+	public bool DamageCheckRGB(string enemyColor) 
+	{
+		Color comp;
+
+		switch (enemyColor) 
+		{
+			case "magenta": 
+				comp = Color.yellow;
+				break;
+			case "green":
+				comp = Color.red;
+				break;
+			case "yellow":
+				comp = Color.magenta;
+				break;
+			case "Red":
+				comp = Color.green;
+				break;
+			case "white":
+				comp = Color.black;
+				break;
+			case "black":
+				comp = Color.white;
+				break;
+			default:
+				comp = Color.black;
+				break;
+		}
+
 //		Debug.Log ("Recent color: " + mix);
 //		Debug.Log ("Complementary: " + comp);
 //		Debug.Log ("Enemy: " + enemyColor);
-		if (comp.Equals (mix))
+
+		if (comp.Equals (mix)) 
+		{
 			/* object destroyed */
 			return true;
-		else {
+		}
+		else 
+		{
 			/* object not destroyed */
 			PushBackPlayer();
 			enabled = false;	

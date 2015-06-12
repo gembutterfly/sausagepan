@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InkChar : MonoBehaviour {
 
-	public string newColor = "black";
+	public string newColor;
 	private Color col = Color.black;
 	private Color oldCol;
 	private PlayerController playerController;
