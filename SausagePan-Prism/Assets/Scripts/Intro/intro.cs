@@ -16,14 +16,9 @@ public class intro : MonoBehaviour {
 	public GameObject eyes;
 	public GameObject hitSound;
 
-	public Image sound;
-
 	// Use this for initialization
 	void Start () {
 		zahl = time [introcount - 1];
-
-		if (AudioListener.volume.ToString ().Equals("0"))
-			sound.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -57,16 +52,6 @@ public class intro : MonoBehaviour {
 
 	public void Skip(){
 		Application.LoadLevel ("Level1");
-	}
-
-	public void soundOff(){
-		AudioListener.volume = 0;
-		sound.enabled = false;
-	}
-
-	public void soundOn(){
-		AudioListener.volume = 1;
-		sound.enabled = true;
 	}
 
 	private void changeOpacity(){

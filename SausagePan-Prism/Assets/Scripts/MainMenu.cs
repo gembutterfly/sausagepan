@@ -5,7 +5,7 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
 	public int level = 0;
-	public Image sound;
+	GameObject sound;
 
 	public bool IsStartscreen = false;
 	public float waitingTime = 1.0f;
@@ -31,13 +31,15 @@ public class MainMenu : MonoBehaviour {
 	public void Mute()
 	{
 		AudioListener.volume = 0;
-		sound.enabled = false;
+		sound.SetActive (false);
+		PlayerPrefs.SetInt ("soundOn", 0);
 	}
 	
 	public void Sound()
 	{
 		AudioListener.volume = 1;
-		sound.enabled = true;
+		sound.SetActive (true);
+		PlayerPrefs.SetInt ("soundOn", 1);
 	}
 
 	//weiterer spam für fade-in/fade-out
@@ -59,6 +61,9 @@ public class MainMenu : MonoBehaviour {
 
 	void Start () {
 		BeginFade (-1);
+		sound = GameObject.Find ("Sound");
+		if (IsStartscreen)
+			PlayerPrefs.SetInt ("soundOn", 1);
 	}
 
 	IEnumerator ChangeLevel () {
