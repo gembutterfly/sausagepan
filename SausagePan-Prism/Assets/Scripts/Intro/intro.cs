@@ -51,6 +51,9 @@ public class intro : MonoBehaviour {
 	}
 
 	public void Skip(){
+		var go = GameObject.Find ("audio");
+		AudioSource help = go.GetComponent<AudioSource> ();
+		help.Stop ();
 		Application.LoadLevel ("Level1");
 	}
 
