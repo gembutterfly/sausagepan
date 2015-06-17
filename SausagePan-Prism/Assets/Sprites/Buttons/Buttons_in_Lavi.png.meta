@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 671f54cf6f3c4454bb1ff1dc9a6b55c8
-timeCreated: 1433429117
+guid: 8aa5de16b99a56947856efc5a71e6359
+timeCreated: 1434552134
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Buttons Startbildschirm_0
-    21300002: Buttons Startbildschirm_1
+    21300000: Buttons_in_Lavi_0
+    21300002: Buttons_in_Lavi_1
+    21300004: Buttons_in_Lavi_2
+    21300006: Buttons_in_Lavi_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,25 +53,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Buttons Startbildschirm_0
+    - name: Buttons_in_Lavi_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 153
+        y: 432
         width: 319
         height: 90
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Buttons Startbildschirm_1
+    - name: Buttons_in_Lavi_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 319
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons_in_Lavi_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 320
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons_in_Lavi_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
+        width: 319
         height: 90
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
