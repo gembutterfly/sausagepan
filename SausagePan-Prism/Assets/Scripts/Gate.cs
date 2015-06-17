@@ -78,7 +78,7 @@ public class Gate : MonoBehaviour {
 		playerController.enabled = false;
 
 		Invoke ("Hide", 2);
-		Invoke ("ShowEndscreen", 2);
+//		Invoke ("ShowEndscreen", 2);
 		Invoke ("AddItemToInventory", 2);
 		Invoke ("PlayerControllerIsAble", 2);
 	}
