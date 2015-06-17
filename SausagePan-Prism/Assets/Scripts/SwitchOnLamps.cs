@@ -1,29 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 /** Don't forget to add a collider
  * */
 
 public class SwitchOnLamps : MonoBehaviour {
 
-	public SpriteRenderer lightCone;
-	public string color;
-	private Color col;
-	private bool lampSwitch = false;
+	public Image ink;
+	public GameObject help;
+	public GameObject minigame;
 
 	// Use this for initialization
 	void Start () {
-		switch (this.color) {
-		case "blue": col = Color.blue;break;
-		case "red": col = Color.red;break;
-		case "green": col = Color.green;break;
-		case "cyan": col = Color.cyan;break;
-		case "magenta": col = Color.magenta;break;
-		case "yellow": col = Color.yellow;break;
-		default: col = Color.white;break;
-		}
-		col.a = 0;
-		lightCone.color = col;
+		ink.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -31,15 +21,21 @@ public class SwitchOnLamps : MonoBehaviour {
 	
 	}
 
-	void OnMouseUp() {
-		if (!lampSwitch) {
-			col.a = 1;
-			lampSwitch = true;
-		} else {
-			col.a = 0;
-			lampSwitch = false;
-		}
-		
-		lightCone.color = col;
+
+	public void ToggleActive() {
+		if (ink.enabled)
+			ink.enabled = false;
+		else
+			ink.enabled = true;
+	}
+
+	public void SwitchToMinigame() {
+		help.SetActive(false);
+		minigame.SetActive(true);
+	}
+
+	public void SwitchToHelp() {
+		help.SetActive(true);
+		minigame.SetActive(false);
 	}
 }
