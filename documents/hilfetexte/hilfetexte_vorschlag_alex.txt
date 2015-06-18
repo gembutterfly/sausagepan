@@ -1,0 +1,81 @@
+Level 1 Subtraktive Farbmischung - Was ist das eigentlich?
+
+Huch, was ist denn hier passiert? Irgendetwas ist da hinten gerade zu Boden gefallen.
+Am besten ich schaue mal was da los ist.
+
+Ob mir die Farben dabei helfen können? Ich glaube das hier hat etwas mit Pigmentfarbenmischung zu tun.
+Man nennt diese Art der Farbmischung auch subtraktive Farbmischung, weil man etwas "wegnimmt".
+Ein Blatt an einem Baum ist grün, weil es alle anderen Farben "verschluckt" hat.
+Ein Gegenstand der alle Farben aufnimmt erscheint uns deshalb schwarz,
+weiß hingegen sehen wir, wenn keine Farben auftreten.
+
+Ich könnte das eigentlich gleich mal mit meinen alten Farbtuben ausprobieren.
+Klicke auf den Würfel oben links um in das Minispiel zu gelangen.
+
+----------------------------------------------------------------------------------------------------
+
+Level 2 Additive Farbmischung - Was ist das eigentlich?
+
+Die Pigmentfarbenmischung hast du ja bereits verstanden.
+Aber wusstest du, dass sich Licht ganz anders mischt?
+Man nennt diese Art der Farbmischung auch additive Farbmischung.
+Der Name ist auch total logisch!
+
+Wenn wir nämlich Lichtfarben addieren, also mischen, dann wird das Licht immer 'heller'.
+Alle Lichtfarben zusammen ergeben deshalb auch weiß.
+
+Was ist aber, wenn gar kein Licht da ist? 
+Das kannst du selbst beobachten, wenn du einmal die Lampe in deinem Zimmer ausmachst.
+Es bleibt dunkel. In Farbensprache heißt das: schwarz.
+
+Natürlich kann man aber auch ganz viele andere Farbtöne mischen.
+Am besten probieren wir das gleich mal aus!
+
+----------------------------------------------------------------------------------------------------
+
+Level 3 Farbreflektion - Was ist das eigentlich?
+
+Im letzten Level hast du ja schon gelernt wie additive Farbmischung funktioniert. Das ist super, denn genau das brauchen wir hier auch!
+
+Diesmal trifft das farbige Licht aber auf eine der ebenfalls farbigen Wolken. 
+Licht, das dieselbe Farbe wie die Wolke hat, wird von dieser reflektiert. Das heißt, dass das Licht zurückgeworfen wird, 
+die Wolke erscheint unserem Auge dadurch in dieser Farbe.
+Die verbliebenen Lichtfarben hingegen treten wieder auf der Unterseite aus, da sie ja durchlässig ist.
+
+Da vorn stehen Windmühlen, die du einschalten kannst. Damit lassen sich die Wolken sicher bewegen. Lass es uns gleich mal ausprobieren!
+
+----------------------------------------------------------------------------------------------------
+
+Level 4
+-
+
+
+----------------------------------------------------------------------------------------------------
+
+Level 5 Lichtbrechung - Was ist das eigentlich?
+
+Wusstest du, dass du weißes Licht zerteilen kannst? Hört sich schon etwas seltsam an, nicht wahr?
+Mit Zerteilen meine ich, dass man das Licht in seine urspüngliche Farben teilen kann.
+
+Wenn du die Prismen auf dem Spielfeld bemerkt hast, dann hast du auch das geeignete Werkzeug dafür gefunden!
+
+Am besten erkläre ich dir das erstmal am Beispiel von weißem Licht.
+Du erinnerst dich ja daran, dass dieses ein Ergebnis der additiven Farbmischung aus allen Farben ist, oder?
+
+Lässt man weißes Licht durch ein Glas-Prisma gehen, entsteht auf der anderen Seite ein Bündel aus farbigen Strahlen.
+Dieses Bündel nennt man auch Spektrum und besteht aus den Farben rot, orange, gelb, grün, blau und ultraviolett -
+also allen Farben die wir gebraucht haben um weiß zu mischen!
+
+Damit der Mensch das ganze Spektrum sehen kann, muss das weiße Licht gebrochen werden. Das bedeutet, dass
+jeder farbige Teil-Lichtstrahl mit einem anderen Winkel vom Prisma ausgestrahlt wird. 
+
+Zum Beispiel hat rot beim Austreten einen ganz kleinen Brechungswinkel und strahlt weiterhin nach vorne, während bei blau der Winkel größer ist und weiter nach
+unten strahlt als rot. Aber das ist erstmal nicht so wichtig für uns!
+
+Dass das so gut funktioniert hat auch mit der besonderen Form des Prismas zu tun. Mit einer einfachen Glasscheibe würde das nicht funktionieren.
+Schau dir doch einfach mal im Minispiel an, warum das so ist!
+
+----------------------------------------------------------------------------------------------------
+
+Level 6
+-
