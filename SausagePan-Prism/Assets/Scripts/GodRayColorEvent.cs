@@ -19,6 +19,7 @@ public class GodRayColorEvent : MonoBehaviour {
 	// Start event on collision
 	public void OnTriggerEnter2D (Collider2D other)
 	{
+		if (other.CompareTag("Player"))
 		ColorPlayer(LightColor());
 	}
 
