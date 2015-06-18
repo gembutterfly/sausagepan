@@ -69,6 +69,21 @@ Level 4
 
 Level 5 Lichtbrechung - Was ist das eigentlich?
 
+Wusstest du, dass man Licht aufteilen kann? Hört sich seltsam an, aber ausgestrahltes Licht
+besteht meist aus mehreren Anteilen. Sonnenlicht enthält alle Farben des Regenbogens!
+
+Wenn du Prismen, diese dreieckigen Dinger aus Glas, siehst, dann kannst du Lichtstrahlen damit
+aufteilen, indem du sie schräg darauf fallen lässt. So wie es Regentropfen mit Sonnenlicht tun.
+
+Da sich die verschieden farbigen Lichtanteile unterschiedlich schnell durch Glas bewegen,
+kommen sie in verschiedenen Richtungen aus dem Prisma wieder heraus, so dass du sie sehen kannst.
+Blaues Licht wird viel stärker durch Glas abgebremst als rotes Licht, und ändert beim Übergang
+von Luft in Glas und andersherum seine Richtung viel mehr.
+
+Probiere das im Minispiel doch einfach mal aus!
+
+------------------------------
+
 Wusstest du, dass du weißes Licht zerteilen kannst? Hört sich schon etwas seltsam an, nicht wahr?
 Mit Zerteilen meine ich, dass man das Licht in seine urspüngliche Farben teilen kann.
 
@@ -78,7 +93,7 @@ Am besten erkläre ich dir das erstmal am Beispiel von weißem Licht.
 Du erinnerst dich ja daran, dass dieses ein Ergebnis der additiven Farbmischung aus allen Farben ist, oder?
 
 Lässt man weißes Licht durch ein Glas-Prisma gehen, entsteht auf der anderen Seite ein Bündel aus farbigen Strahlen.
-Dieses Bündel nennt man auch Spektrum und besteht aus den Farben rot, orange, gelb, grün, blau und ultraviolett -
+Dieses Bündel nennt man auch Spektrum und besteht aus den Farben rot, orange, gelb, grün, blau und ultraviolett (nicht zwangsläufig) -
 also allen Farben die wir gebraucht haben um weiß zu mischen!
 
 Damit der Mensch das ganze Spektrum sehen kann, muss das weiße Licht gebrochen werden. Das bedeutet, dass
