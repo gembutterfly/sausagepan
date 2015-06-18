@@ -30,5 +30,4 @@ public class InkChar : MonoBehaviour {
 			playerController.PaintChar(col, false);
 		}
 	}
-
 }
