@@ -1,8 +1,23 @@
 Level 1 Subtraktive Farbmischung - Was ist das eigentlich?
 
-Huch, was ist denn hier passiert? Irgendetwas ist da hinten gerade zu Boden gefallen.
-Am besten ich schaue mal was da los ist.
+Huch, was ist denn hier passiert? Da hinten ist etwas zu Boden gefallen.
+Am besten ich schaue mal nach. Ob mir die Farben dabei helfen können?
+Vielleicht muss ich sie mischen. Was steht denn da auf diesem Schild?
 
+"
+Subtraktive Farbmischung
+
+Subtraktiv bedeutet etwas wegnehmen. Weißes Licht kann man ganz einfach aus rotem,
+grünem und blauem Licht mischen. Wenn du ein grünes Blatt an einem Baum siehst,
+dann "verschluckt" dieses Blatt das rote und blaue Licht. Das Grüne aber "spuckt"
+es wieder aus, so dass es in dein Auge gelangt und du es sehen kannst. Mit Malfarben
+funktioniert es ganz genau so. Denn auch in deinem Auge gibt es Zellen die nur grünes
+Licht sehen, solche die nur Rotes sehen und andere die nur Blaues sehen."
+
+Ich könnte das eigentlich gleich mal mit meinen Farbtuben ausprobieren,
+indem ich den Würfel links oben berühre.
+
+----------------------------------------------------------------------------------------------------
 Ob mir die Farben dabei helfen können? Ich glaube das hier hat etwas mit Pigmentfarbenmischung zu tun.
 Man nennt diese Art der Farbmischung auch subtraktive Farbmischung, weil man etwas "wegnimmt".
 Ein Blatt an einem Baum ist grün, weil es alle anderen Farben "verschluckt" hat.
@@ -33,7 +48,7 @@ Am besten probieren wir das gleich mal aus!
 
 ----------------------------------------------------------------------------------------------------
 
-Level 3 Farbreflektion - Was ist das eigentlich?
+Level 3 Farbreflexion - Was ist das eigentlich?
 
 Im letzten Level hast du ja schon gelernt wie additive Farbmischung funktioniert. Das ist super, denn genau das brauchen wir hier auch!
 
