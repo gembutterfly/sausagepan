@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: dc266bc03ed259942be48b13979d314f
+timeCreated: 1433542094
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AKW GrayScale
+    21300002: AKW Color
+    21300004: Sun Ray color
+    21300006: Sun Ray gray
+    21300008: Sun Center Color
+    21300010: Sun Center gray
+    21300012: Path Point black
+    21300014: Path Point magenta
+    21300016: Path point blue
+    21300018: SpritesforGame_9
+    21300020: Path Point red
+    21300022: Path Point yellow
+    21300024: Path black
+    21300026: Path Point green
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AKW GrayScale
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 716
+        width: 629
+        height: 660
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AKW Color
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 718
+        width: 630
+        height: 660
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sun Ray color
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 1294
+        width: 172
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sun Ray gray
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1135
+        width: 172
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sun Center Color
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 261
+        width: 377
+        height: 377
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sun Center gray
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 272
+        width: 377
+        height: 377
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path Point black
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 518
+        width: 242
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path Point magenta
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 518
+        width: 242
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path point blue
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 352
+        width: 242
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpritesforGame_9
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 348
+        width: 242
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path Point red
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 158
+        width: 242
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path Point yellow
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 163
+        width: 242
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path black
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 5
+        width: 842
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Path Point green
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 0
+        width: 242
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
