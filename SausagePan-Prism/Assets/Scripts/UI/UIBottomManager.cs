@@ -23,10 +23,12 @@ public class UIBottomManager : MonoBehaviour {
 	
 	bool lightColorCircleXL_isActive = true;
 
-
+	// List of all colors
 	List<Color> fullColorList = new List<Color> ();
 
-
+	/**
+	 * Switch color circles to right
+	 * */
 	public void SwitchToRight()
 	{
 		LightColorCircleXL();
@@ -35,6 +37,9 @@ public class UIBottomManager : MonoBehaviour {
 		lightColorCircleXL_isActive = true;
 	}
 
+	/**
+	 * Switch color circles to right
+	 * */
 	public void SwitchToLeft()
 	{
 		ColorColorCircleXL ();
@@ -43,12 +48,17 @@ public class UIBottomManager : MonoBehaviour {
 		lightColorCircleXL_isActive = false;
 	}
 
-	// Open help menu
+	/**
+	 * Open help menu
+	 **/
 	public void HelpMenu()
 	{
 		helpMenu.SetActive (true);
 	}
 
+	/**
+	 * Show black cloud and paint player black
+	 **/
 	public void CallBlackCloud()
 	{
 		if (!blackCloudIsActive) 
@@ -77,7 +87,10 @@ public class UIBottomManager : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	/**
+	 * Show white cloud and paint player white
+	 **/
 	public void CallWhiteCloud()
 	{
 		if (!whiteCloudIsActive) 
@@ -107,11 +120,15 @@ public class UIBottomManager : MonoBehaviour {
 		}
 	}
 
+
+	/**
+	 * Initialize all colors in a list
+	 **/
 	public void InitializeFullColorList(List<Color> colorList)
 	{
+		// Clean old list
 		fullColorList.Clear ();
-		
-		// Initialize fullColorList
+
 		fullColorList.Add (new Color (1, 1, 1, 1)); // 0 white
 		fullColorList.Add (new Color (1, 1, 0, 1)); // 1 yellow
 		fullColorList.Add (new Color (1, 0, 1, 1)); // 2 magenta
@@ -124,14 +141,20 @@ public class UIBottomManager : MonoBehaviour {
 		FillColorCircle (colorList);
 	}
 
+	/**
+	 * Override old full color list with grey,
+	 * if colors aren't allready found in game
+	 **/
 	public void FillColorCircle(List<Color> colorList)
 	{
 		int i = 0;
 		int j = 0;
 
-
+		// List with IDs of full color list elements
 		List<int> tempColorIDList = new List<int> {0, 1, 2, 3, 4, 5, 6, 7};
 
+		// Search in full color list all found colors in game
+		// Remove all found indexes in tempColorIDList
 		foreach(Color cl in colorList.ToList())
 		{
 			foreach(Color fcl in fullColorList.ToList())
@@ -154,6 +177,8 @@ public class UIBottomManager : MonoBehaviour {
 
 		tempColorIDList.Sort ();
 
+		// Override all colors in fullColorList with grey, 
+		// that aren't allready found in game
 		foreach(Color fcl in fullColorList.ToList())
 		{
 			foreach(int tcIDl in tempColorIDList)
@@ -169,7 +194,7 @@ public class UIBottomManager : MonoBehaviour {
 
 		//Debug.Log ("tempColorIDList " + tempColorIDList.Count);
 
-		
+		// Set old color circle combination 
 		if (lightColorCircleXL_isActive)
 			SwitchToRight ();
 		else
@@ -186,6 +211,8 @@ public class UIBottomManager : MonoBehaviour {
 	 * 4 = top_mid
 	 * 5 = mid
 	 * 6 = bottom
+	 * 
+	 * Create color circles with their color
 	 * */
 	void LightColorCircleXL()
 	{
@@ -231,12 +258,18 @@ public class UIBottomManager : MonoBehaviour {
 		colorCircleXS [6].GetComponent<Image> ().color = fullColorList[2]; // magenta 
 	}
 
+	/**
+	 * Reset black cloud
+	 **/
 	void ResetBlackCloud()
 	{
 		blackCloud.SetActive (false);
 		blackCloudIsActive = false;
 	}
-	
+
+	/**
+	 * Reset white cloud
+	 **/
 	void ResetWhiteCloud()
 	{
 		whiteCloud.SetActive (false);

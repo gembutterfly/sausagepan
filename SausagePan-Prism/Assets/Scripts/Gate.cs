@@ -12,6 +12,21 @@ public class Gate : MonoBehaviour {
 	PlayerController playerController;
 	SpriteRenderer playerBody;
 	//public GameObject endScreen;
+	
+
+	public void OnTriggerEnter2D (Collider2D other)
+	{
+		if (other.CompareTag ("Player")) 
+		{
+			if(playerBody.color.Equals(col))
+			{
+				Debug.Log("Spieler hat Tor betreten" + col);
+				Debug.Log ("Seine Farbe ist: " + playerBody.color);
+				
+				Show ();
+			}
+		}
+	}
 
 	// Use this for initialization
 	void Start () 
@@ -55,21 +70,9 @@ public class Gate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+	
 	}
 
-	public void OnTriggerEnter2D (Collider2D other)
-	{
-		if (other.CompareTag ("Player")) 
-		{
-			if(playerBody.color.Equals(col))
-			{
-				Debug.Log("Spieler hat Tor betreten" + col);
-				Debug.Log ("Seine Farbe ist: " + playerBody.color);
-
-				Show ();
-			}
-		}
-	}
 
 	void Show()
 	{

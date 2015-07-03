@@ -26,8 +26,13 @@ public class PlayerController : MonoBehaviour {
 	private Color mix;
 	private UIBottomManager uIBottomManager;
 
-	public void Flip() {
+	/**
+	 * Flip the looking direction of player
+	 **/
+	public void Flip() 
+	{
 		lookingRight = !lookingRight;
+
 		// scale x by -1 to flip coordinate system
 		Vector3 myScale = transform.localScale;
 		myScale.x *= -1;
@@ -56,8 +61,12 @@ public class PlayerController : MonoBehaviour {
 		/**
 		 * Check and add a new found color to a list
 		 * */
+		FoundNewColor (newColor);
 		FoundNewColor (mixColor);
 
+		/**
+		 * color player with new color
+		 **/
 		sprite.color = mixColor;
 
 		bodypart = GameObject.Find ("blackBuddy/textures/body");
@@ -73,9 +82,11 @@ public class PlayerController : MonoBehaviour {
 		sprite.color = mixColor;
 	}
 	
-
-	public Color MixColorsSubtractive(Color col1, Color col2) {
-		
+	/**
+	 * Subtractive painting
+	 **/
+	public Color MixColorsSubtractive(Color col1, Color col2) 
+	{
 		if (col2.Equals (Color.white)) 
 		{
 			mix = col2;
@@ -96,40 +107,11 @@ public class PlayerController : MonoBehaviour {
 			mix = new Color (r, g, b, 1);
 		}
 		return mix;
-
-//		Color mix = Color.black;
-//		
-//		// determine first color
-//		if (col1.Equals (Color.white) || col1.Equals (Color.black)) {
-//			mix = col2;
-//		}
-//		// he was blue
-//		if(col1.Equals (Color.blue)) {
-//			if(col2.Equals(Color.yellow)) {
-//				mix = Color.black;
-//			}
-//		}
-//		// he was green
-//		if(col1.Equals (Color.green)) {
-//			if(col2.Equals(Color.green)) {
-//				mix = Color.green;
-//			}
-//			if(col2.Equals(Color.magenta)) {
-//				mix = new Color(Color.green.r-Color.magenta.r,Color.green.g-Color.magenta.g, Color.green.b-Color.magenta.b,1);
-//			}
-//		}
-//		
-//		// he was magenta
-//		if(col1.Equals (Color.magenta)) {
-//			if(col2.Equals(Color.green)) {
-//				mix = Color.black;
-//			}
-//			if(col2.Equals(Color.magenta)) {
-//				mix = Color.magenta;
-//			}
-//		}
 	}
 
+	/**
+	 * Additive painting
+	 **/
 	public Color MixColorsAdditive(Color oldColor, Color newColor)
 	{
 		float r = oldColor.r + newColor.r;
@@ -144,6 +126,9 @@ public class PlayerController : MonoBehaviour {
 		return mix;
 	}
 
+	/**
+	 * Push player back
+	 **/
 	public void PushBackPlayer()
 	{
 		int new_x_position = (int)(0.01f * char2D.position.x * pushPower);
@@ -153,7 +138,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	/**
-	 * 
+	 * Check complementary color
 	 * */
 	public bool DamageCheckRGB(string enemyColor) 
 	{
@@ -203,6 +188,9 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * Reset player controller
+	 **/
 	void PlayerControllerIsAble()
 	{
 		enabled = true;
@@ -234,11 +222,13 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		char2D = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator> ();
 		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 
+		// Initialize first colors
 		foundColors.Add(new Color(0.5F, 0.5F, 0.5F, 1));
 		foundColors.Add(new Color(0, 0, 0, 1));
 
@@ -254,9 +244,11 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called indepently from frames
-	void FixedUpdate() {
+	void FixedUpdate() 
+	{
 		// get user horizontal input
 		float inpx = Input.GetAxis ("Horizontal");
+
 		// set animator parameter
 		anim.SetFloat ("speed", Mathf.Abs(inpx));
 		
@@ -267,12 +259,15 @@ public class PlayerController : MonoBehaviour {
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 		
 		anim.SetBool ("isGrounded", isGrounded);
-		
-		if((inpx > 0 && !lookingRight) || (inpx < 0 && lookingRight)) {
+
+		// Set looking direction
+		if((inpx > 0 && !lookingRight) || (inpx < 0 && lookingRight)) 
+		{
 			Flip();
 		}
 		
-		if (jump) {
+		if (jump) 
+		{
 			char2D.AddForce(new Vector2(0, jumpForce));
 			jump = false;
 		}

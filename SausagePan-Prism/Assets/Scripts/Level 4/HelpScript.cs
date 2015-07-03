@@ -10,6 +10,9 @@ public class HelpScript : MonoBehaviour {
 	public GameObject moth2;
 	public GameObject backToTextBTN;
 
+	/**
+	 * Show minigame in help
+	 * */
 	public void ShowMinigame()
 	{
 		minigame.SetActive (true);
@@ -20,6 +23,9 @@ public class HelpScript : MonoBehaviour {
 //		moth2.GetComponent<Animator> ().enabled = true;
 	}
 
+	/**
+	 * Exit button of help menu
+	 * */
 	public void ExitHelpMenue()
 	{
 		helpMenu.SetActive (false);
@@ -27,10 +33,14 @@ public class HelpScript : MonoBehaviour {
 		minigame.SetActive (false);
 		backToTextBTN.SetActive (false);
 
+		// Reset moth1 and moth2
 		moth1.GetComponent<MothScript> ().Retry ();
 		moth2.GetComponent<MothScript> ().Retry ();
 	}
-	
+
+	/**
+	 * 
+	 * */
 	public void BackToHelpText()
 	{
 		helpText.SetActive (true);
