@@ -6,8 +6,9 @@ using System.Linq;
 
 public class UIBottomManager : MonoBehaviour {
 
-	// Color circles
-	public List<GameObject> colorCircleXL = new List<GameObject>();
+
+	// Create lists of GameObjects for the color circles
+	public List<GameObject> colorCircleXL = new List<GameObject>();		
 	public List<GameObject> colorCircleXS = new List<GameObject>();
 
 	// Black and white cloud
@@ -18,6 +19,8 @@ public class UIBottomManager : MonoBehaviour {
 	public GameObject helpMenu;
 
 	GameObject player;
+
+	// Set bool variables for the back and white cloud
 	bool blackCloudIsActive = false;
 	bool whiteCloudIsActive = false;
 	
@@ -31,10 +34,10 @@ public class UIBottomManager : MonoBehaviour {
 	 * */
 	public void SwitchToRight()
 	{
-		LightColorCircleXL();
-		ColorColorCircleXS ();
+		LightColorCircleXL();					// Call function that set additive colors in the big color circles
+		ColorColorCircleXS ();					// Call function that set subtractive colors in the small color circles
 
-		lightColorCircleXL_isActive = true;
+		lightColorCircleXL_isActive = true;		// Set the big additive color circles true 
 	}
 
 	/**
@@ -42,8 +45,8 @@ public class UIBottomManager : MonoBehaviour {
 	 * */
 	public void SwitchToLeft()
 	{
-		ColorColorCircleXL ();
-		LightColorCircleXS ();
+		ColorColorCircleXL ();					// Call function that set subtractive colors in the big color circles
+		LightColorCircleXS ();					// Call function that set additive colors in the small color circles
 
 		lightColorCircleXL_isActive = false;
 	}
@@ -53,11 +56,11 @@ public class UIBottomManager : MonoBehaviour {
 	 **/
 	public void HelpMenu()
 	{
-		helpMenu.SetActive (true);
+		helpMenu.SetActive (true);				// Activate the helpMenu GameObject 
 	}
 
 	/**
-	 * Show black cloud and paint player black
+	 * Activate the GameObject of black cloud and set it position on top of player
 	 **/
 	public void CallBlackCloud()
 	{
@@ -65,31 +68,33 @@ public class UIBottomManager : MonoBehaviour {
 		{
 			if(whiteCloudIsActive)
 			{
-				ResetWhiteCloud();
+				ResetWhiteCloud();				// Call function that will hide the white cloud
 
-				blackCloudIsActive = true;
+				blackCloudIsActive = true;		// Set the blackCloudIsActive (bool) variable true
 				
-				blackCloud.SetActive (true);
+				blackCloud.SetActive (true);	// Activate the GameObject of black cloud
 				blackCloud.GetComponent<Transform> ().localPosition = new Vector3 (player.GetComponent<Transform> ().localPosition.x,
 				                                                                   player.GetComponent<Transform> ().localPosition.y + 5,
 				                                                                   player.GetComponent<Transform> ().localPosition.z);
-				Invoke ("ResetBlackCloud", 5);
+
+				Invoke ("ResetBlackCloud", 5);	// Call, after a delay of 5 seconds, a function that will hide the black cloud	
 			}
 			else
 			{
-				blackCloudIsActive = true;
+				blackCloudIsActive = true;		// Set the blackCloudIsActive (bool) variable true
 				
-				blackCloud.SetActive (true);
+				blackCloud.SetActive (true);	// Activate the GameObject of black cloud	
 				blackCloud.GetComponent<Transform> ().localPosition = new Vector3 (player.GetComponent<Transform> ().localPosition.x,
 				                                                                   player.GetComponent<Transform> ().localPosition.y + 5,
 				                                                                   player.GetComponent<Transform> ().localPosition.z);
-				Invoke ("ResetBlackCloud", 5);
+
+				Invoke ("ResetBlackCloud", 5);	// Call, after a delay of 5 seconds, a function that will hide the black cloud
 			}
 		}
 	}
 
 	/**
-	 * Show white cloud and paint player white
+	 * Activate the GameObject of whtie cloud and set it position on top of player
 	 **/
 	public void CallWhiteCloud()
 	{
@@ -97,32 +102,34 @@ public class UIBottomManager : MonoBehaviour {
 		{
 			if(blackCloudIsActive)
 			{
-				ResetBlackCloud();
+				ResetBlackCloud();				// Call function that will hide the black cloud
 
-				whiteCloudIsActive = true;
+				whiteCloudIsActive = true;		// Set the whiteCloudIsActive (bool) variable true
 				
-				whiteCloud.SetActive (true);
+				whiteCloud.SetActive (true);	// Activate the GameObject of white cloud
 				whiteCloud.GetComponent<Transform> ().localPosition = new Vector3 (player.GetComponent<Transform> ().localPosition.x,
 				                                                                   player.GetComponent<Transform> ().localPosition.y + 5,
 				                                                                   player.GetComponent<Transform> ().localPosition.z);
-				Invoke ("ResetWhiteCloud", 5);
+
+				Invoke ("ResetWhiteCloud", 5);	// Call, after a delay of 5 seconds, a function that will hide the white cloud
 			}
 			else
 			{
-				whiteCloudIsActive = true;
+				whiteCloudIsActive = true;		// Set the whiteCloudIsActive (bool) variable true
 				
-				whiteCloud.SetActive (true);
+				whiteCloud.SetActive (true);	// Activate the GameObject of white cloud
 				whiteCloud.GetComponent<Transform> ().localPosition = new Vector3 (player.GetComponent<Transform> ().localPosition.x,
 				                                                                   player.GetComponent<Transform> ().localPosition.y + 5,
 				                                                                   player.GetComponent<Transform> ().localPosition.z);
-				Invoke ("ResetWhiteCloud", 5);
+
+				Invoke ("ResetWhiteCloud", 5); 	// Call, after a delay of 5 seconds, a function that will hide the white cloud
 			}
 		}
 	}
 
 
 	/**
-	 * Initialize all colors in a list
+	 * Initialize all colors in game into a list
 	 **/
 	public void InitializeFullColorList(List<Color> colorList)
 	{
@@ -142,7 +149,7 @@ public class UIBottomManager : MonoBehaviour {
 	}
 
 	/**
-	 * Override old full color list with grey,
+	 * Override each element int the old fullColorList with grey,
 	 * if colors aren't allready found in game
 	 **/
 	public void FillColorCircle(List<Color> colorList)
@@ -175,9 +182,9 @@ public class UIBottomManager : MonoBehaviour {
 			i = 0;
 		}
 
-		tempColorIDList.Sort ();
+		tempColorIDList.Sort ();				// Sort tempColorIDList
 
-		// Override all colors in fullColorList with grey, 
+		// Override each element int the old fullColorList with grey,
 		// that aren't allready found in game
 		foreach(Color fcl in fullColorList.ToList())
 		{
@@ -194,7 +201,7 @@ public class UIBottomManager : MonoBehaviour {
 
 		//Debug.Log ("tempColorIDList " + tempColorIDList.Count);
 
-		// Set old color circle combination 
+		// Set old color circles combination 
 		if (lightColorCircleXL_isActive)
 			SwitchToRight ();
 		else
@@ -202,7 +209,7 @@ public class UIBottomManager : MonoBehaviour {
 	}
 
 	/**
-	 * Color Circle
+	 * Color Circles
 	 * 
 	 * 0 = bottom_left
 	 * 1 = bottom_right
@@ -211,8 +218,10 @@ public class UIBottomManager : MonoBehaviour {
 	 * 4 = top_mid
 	 * 5 = mid
 	 * 6 = bottom
-	 * 
-	 * Create color circles with their color
+	 * */
+
+	/**
+	 * Set additive colors into big color circles
 	 * */
 	void LightColorCircleXL()
 	{
@@ -225,6 +234,9 @@ public class UIBottomManager : MonoBehaviour {
 		colorCircleXL [6].GetComponent<Image> ().color = fullColorList[5]; // green
 	}
 
+	/**
+	 * Set subtractive colors into big color circles
+	 * */
 	void ColorColorCircleXL()
 	{
 		colorCircleXL [0].GetComponent<Image> ().color = fullColorList[6]; // blue
@@ -236,6 +248,9 @@ public class UIBottomManager : MonoBehaviour {
 		colorCircleXL [6].GetComponent<Image> ().color = fullColorList[2]; // magenta 
 	}
 
+	/**
+	 * Set additive colors into small color circles
+	 * */
 	void LightColorCircleXS()
 	{
 		colorCircleXS [0].GetComponent<Image> ().color = fullColorList[4]; // cyan
@@ -246,7 +261,10 @@ public class UIBottomManager : MonoBehaviour {
 		colorCircleXS [5].GetComponent<Image> ().color = fullColorList[0]; // white 
 		colorCircleXS [6].GetComponent<Image> ().color = fullColorList[5]; // green
 	}
-	
+
+	/**
+	 * Set subtractive colors into small color circles
+	 * */
 	void ColorColorCircleXS()
 	{
 		colorCircleXS [0].GetComponent<Image> ().color = fullColorList[6]; // blue

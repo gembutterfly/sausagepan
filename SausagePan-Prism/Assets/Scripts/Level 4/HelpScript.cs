@@ -33,13 +33,13 @@ public class HelpScript : MonoBehaviour {
 		minigame.SetActive (false);
 		backToTextBTN.SetActive (false);
 
-		// Reset moth1 and moth2
+		// Call function that will reset moth1 and moth2
 		moth1.GetComponent<MothScript> ().Retry ();
 		moth2.GetComponent<MothScript> ().Retry ();
 	}
 
 	/**
-	 * 
+	 * Set the minigame GameObject false and helpText one true
 	 * */
 	public void BackToHelpText()
 	{

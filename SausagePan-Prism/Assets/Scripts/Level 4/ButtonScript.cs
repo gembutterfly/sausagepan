@@ -6,19 +6,22 @@ using System.Collections;
 
 public class ButtonScript : MonoBehaviour, IPointerDownHandler {
 
-	public Image mothWing1;
-	public Image mothWing2;
-	public Image mothBody;
-	public string buttonColor;
+	public Image mothWing1;					// Image of moths wing
+	public Image mothWing2;					// Image of moths wing
+	public Image mothBody;					// Image of moths body
+	public string buttonColor;				// String (color) of a button
 	
 	private Color color;
 
 	public void OnPointerDown(PointerEventData data)
 	{
-		GetColor (buttonColor);
-		ColorMoth ();
+		GetColor (buttonColor);				// Call a function that will convert string (color) into Color
+		ColorMoth ();						// Call a function that will paint moth with the chosen color
 	}
 
+	/**
+	 * Convert (string) color to Color
+	 * */
 	void GetColor(string btnColor)
 	{
 		switch (btnColor) 
@@ -59,6 +62,9 @@ public class ButtonScript : MonoBehaviour, IPointerDownHandler {
 		}
 	}
 
+	/**
+	 * Paint moth with a color
+	 * */
 	void ColorMoth()
 	{
 		mothWing1.color = color;
@@ -68,6 +74,7 @@ public class ButtonScript : MonoBehaviour, IPointerDownHandler {
 
 	void Start()
 	{
+		// Set a default color (white) of moth
 		mothWing1.color = new Color(1, 1, 1, 1);
 		mothWing2.color = new Color(1, 1, 1, 1);
 		mothBody.color = new Color(1, 1, 1, 1);

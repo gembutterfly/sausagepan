@@ -5,25 +5,25 @@ using System.Linq;
 
 public class PlayerController : MonoBehaviour {
 
-	public float maxSpeed = 4;
-	public float pushPower = -550;
-	public float jumpForce = 550;
-	public Transform groundCheck;
-	public LayerMask whatIsGround;
+	public float maxSpeed = 4;									// Speed of Player
+	public float pushPower = -550;								// A push power that will influence the player
+	public float jumpForce = 550;								// A variable for players jump power
+	public Transform groundCheck;								// A Gizmo variable
+	public LayerMask whatIsGround;								
 
-	[HideInInspector] // invisible in Unity GUI
-	public List<Color> foundColors = new List<Color> ();
+	[HideInInspector] 											// invisible in Unity GUI
+	public List<Color> foundColors = new List<Color> ();		// A List that will be filled with all found colors in game
 
-	[HideInInspector] // invisible in Unity GUI
-	public bool lookingRight = true;
+	[HideInInspector]											// invisible in Unity GUI
+	public bool lookingRight = true;							// A bool variable for the looking direction of player
 
 	private Rigidbody2D char2D;
 	private Animator anim;
 	private bool isGrounded = false;
 	private bool jump = false;
-	private Color oldColor;
-	private Color mixColor;
-	private Color mix;
+	private Color oldColor;										// A variable for the currently player color
+	private Color mixColor;										// Result color between the combination of two colors
+	private Color mix;											// Result of the additive or subtractive painting
 	private UIBottomManager uIBottomManager;
 
 	/**
@@ -49,25 +49,18 @@ public class PlayerController : MonoBehaviour {
 		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
 		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
 
-		// Get old color of figure
-		oldColor = sprite.color;
+		oldColor = sprite.color;								// Get old color of figure
 		
-		// determine mixed color
-		if (additive)
+
+		if (additive)											// Determine mixed color
 			mixColor = MixColorsAdditive (oldColor, newColor);
 		else
 			mixColor = MixColorsSubtractive(oldColor, newColor);
 
-		/**
-		 * Check and add a new found color to a list
-		 * */
-		FoundNewColor (newColor);
-		FoundNewColor (mixColor);
+		FoundNewColor (newColor);								// Call a function that will check the new collected color and maybe it will be added to foundColors							
+		FoundNewColor (mixColor);								// Call a function that will check the new mixed color and maybe it will be added to foundColors
 
-		/**
-		 * color player with new color
-		 **/
-		sprite.color = mixColor;
+		sprite.color = mixColor;								// Paint player with the mixed color
 
 		bodypart = GameObject.Find ("blackBuddy/textures/body");
 		sprite = bodypart.GetComponent<SpriteRenderer> ();
@@ -91,7 +84,8 @@ public class PlayerController : MonoBehaviour {
 		{
 			mix = col2;
 		}
-		else {
+		else 
+		{
 			float r = col1.r - (1 - col2.r);
 			float g = col1.g - (1 - col2.g);
 			float b = col1.b - (1 - col2.b);
@@ -106,6 +100,7 @@ public class PlayerController : MonoBehaviour {
 
 			mix = new Color (r, g, b, 1);
 		}
+
 		return mix;
 	}
 
@@ -123,6 +118,7 @@ public class PlayerController : MonoBehaviour {
 		b = Mathf.Min (1, b);
 
 		mix = new Color (r, g, b, 1);
+
 		return mix;
 	}
 
@@ -138,7 +134,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	/**
-	 * Check complementary color
+	 * Convert a (color) string to their complementary color.
+	 * 
+	 * Check if player has the complementary color of an enemy.
+	 * In case of 
+	 * 		true: enemy will be destroyed
+	 * 		false: player will be pushed back
 	 * */
 	public bool DamageCheckRGB(string enemyColor) 
 	{
@@ -215,8 +216,7 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-		// Get distinct elements and convert into a list again.
-		List<Color> distinct = foundColors.Distinct().ToList();
+		List<Color> distinct = foundColors.Distinct().ToList();	// Get distinct elements and convert into a list again.
 		foundColors = distinct;
 		//Debug.Log ("pre++ " + foundColors.Count);
 	}
@@ -228,11 +228,12 @@ public class PlayerController : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 
-		// Initialize first colors
-		foundColors.Add(new Color(0.5F, 0.5F, 0.5F, 1));
-		foundColors.Add(new Color(0, 0, 0, 1));
+		foundColors.Add(new Color(0.5F, 0.5F, 0.5F, 1));		// Initialize first color in foundColors
+		foundColors.Add(new Color(0, 0, 0, 1));					// Initialize second color in foundColors
 
 		uIBottomManager.InitializeFullColorList (foundColors);
+
+		PaintChar (Color.green, true);
 	}
 	
 	// Update is called once per frame

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlattformScript : MonoBehaviour {
 
-	public float newSpeed;
-	public float oldSpeed;
+	public float newSpeed;								// New player speed
+	public float oldSpeed;								// Old player speed
 
 	PlayerController playerController;
 

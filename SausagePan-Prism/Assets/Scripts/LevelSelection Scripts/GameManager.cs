@@ -4,12 +4,12 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	//zeigt, ob der jeweilige Level schon bestanden ist oder nicht
-	static bool levelOneClear = false;
-	static bool levelTwoClear = false;
-	static bool levelThreeClear = false;
-	static bool levelFourClear = false;
-	static bool levelFiveClear = false;
-	static bool levelSixClear = false;
+	static bool levelOneClear = true;
+	static bool levelTwoClear = true;
+	static bool levelThreeClear = true;
+	static bool levelFourClear = true;
+	static bool levelFiveClear = true;
+	static bool levelSixClear = true;
 
 	//dazu kommt ein Counter, damit der kleine Mann sich zu nächsten Level
 	//bewegen kann, 

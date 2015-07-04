@@ -31,7 +31,7 @@ public class MainLevelController : MonoBehaviour {
 	void OnMouseDown()
 	{
 		if (Input.GetMouseButtonDown (0)) {
-			if(gameManager.getLevelValue (levelNumber -1))
+			if(gameManager.getLevelValue (levelNumber - 1))
 			{
 				Application.LoadLevel(levelName);
 			}
