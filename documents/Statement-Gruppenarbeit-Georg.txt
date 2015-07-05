@@ -1,0 +1,33 @@
+Statement zur Gruppenarbeit und Durchführung
+============================================
+
+Die Projektarbeit, geprägt durch ein angenehmes Gruppenklima, ging vor allem zu Anfang in großen
+Schritten voran. Wir erzielten schnell größere Fortschritte und die Gruppenmitglieder halfen sich
+wenn Probleme auftraten. Durch regelmäßige Gruppentreffen und eine klare Aufgabenverteilung war ein
+stetiger Fortschritt deutlich sichtbar.
+
+Zu Beginn stellte sich die Frage, welche Engine zu nutzen sei. Flash wäre eine angenehme Plattform
+mit unzähligen Ressourcen gewesen. Da Flash jedoch immer mehr in den Hintergrund tritt und auf lange
+Sicht verschwinden soll, entschieden wir uns eine zukunftsweisende Alternative zu suchen. Zuerst
+fiel unser Augenmerk auf HTML5, beziehungsweise das Spiel-Framework Phaser, welches auf HTML5
+aufbaut. Der Entwicklungsaufwand wäre jedoch ein zu hoher gewesen, weshalb wir uns letztendlich für
+die moderne Multiplattform-Spielengine Unity entschieden.
+
+Die Einarbeitung in die Engine resultierte in verschiedenen, zum Teil recht guten, Prototypen. Einer
+davon wurde als Basis für die weitere, gemeinsame Entwicklung genutzt. Jedes Teammitglied bekam die
+Aufgabe eine Spielmechanik zu entwickeln und ein Level des Spiels zu entwickeln. Da die Mechaniken
+zuerst fertig gestellt werden sollten, konnten sie dann auch in anderen Levels verwendet werden. So
+flossen die Ideen aller Teammitgleider in das Spiel ein.
+
+Ein Hindernis in der Durchführung war die etwas unstete Auslegung der Aufgabenstellung. In der
+Einführungsveranstaltung der Vorlesung wurde darauf hingewiesen, dass entgegen zu den Projekten der
+Vorjahre, keine Lernsoftware, sondern Lernspiele entstehen sollten und der spielerische Aspekt
+im Vordergrund stehen sollte. Zudem wurde in der Vorlesung auch das intuitive Lernen als eine
+Variante der Didaktik vorgestellt. Während des Projektes wurden uns allerdings immer wieder
+Einschränkungen aufgezwungen die dieser anfänglichen Weisung widersprachen.
+Trotz allem war das Projekt eine großartige Möglichkeit didaktische Theorie in die Praxis
+umzusetzen. Das Projekt bot eine ausgewogene Mischung aus kreativem Freiraum und einem Rahmen, der
+durch den Lehrstuhl vorgegeben war.
+
+Unser Tutor war freundlich und vermittelte stets zufriedenstellend zwischen dem Team und den
+Lehrenden. Die Kommunikation und die Treffen waren stets unkompliziert und reibungslos.

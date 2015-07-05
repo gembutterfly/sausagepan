@@ -1,66 +1,38 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class PlayerController : MonoBehaviour {
 
-	public float maxSpeed = 4;
-	public float pushPower = -550;
-	public float jumpForce = 550;
-	public Transform groundCheck;
-	public LayerMask whatIsGround;
+	public float maxSpeed = 4;									// Speed of Player
+	public float pushPower = -550;								// A push power that will influence the player
+	public float jumpForce = 550;								// A variable for players jump power
+	public Transform groundCheck;								// A Gizmo variable
+	public LayerMask whatIsGround;								
+
+	[HideInInspector] 											// invisible in Unity GUI
+	public List<Color> foundColors = new List<Color> ();		// A List that will be filled with all found colors in game
+
+	[HideInInspector]											// invisible in Unity GUI
+	public bool lookingRight = true;							// A bool variable for the looking direction of player
 
 	private Rigidbody2D char2D;
 	private Animator anim;
-	[HideInInspector] // invisible in Unity GUI
-	public bool lookingRight = true;
 	private bool isGrounded = false;
 	private bool jump = false;
-	private Color oldColor;
-	private Color mixColor;
-	private Color mix;
+	private Color oldColor;										// A variable for the currently player color
+	private Color mixColor;										// Result color between the combination of two colors
+	private Color mix;											// Result of the additive or subtractive painting
+	private UIBottomManager uIBottomManager;
 
-	// Use this for initialization
-	void Start () {
-		char2D = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator> ();
-	}
-	
-	// Update is called once per frame
-	// jumping and firing here
-	void Update () {
-		if (Input.GetButtonDown ("Jump") && isGrounded) {
-			jump = true;
-		}
-	}
-
-	// Update is called indepently from frames
-	void FixedUpdate() {
-		// get user horizontal input
-		float inpx = Input.GetAxis ("Horizontal");
-		// set animator parameter
-		anim.SetFloat ("speed", Mathf.Abs(inpx));
-
-		// set x and y speed of character
-		char2D.velocity = new Vector2 (inpx * maxSpeed, char2D.velocity.y);
-
-		// checks whether colliders are within a given circle
-		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
-
-		anim.SetBool ("isGrounded", isGrounded);
-
-		if((inpx > 0 && !lookingRight) || (inpx < 0 && lookingRight)) {
-			Flip();
-		}
-
-		if (jump) {
-			char2D.AddForce(new Vector2(0, jumpForce));
-			jump = false;
-		}
-
-	}
-
-	public void Flip() {
+	/**
+	 * Flip the looking direction of player
+	 **/
+	public void Flip() 
+	{
 		lookingRight = !lookingRight;
+
 		// scale x by -1 to flip coordinate system
 		Vector3 myScale = transform.localScale;
 		myScale.x *= -1;
@@ -71,23 +43,24 @@ public class PlayerController : MonoBehaviour {
 	 * Paints the character according to its recent color.
 	 * true = additive color mixing
 	 * false = subtractive color mixing
-	 * 
 	 * */
 	public void PaintChar(Color newColor, bool additive)
 	{
 		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
 		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
 
-		// Get old color of figure
-		oldColor = sprite.color;
+		oldColor = sprite.color;								// Get old color of figure
 		
-		// determine mixed color
-		if (additive)
+
+		if (additive)											// Determine mixed color
 			mixColor = MixColorsAdditive (oldColor, newColor);
 		else
 			mixColor = MixColorsSubtractive(oldColor, newColor);
 
-		sprite.color = mixColor;
+		FoundNewColor (newColor);								// Call a function that will check the new collected color and maybe it will be added to foundColors							
+		FoundNewColor (mixColor);								// Call a function that will check the new mixed color and maybe it will be added to foundColors
+
+		sprite.color = mixColor;								// Paint player with the mixed color
 
 		bodypart = GameObject.Find ("blackBuddy/textures/body");
 		sprite = bodypart.GetComponent<SpriteRenderer> ();
@@ -102,14 +75,17 @@ public class PlayerController : MonoBehaviour {
 		sprite.color = mixColor;
 	}
 	
-
-	public Color MixColorsSubtractive(Color col1, Color col2) {
-		
+	/**
+	 * Subtractive painting
+	 **/
+	public Color MixColorsSubtractive(Color col1, Color col2) 
+	{
 		if (col2.Equals (Color.white)) 
 		{
 			mix = col2;
 		}
-		else {
+		else 
+		{
 			float r = col1.r - (1 - col2.r);
 			float g = col1.g - (1 - col2.g);
 			float b = col1.b - (1 - col2.b);
@@ -124,41 +100,13 @@ public class PlayerController : MonoBehaviour {
 
 			mix = new Color (r, g, b, 1);
 		}
-		return mix;
 
-//		Color mix = Color.black;
-//		
-//		// determine first color
-//		if (col1.Equals (Color.white) || col1.Equals (Color.black)) {
-//			mix = col2;
-//		}
-//		// he was blue
-//		if(col1.Equals (Color.blue)) {
-//			if(col2.Equals(Color.yellow)) {
-//				mix = Color.black;
-//			}
-//		}
-//		// he was green
-//		if(col1.Equals (Color.green)) {
-//			if(col2.Equals(Color.green)) {
-//				mix = Color.green;
-//			}
-//			if(col2.Equals(Color.magenta)) {
-//				mix = new Color(Color.green.r-Color.magenta.r,Color.green.g-Color.magenta.g, Color.green.b-Color.magenta.b,1);
-//			}
-//		}
-//		
-//		// he was magenta
-//		if(col1.Equals (Color.magenta)) {
-//			if(col2.Equals(Color.green)) {
-//				mix = Color.black;
-//			}
-//			if(col2.Equals(Color.magenta)) {
-//				mix = Color.magenta;
-//			}
-//		}
+		return mix;
 	}
 
+	/**
+	 * Additive painting
+	 **/
 	public Color MixColorsAdditive(Color oldColor, Color newColor)
 	{
 		float r = oldColor.r + newColor.r;
@@ -170,9 +118,13 @@ public class PlayerController : MonoBehaviour {
 		b = Mathf.Min (1, b);
 
 		mix = new Color (r, g, b, 1);
+
 		return mix;
 	}
 
+	/**
+	 * Push player back
+	 **/
 	public void PushBackPlayer()
 	{
 		int new_x_position = (int)(0.01f * char2D.position.x * pushPower);
@@ -182,7 +134,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	/**
+	 * Convert a (color) string to their complementary color.
 	 * 
+	 * Check if player has the complementary color of an enemy.
+	 * In case of 
+	 * 		true: enemy will be destroyed
+	 * 		false: player will be pushed back
 	 * */
 	public bool DamageCheckRGB(string enemyColor) 
 	{
@@ -232,8 +189,89 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void PlayerControllerIsAble()
+	/**
+	 * Reset player controller
+	 **/
+	void PlayerControllerIsAble()
 	{
 		enabled = true;
+	}
+
+	/**
+	 * Check and add a new found color to a list
+	 * */
+	void FoundNewColor(Color foundColor)
+	{
+		foreach (Color color in foundColors.ToList())
+		{
+			if(color.Equals(foundColor))
+			{
+				//Debug.Log("Found " + color);
+			} 
+			else
+			{
+				foundColors.Add(foundColor);
+				uIBottomManager.InitializeFullColorList (foundColors);
+				//Debug.Log ("New Color " + color);
+			}
+		}
+
+		List<Color> distinct = foundColors.Distinct().ToList();	// Get distinct elements and convert into a list again.
+		foundColors = distinct;
+		//Debug.Log ("pre++ " + foundColors.Count);
+	}
+
+	// Use this for initialization
+	void Start () 
+	{
+		char2D = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator> ();
+		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+
+		foundColors.Add(new Color(0.5F, 0.5F, 0.5F, 1));		// Initialize first color in foundColors
+		foundColors.Add(new Color(0, 0, 0, 1));					// Initialize second color in foundColors
+
+		uIBottomManager.InitializeFullColorList (foundColors);
+
+		PaintChar (Color.green, true);
+	}
+	
+	// Update is called once per frame
+	// jumping and firing here
+	void Update () {
+		if (Input.GetButtonDown ("Jump") && isGrounded) {
+			jump = true;
+		}
+	}
+	
+	// Update is called indepently from frames
+	void FixedUpdate() 
+	{
+		// get user horizontal input
+		float inpx = Input.GetAxis ("Horizontal");
+
+		// set animator parameter
+		anim.SetFloat ("speed", Mathf.Abs(inpx));
+		
+		// set x and y speed of character
+		char2D.velocity = new Vector2 (inpx * maxSpeed, char2D.velocity.y);
+		
+		// checks whether colliders are within a given circle
+		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
+		
+		anim.SetBool ("isGrounded", isGrounded);
+
+		// Set looking direction
+		if((inpx > 0 && !lookingRight) || (inpx < 0 && lookingRight)) 
+		{
+			Flip();
+		}
+		
+		if (jump) 
+		{
+			char2D.AddForce(new Vector2(0, jumpForce));
+			jump = false;
+		}
+		
 	}
 }

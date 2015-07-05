@@ -5,128 +5,109 @@ using System.Collections;
 public class Gate : MonoBehaviour {
 
 	public string gateColor;
-	public GameObject endImg;
+	public GameObject gateinner; 
 
-	Color col;
+	Color color;
 	Inventory inventory;
-	PlayerController playerController;
 	SpriteRenderer playerBody;
-	//public GameObject endScreen;
-
-	// Use this for initialization
-	void Start () 
-	{
-		endImg = GameObject.FindGameObjectWithTag ("TheEnd");
-		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
-		playerController = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
-		playerBody = GameObject.FindGameObjectWithTag ("Body").GetComponent<SpriteRenderer>();
-
-		switch (gateColor) 
-		{
-			case "blue": 
-				col = Color.blue; 
-				break;
-			case "red": 
-				col = Color.red; 
-				break;
-			case "white": 
-				col = Color.white; 
-				break;
-			case "yellow": 
-				col = Color.yellow; 
-				break;
-			case "green": 
-				col = Color.green; 
-				break;
-			case "magenta": 
-				col = Color.magenta;
-				break;
-			case "cyan": 
-				col = Color.cyan; 
-				break;
-			default: 
-				col = Color.black; 
-				break;
-		}
-
-		Hide ();
-	}
 	
-	// Update is called once per frame
-	void Update () 
-	{
-	}
 
 	public void OnTriggerEnter2D (Collider2D other)
 	{
 		if (other.CompareTag ("Player")) 
 		{
-			if(playerBody.color.Equals(col))
+			if(playerBody.color.Equals(color))
 			{
-				Debug.Log("Spieler hat Tor betreten" + col);
-				Debug.Log ("Seine Farbe ist: " + playerBody.color);
-
-				Show ();
+				gateinner.SetActive(true);
+				//AddItemToInventory();
+				StartCoroutine("ChangeLevel");
 			}
 		}
 	}
 
-	void Show()
+	// Use this for initialization
+	void Start () 
 	{
-		endImg.SetActive (true);
+		//inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		playerBody = GameObject.FindGameObjectWithTag ("Body").GetComponent<SpriteRenderer>();
 
-		playerController.enabled = false;
-
-		Invoke ("Hide", 2);
-//		Invoke ("ShowEndscreen", 2);
-		Invoke ("AddItemToInventory", 2);
-		Invoke ("PlayerControllerIsAble", 2);
-	}
-	
-	void Hide()
-	{
-		endImg.SetActive (false);
-	}
-
-//	void ShowEndscreen() {
-//		endScreen.SetActive(true);
-//		endScreen.transform.Find("EndBackground").gameObject.SetActive(true);
-//		endScreen.transform.Find("EndText").gameObject.SetActive(true);
-//	}
-
-	void AddItemToInventory()
-	{
+		// Convert gate color(string) to a color
 		switch (gateColor) 
 		{
 			case "blue": 
-				inventory.AddItem (0); 
+				color = Color.blue; 
 				break;
 			case "red": 
-				inventory.AddItem (1);
+				color = Color.red; 
 				break;
-			case "orange": 
-				inventory.AddItem (2); 
-				break;
-			case "yellow":
-				inventory.AddItem (3);
+			case "yellow": 
+				color = Color.yellow; 
 				break;
 			case "green": 
-				inventory.AddItem (4);
+				color = Color.green; 
 				break;
 			case "magenta": 
-				inventory.AddItem (5);
+				color = Color.magenta;
 				break;
 			case "cyan": 
-				inventory.AddItem (6);
+				color = Color.cyan; 
 				break;
 			default: 
-				inventory.AddItem (7);
+				color = Color.black; 
 				break;
 		}
 	}
 
-	void PlayerControllerIsAble()
+	/**
+	 * Add item into inventory and finish level
+	 * */
+//	void AddItemToInventory()
+//	{
+//		switch (gateColor) 
+//		{
+//			case "blue": 
+//				inventory.AddItem (0); 
+//				Invoke("ChangeLevel", 2);
+//				break;
+//			case "red": 
+//				inventory.AddItem (1);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			case "orange": 
+//				inventory.AddItem (2); 
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			case "yellow":
+//				inventory.AddItem (3);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			case "green": 
+//				inventory.AddItem (4);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			case "magenta": 
+//				inventory.AddItem (5);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			case "cyan": 
+//				inventory.AddItem (6);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//			default: 
+//				inventory.AddItem (7);
+//			Invoke("ChangeLevel", 2);
+//				break;
+//		}
+//	}
+
+	/**
+	 * Load level selection
+	 * */
+	IEnumerator ChangeLevel () 
 	{
-		playerController.enabled = true;
+		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		Application.LoadLevel ("LevelSelection");
 	}
+
 }

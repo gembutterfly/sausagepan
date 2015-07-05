@@ -1,0 +1,177 @@
+\documentclass[10pt,a4paper,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\chaptername}{}
+\usepackage{titlesec} 
+\titleformat{\chapter}{\bfseries\Huge}{\thechapter.\quad}{0em}{}
+\geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
+\pagestyle{empty} %keine Kopf-/Fußzeile
+\author{Sausage Pan}
+\begin{document}
+	%Farbdefinierung
+	\definecolor{orange}{HTML}{F67800}
+	\definecolor{hellorange}{HTML}{FFAD41}
+	\definecolor{schwarz}{rgb}{0,0,0}
+	%Stildefinitionen!!Wichtig!!
+	\newcommand{\Eins}[1]{\color{orange}\textbf{{\Large#1}}} %Überschrift 1. Ordnung
+	\newcommand{\Zwei}[1]{\color{orange}\textbf{{\large#1}}} %Überschrift 2. Ordnung
+	\newcommand{\Drei}[1]{\color{orange}{\normalsize#1}} %Überschrift 3. Ordnung
+	\newcommand{\Text}{\color{schwarz}} %normaler Fließtext
+	\newcommand{\Fusszeile}
+	{\textit{{\footnotesize Eckert, Georg - Roscher, Philipp - Krien, Alexandra - Sinakow, Sergej - Blasberg, Bettina - Groß, Stephanie Sara}}} %Fußzeile immer am Ende der Seite einfügen!
+	%Randstreifen
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	%Header-Bild
+	\begin{center}
+		\includegraphics[width=160mm]{header2}
+	\end{center}
+	%Eigentlicher Inhalt :D
+	\color{orange} \textit{Gruppenname:} \color{schwarz}sausage pan \color{orange} \textit{Gruppenleiter:} \color{schwarz}Georg Eckert   \color{orange} \textit{Protokollant:} \color{schwarz}Philipp Roscher\\
+	\\
+	\tableofcontents
+	\clearpage
+	\chapter{Einführung}
+	\section{Gruppe}
+	Wir sind Gruppe 12 des Projektes Medienpsychologie und -didaktik 2015. Unser Gruppenchef ist Georg Eckert. 
+	Philipp Roscher ist unser Protokollant. Weitere Mitglieder sind Bettina Blasberg, Sara Groß, Alexandra Krien und Sergej 				Sinakow.
+
+	\section{Konzept}
+	\subsection{Setting}
+		Das Spiel bewegt sich in einer fiktiven Welt. Der Spieler übernimmt dabei die
+	Rolle eines namenlosen Helden, welcher weder hinsichtlich des Alters, Geschlechts
+	etc. spezifiziert wird.
+	Ausgangssituation für das Spiel ist, dass in Folge eines Missgeschickes der Regenbogen
+	in Fragmente zerspringt. Als Resultat wird die Welt in ein einheitliches
+	Grau getaucht.
+	Aufgabe ist es nun, diese Fragmente wieder einzusammeln um letztendlich den
+	Regenbogen neu zusammensetzen zu können. Diese Fragmente finden sich in den
+	einzelnen Level wieder, die als Jump'n'Run angelegt werden.
+	Der Spieler soll dabei ein grundlegendes Verständnis für die Farbenlehre erhalten.
+	Jedes Level fokussiert sich dabei auf ein anderes Teilthema.
+	Als unterstützende Hilfe steht dem Spieler stets eine Art Mentor zur Verfügung, welcher um Hilfe gebeten
+	werden kann. So wollen wir möglicherweise aufkommenden Frust eindämpfen.
+	Weiterhin existieren einige Zwischenlevel, die andere Spielmechaniken nutzen. Diese treten in Form von kleinen
+	Puzzles bzw. Quiz auf.
+	Der Spielfortschritt wird anhand der Übersichtskarte angezeigt. Diese ist am Anfang komplett grau. Nachdem eine
+	Farbe in einem Level gewonnen wurde, erscheint diese schließlich auch wieder auf der Karte.
+
+	\subsection{Spielmechaniken}
+	Das Spiel wird mit 9 Grundmechaniken auskommen. Die ersten zwei sind genretypisch laufen und
+	springen. Dazu kommt das Verschieben von Gegenständen. Die Farblehre wird durch die Prinzipien
+	der additiven und subtraktiven Farbmischung, sowie der Brechung von Licht vermittelt.\\
+	Das erfordert folgende Spielmechanik:
+	\begin{itemize}
+	\item Einfärben des zu Beginn schwarzen Charakters bei Kontakt mit einer Lichtfarbe in dieselbe
+	\item additive Farbmischung bei aufeinanderfolgendem Kontakt mit verschiedenen Lichtfarben
+	\item Einfärben des Charakters bei Kontakt mit farblichen Flüssigkeiten in dieselbe
+	\item subtraktive Farbmischung bei Kontakt mit verschiedenen Flüssigkeiten
+	\item Entfernung von Farbpigmenten bei Kontakt mit farbloser Flüssigkeiten
+	\item Aufspaltung von Lichtstrahlen in ihr Farbspektrum durch Prismen
+	\item Besiegen von Gegnern durch Sprünge bei vorherigem Einfärben mit der Komplementärfarbe
+	\item Verdeckung durch Gegenstände, welche vor Lichtstrahlen geschoben werden
+	\end{itemize}
+
+	\subsection{Steuerung}
+	Gespielt wird mit Maus und Tastatur.
+	Innerhalb der Level kann sich der Spieler über die Pfeiltasten bewegen.
+
+	\chapter{Planung}
+	\section{Arbeitspakete}
+	\begin{tabular}{l|l|l|l}\hline
+	ID & Arbeitspaket & Inhalt & Haupterantwortlicher\\\hline
+	1 & Spielmechanik & Bewegung Spieler (laufen/springen/interagieren) & Georg\\
+	&& Rätselmechaniken (s. Storyboard) & alle\\
+	&& Spielablauf (Fortschritt, Levelfolge, etc.) & Sergej\\\hline
+	2 & Grafik und Animation & Charaktere & Alexandra\\
+	&& Level (Stage, VG, HG) & Alexandra, Georg\\
+	&& Levelübersicht & Bettina\\
+	&& Startbildschirm & Sara\\
+	&& Zwischensequenzen & Alexandra\\
+	&& Menüleiste / Buttons & Alexandra\\\hline
+	3 & Programmierung & Level & alle\\
+	&& Minigames & alle\\\hline
+	4 & Inhalt & Storyboard ausarbeiten & alle\\
+	&& Inhalte aufbereiten & alle\\
+	&& Dialoge schreiben & Philipp\\\hline
+	5 & Musik und Sounds & Hintergrundmusik wählen & Georg\\
+	&& Sounds (bei Aktionen) & Sergej\\\hline
+	6 & Bonusinhalte & Würstchen-Senpai &\\
+	& \textit{(optional)} & Regentanz &\\
+	&& Achievements &\\
+	&& weitere inhaltliche Themen &\\\hline
+	7 & Abgabedokumente & Logo & Georg\\
+	&& Corporate Design & Sara\\
+	&& Protokolle & Philipp\\
+	&& Zeitplan & Sara\\
+	&& Storyboard & Alexandra\\
+	&& Arbeitspakete & Alexandra\\
+	&& Erwartungsbild Prototyp & Alexandra\\
+	&& Layoutentwürfe & alle\\
+	&& Prototyp & alle\\
+	&& Enddokumentation & alle\\\hline
+	8 & Präsentation & Folien & Bettina\\
+	&& Präsentation & Georg\\\hline
+	\end{tabular}\
+	
+	\clearpage
+
+	\section{Zeitplan}
+	\begin{tabular}{l|l|l}\hline
+ 	 KW & Datum & Ziele\\\hline
+	17 & 22.04. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\
+	& 24.05. & Zeitplan, Corporate Design, erste Entwürfe\\\hline
+	18 & 29.04. (3.DS) &  Storyboard, Arbeitspakete, Spieltitel\\\hline
+	19 & 05.05. & \textbf{Abgabe Teilziel 2}\\
+	& 08.05.& Layoutvorschlag, Struktur, AP 1\\\hline
+	20 & 13.05. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\
+	& 15.05. & erste Inhalte, AP 1\\
+	& 17.05. & \textbf{Abgabe Teilziel 3}\\\hline
+	21 & 20.05. & Feedback zum Layout\\
+	& 22.05. & Layout, Hauptfunktionalitäten, AP 3\\\hline
+	22 & 29.05. & Prototyp-Design, AP 3+2 \\\hline
+	23 & 05.06. & erstes Level fertig, Aufgabenbeispiel, AP 3+2\\
+	& 07.06. & \textbf{Abgabe Teilziel 4}\\\hline
+	24 & 10.06. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\\hline
+	25 & & individuelles Arbeiten, AP 3+2\\\hline
+	26 & & individuelles Arbeiten, AP 5 (+6?)\\\hline
+	27 & & Dokumentation, Erklärung\\\hline
+	28 & & Vorbereitung Präsentation und Abgabe, AP 8\\
+	\end{tabular}
+
+	\clearpage
+
+	\chapter{Spielbeschreibung}
+
+	\chapter{Evaluation}
+	\section{Evaluation des Zeitplans}
+
+	\section{Evaluation Ergebnis}
+
+	\section{Berwertung des Projektes}
+	\subsection{Alexandra}
+			Das Projekt zur Veranstaltung Medienpsychologie und -didaktik, war für mich eine interessante neue Erfahrung. 			Zum ersten Mal beschäftigte ich mich mit der Realisierung eines größeren Spiele-Projektes. \\
+	Besonders schwierig war dabei die Festlegung der Zielgruppe, da für uns schnell feststand, dass wir kein typisches Lernspiel 			für Schüler, sondern eines für Interessierte machen wollten.\\
+	Schade war es dabei, dass dies von den Verantwortlichen nicht so wahrgenommen wurde und man darauf beharrte den 				Lerninhalt an den Schulstoff anzupassen. Dies stand aber in keinerlei Relation zu unserem Konzept.\\
+	Ebenso möchte ich erwähnen, dass in der Vorlesung gesagt wurde, dass man diesen Jahr intuitive und eben keine klassischen 			Lernspiele erwarten würde. Ohne anmassend zu klingen möchte ich meinen, dass wir die einzige Gruppe waren, die sich dies zu 	Herzen nahm. Genau dafür wurden wir wiederum kritisiert. Hier ist eindeutig ein klarer Rahmen für das Projekt notwendig, 			denn uns hat die Kritik sehr irritiert.\\
+	Dies äußerte sich auch im generellen Projektplan. Eine gesamte Ausarbeitung sämtlicher Level zu verlangen, bevor man sich 			überhaupt mit der Engine beschäftigt hat beziehungsweise erste Funktionalitäten herstellen konnte sehe ich als sehr 				fragwürdig an.\\
+	Dennoch hatte das Projekt auch seine positiven Seiten. Da wir uns als Gruppenmitglieder bereits größtenteils vorher gut 			kannten, waren Absprachen und Zusammenarbeit kein Problem. Selten gab es Diskussionen zum Konzept, wir fanden immer 			einen Kompromiss oder schafften es unsere Ideen zu kombinieren. Man kann daher sagen dass jeder einzelne großen Anteil am 	letztendlichen Ergebniss hat, mit welchem wir auch sehr zufrieden sind.\\
+	Da die wenigen Probleme die wir hatten meist unsere eigenen waren, haben wir unseren Tutor kaum beansprucht. Von daher 			ist es schwierig ein Urteil über seine Arbeit zu fällen. Auf jeden Fall war er aber immer ein Ansprechpartner für uns und konnte 			das Feedback des Lehrstuhls zu unserer Arbeit gut vermitteln.\\
+
+	\subsection{Bettina}
+
+	\subsection{Georg}
+
+	\subsection{Philipp}
+	
+	\subsection{Sara}
+
+	\subsection{Sergej}
+
+	\Fusszeile
+\end{document}
