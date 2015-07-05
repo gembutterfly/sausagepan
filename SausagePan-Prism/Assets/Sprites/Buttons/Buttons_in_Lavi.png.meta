@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8aa5de16b99a56947856efc5a71e6359
-timeCreated: 1434552134
+timeCreated: 1436095944
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: Buttons_in_Lavi_1
     21300004: Buttons_in_Lavi_2
     21300006: Buttons_in_Lavi_3
+    21300008: Buttons_in_Lavi_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,7 +62,7 @@ TextureImporter:
         width: 319
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_in_Lavi_1
       rect:
@@ -71,7 +72,7 @@ TextureImporter:
         width: 319
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_in_Lavi_2
       rect:
@@ -81,7 +82,7 @@ TextureImporter:
         width: 320
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_in_Lavi_3
       rect:
@@ -91,7 +92,17 @@ TextureImporter:
         width: 319
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons_in_Lavi_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 320
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
