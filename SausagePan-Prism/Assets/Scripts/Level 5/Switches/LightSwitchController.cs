@@ -23,15 +23,20 @@ public class LightSwitchController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			if(Input.GetMouseButtonDown(0))
-			{
-				switch(lightState)
-				{
-				case State.First: secondRay.SetActive(false); firstRay.SetActive(true); lightState = State.Second; break;
-				case State.Second: firstRay.SetActive(false); secondRay.SetActive(true); lightState = State.First; break;
-				}
-			}
+			
 
-	
+	}
+
+	void OnMouseDown()
+	{
+		if(Input.GetMouseButtonDown(0))
+		{
+			switch(lightState)
+			{
+			case State.First: secondRay.SetActive(false); firstRay.SetActive(true); lightState = State.Second; break;
+			case State.Second: firstRay.SetActive(false); secondRay.SetActive(true); lightState = State.First; break;
+			}
+		}
+
 	}
 }
