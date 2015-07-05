@@ -17,4 +17,4 @@
 \contentsline {subsection}{\numberline {4.3.3}Georg}{7}
 \contentsline {subsection}{\numberline {4.3.4}Philipp}{7}
 \contentsline {subsection}{\numberline {4.3.5}Sara}{7}
-\contentsline {subsection}{\numberline {4.3.6}Sergej}{7}
+\contentsline {subsection}{\numberline {4.3.6}Sergej}{8}
