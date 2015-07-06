@@ -5,7 +5,10 @@ using System.Collections;
 public class Gate : MonoBehaviour {
 
 	public string gateColor;
-	public GameObject gateinner; 
+	public GameObject gateinner;
+
+	private GameManager manager;
+	public int levelNumber;
 
 	private Color color;
 	private UIManager uIManager;
@@ -64,6 +67,8 @@ public class Gate : MonoBehaviour {
 				color = Color.black; 
 				break;
 		}
+
+		manager = GameObject.Find ("GameManager").GetComponent<GameManager>();
 	}
 
 	/**
@@ -108,7 +113,11 @@ public class Gate : MonoBehaviour {
 	{
 		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
-		Application.LoadLevel (Application.loadedLevel - 1);
+
+		manager.setCounter (levelNumber);
+		manager.changeLevelValue (levelNumber);
+
+		Application.LoadLevel ("LevelSelection");
 	}
 
 	void Update()
