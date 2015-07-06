@@ -5,80 +5,192 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
-	public List<GameObject> Slots = new List<GameObject>();
-	public List<Item> Items = new List<Item>();
-	public GameObject slots;
-	public GameObject toolTip;
+	public List<Item> inventory = new List<Item>();
+	public int slotX, slotY;
+	public GUISkin skin;
 
-	ItemDatabase itemDatabase;
-	int x = -400;
-	int y = -2;
+	private ItemDatabase itemDatabase;
+	private bool showInventory;
+	private bool showTooltip;
+	private string tooltip;
 
 
-	public void ShowToolTip(Vector3 toolTipPosition, Item item)
-	{
-		toolTip.SetActive (true);
-		toolTip.GetComponent<RectTransform> ().localPosition = new Vector3 (toolTipPosition.x, toolTipPosition.y + 200, toolTipPosition.z);
-
-		toolTip.transform.GetChild (0).GetComponent<Text> ().text = item.itemName;
-		toolTip.transform.GetChild (1).GetComponent<Text> ().text = item.itemDesc;
-	}
-
-	public void HideToolTip()
-	{
-		toolTip.SetActive (false);
-	}
-
+	private bool draggingItem;
+	private Item draggedItem;
+	private int prevIndex;
+	
 	public void AddItem(int id)
 	{
-		for (int i = 0; i < itemDatabase.items.Count; i++) 
+		Debug.Log ("AddItem " + id);
+		for(int i = 0; i < inventory.Count; i++)
 		{
-			if(itemDatabase.items[i].itemID == id)
+			if(inventory[i].itemName == null)
 			{
-				Item item = itemDatabase.items[i];
-				AddItemAtEmptySlot(item);
+				if (id < 0)
+				{
+					inventory[i] = new Item();
+					break;
+				}
+
+				for(int j = 0; j < itemDatabase.items.Count; j++)
+				{
+					if(itemDatabase.items[j].itemID == id)
+						inventory[i] = itemDatabase.items[j];
+				}
+
+				break;
+			}
+		}
+	}
+
+	public void RemoveItem(int id)
+	{
+		for (int i = 0; i < inventory.Count; i++) 
+		{
+			if(inventory[i].itemID == id)
+			{
+				inventory[i] = new Item();
+				break;
+			}
+		}
+	}
+
+	public bool InventoryContains(int id)
+	{
+		foreach (Item item in inventory)
+			if (item.itemID == id)
+				return true;
+		return false;
+	}
+	
+	public void SaveInventory()
+	{
+		for(int i = 0; i < inventory.Count; i++)
+			PlayerPrefs.SetInt ("Inventory " + i, inventory[i].itemID); 
+	}
+	
+	public void LoadInventory()
+	{
+		for(int i = 0; i < inventory.Count; i++)
+			inventory[i] = PlayerPrefs.GetInt("Inventory " + i, -1) >= 0 ? itemDatabase.items[PlayerPrefs.GetInt("Inventory " + i)] : new Item();
+	}
+
+	void Start()
+	{
+		itemDatabase = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
+		
+		for (int i = 0; i < (slotX * slotY); i++) 
+		{
+			inventory.Add(new Item());
+		}
+	}
+	
+	void Update()
+	{
+		if (Input.GetButtonDown ("Jump")) 
+		{
+			showInventory = !showInventory;
+		}
+	}
+	
+	void OnGUI()
+	{
+//		if (GUI.Button (new Rect (40, 300, 100, 40), "Save"))
+//			SaveInventory ();
+//		if (GUI.Button (new Rect (40, 350, 100, 40), "Load"))
+//			LoadInventory ();
+		
+		
+		tooltip = ""; 
+		
+		GUI.skin = skin;
+		
+		if (showInventory) 
+		{
+			DrawInventory();
+			
+			if (showTooltip) 
+			{
+				GUI.Box(new Rect(Event.current.mousePosition.x + 20f, Event.current.mousePosition.y, 200, 200), tooltip, skin.GetStyle("Tooltip"));
+			}
+		}
+		
+		if (draggingItem) 
+		{
+			GUI.DrawTexture (new Rect(Event.current.mousePosition.x + 0f, Event.current.mousePosition.y, 50, 50), draggedItem.itemIcon);
+			
+		}
+	}
+	
+	void  DrawInventory()
+	{
+		Event e = Event.current;
+		int i = 0;
+		
+		for(int y = 0; y < slotY; y++)
+		{
+			for(int x = 0; x < slotX; x++)
+			{
+				Rect slotRect = new Rect(x * 60, y * 60, 50, 50);
+				GUI.Box(slotRect, "", skin.GetStyle("Slot"));
 				
-				break;
+				Item item = inventory[i]; 
+				
+				if(item.itemName != null)
+				{
+					if (item.itemIcon != null)
+						GUI.DrawTexture(slotRect, inventory[i].itemIcon);
+					
+					if(slotRect.Contains(e.mousePosition))
+					{
+						tooltip = CreateTooltip(inventory[i]);
+						showTooltip = true;
+						
+						if(e.button == 0 && e.type == EventType.mouseDrag && !draggingItem)
+						{
+							draggingItem = true;
+							prevIndex = i;
+							draggedItem = inventory[i];
+							inventory[i] = new Item();
+						}
+						
+						if (e.type == EventType.mouseUp && draggingItem)
+						{
+							inventory[prevIndex] = inventory[i];
+							inventory[i] = draggedItem;
+							draggingItem = false;
+							draggedItem = null;
+						}
+					}
+				}
+				else 
+				{
+					if (slotRect.Contains(e.mousePosition))
+					{
+						if (e.type == EventType.mouseUp && draggingItem)
+						{
+							inventory[i] = draggedItem;
+							draggingItem = false;
+							draggedItem = null;
+						}
+					}
+				}
+				
+				if(tooltip == "")
+				{
+					showTooltip = false;
+				}
+				
+				i++;
 			}
 		}
 	}
-
-	// Use this for initialization
-	void Start () 
+	
+	string CreateTooltip(Item item)
 	{
-		int slotAmount = 0;
-		itemDatabase = GameObject.FindGameObjectWithTag ("ItemDatabase").GetComponent<ItemDatabase> ();
-
-		for (int i = 0; i < 7; i++) 
-		{
-			GameObject slot = (GameObject)Instantiate(slots);
-			slot.GetComponent<SlotScript>().slotNumber = slotAmount;
-			Slots.Add(slot);
-			Items.Add(new Item());
-			slot.transform.parent = this.gameObject.transform;
-			slot.name = "Slot " + i;
-			slot.GetComponent<RectTransform>().localPosition = new Vector3(x, y, 0);
-			slot.GetComponent<RectTransform>().localScale = new Vector3(2,7,0);
-
-			x = x + 130;
-			slotAmount++;
-		}
-
-//		AddItem (2);
-//		AddItem (0);
-
+		tooltip = "";
+		tooltip += "<color=#000>" + item.itemName + "</color> \n\n" + "<color=#000>" + item.itemDesc + "</color>";
+		
+		return tooltip;
 	}
-
-	void AddItemAtEmptySlot(Item item)
-	{
-		for (int i = 0; i < Items.Count; i++) 
-		{
-			if(Items[i].itemName == null)
-			{
-				Items[i] = item;
-				break;
-			}
-		}
-	}
-
 }

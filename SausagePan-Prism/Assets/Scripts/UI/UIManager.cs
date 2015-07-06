@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
-	GameObject sound;
+	private GameObject sound;
+	private Inventory inventory;
 
 	public void Start() 
 	{
 		sound = GameObject.Find ("Sound");
 		this.gameObject.AddComponent<GlobalSound>();
+
+		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		inventory.LoadInventory ();
 	}
 
 	public void Mute()

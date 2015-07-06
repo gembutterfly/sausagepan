@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour {
 
 		oldColor = sprite.color;								// Get old color of figure
 		
-
-		if (additive)											// Determine mixed color
+		// Determine mixed color
+		if (additive)											
 			mixColor = MixColorsAdditive (oldColor, newColor);
 		else
 			mixColor = MixColorsSubtractive(oldColor, newColor);
@@ -176,12 +176,12 @@ public class PlayerController : MonoBehaviour {
 
 		if (comp.Equals (mix)) 
 		{
-			/* object destroyed */
+			// Object destroyed
 			return true;
 		}
 		else 
 		{
-			/* object not destroyed */
+			// Object not destroyed
 			PushBackPlayer();
 			enabled = false;	
 			Invoke("PlayerControllerIsAble", 2);
@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour {
 
 		uIBottomManager.InitializeFullColorList (foundColors);
 
-		PaintChar (Color.green, true);
+		//PaintChar (Color.green, true);
 	}
 	
 	// Update is called once per frame

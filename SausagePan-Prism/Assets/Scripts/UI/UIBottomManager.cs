@@ -10,6 +10,9 @@ public class UIBottomManager : MonoBehaviour {
 	// Create lists of GameObjects for the color circles
 	public List<GameObject> colorCircleXL = new List<GameObject>();		
 	public List<GameObject> colorCircleXS = new List<GameObject>();
+	
+	// List of all colors
+	public List<Color> fullColorList = new List<Color> ();
 
 	// Black and white cloud
 	public GameObject blackCloud;
@@ -26,9 +29,7 @@ public class UIBottomManager : MonoBehaviour {
 	
 	bool lightColorCircleXL_isActive = true;
 
-	// List of all colors
-	List<Color> fullColorList = new List<Color> ();
-
+	
 	/**
 	 * Switch color circles to right
 	 * */

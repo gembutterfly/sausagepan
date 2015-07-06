@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Serializable]
 public class Item {
 
 	public string itemName;
 	public int itemID;
 	public string itemDesc;
-	public Sprite itemIcon;
-	public GameObject itemModel;
+	public Texture2D itemIcon;
 	public ItemType itemType;
 
 	public enum ItemType
@@ -20,11 +20,12 @@ public class Item {
 		itemName = name;
 		itemID = id;
 		itemDesc = desc;
+		itemIcon = Resources.Load<Texture2D> ("Item Icons/" + name);
 		itemType = type;
-		itemIcon = Resources.Load<Sprite> ("" + name);
 	}
 
 	public Item()
 	{
+		itemID = -1;
 	}
 }
