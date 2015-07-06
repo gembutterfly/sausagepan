@@ -51,6 +51,9 @@ public class GodRay : MonoBehaviour {
 		case "magenta": 
 			color = Color.magenta; 
 			break;
+		case "cyan":
+			color = Color.cyan;
+			break;
 		default: 
 			color = Color.black;
 			break;
