@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour {
 
 	private GameObject sound;
 	private Inventory inventory;
+	private UIBottomManager uIBottomManager;
 
 	public void Start() 
 	{
@@ -15,7 +16,10 @@ public class UIManager : MonoBehaviour {
 		this.gameObject.AddComponent<GlobalSound>();
 
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+
 		inventory.LoadInventory ();
+		uIBottomManager.LoadColorList ();
 	}
 
 	public void Mute()

@@ -211,7 +211,8 @@ public class PlayerController : MonoBehaviour {
 			else
 			{
 				foundColors.Add(foundColor);
-				uIBottomManager.InitializeFullColorList (foundColors);
+				uIBottomManager.InitializeFullColorList ();
+				uIBottomManager.FillColorCircle (foundColors);
 				//Debug.Log ("New Color " + color);
 			}
 		}
@@ -228,12 +229,13 @@ public class PlayerController : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 
-		foundColors.Add(new Color(0.5F, 0.5F, 0.5F, 1));		// Initialize first color in foundColors
-		foundColors.Add(new Color(0, 0, 0, 1));					// Initialize second color in foundColors
+		foundColors.Add(new Color(0, 0, 0, 1));					// Initialize first color in foundColors
 
-		uIBottomManager.InitializeFullColorList (foundColors);
+		uIBottomManager.InitializeFullColorList ();
+		uIBottomManager.FillColorCircle (foundColors);
 
-		//PaintChar (Color.green, true);
+//		if(Application.loadedLevel == 20)
+//			PaintChar (Color.green, true);
 	}
 	
 	// Update is called once per frame

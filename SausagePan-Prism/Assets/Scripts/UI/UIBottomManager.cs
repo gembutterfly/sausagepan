@@ -21,13 +21,16 @@ public class UIBottomManager : MonoBehaviour {
 	// Help menu
 	public GameObject helpMenu;
 
-	GameObject player;
+	private GameObject player;
+	private List<int> colorsIDForSaving;
+	private int maxColorIDAmountForSaving;
+	private PlayerController playerController;
 
 	// Set bool variables for the back and white cloud
-	bool blackCloudIsActive = false;
-	bool whiteCloudIsActive = false;
+	private bool blackCloudIsActive = false;
+	private bool whiteCloudIsActive = false;
 	
-	bool lightColorCircleXL_isActive = true;
+	private bool lightColorCircleXL_isActive = true;
 
 	
 	/**
@@ -132,7 +135,7 @@ public class UIBottomManager : MonoBehaviour {
 	/**
 	 * Initialize all colors in game into a list
 	 **/
-	public void InitializeFullColorList(List<Color> colorList)
+	public void InitializeFullColorList()
 	{
 		// Clean old list
 		fullColorList.Clear ();
@@ -145,8 +148,6 @@ public class UIBottomManager : MonoBehaviour {
 		fullColorList.Add (new Color (0, 1, 0, 1)); // 5 green
 		fullColorList.Add (new Color (0, 0, 1, 1)); // 6 blue
 		fullColorList.Add (new Color (0, 0, 0, 1)); // 7 black
-		
-		FillColorCircle (colorList);
 	}
 
 	/**
@@ -158,8 +159,9 @@ public class UIBottomManager : MonoBehaviour {
 		int i = 0;
 		int j = 0;
 
-		// List with IDs of full color list elements
+		// List with IDs of fullColor list elements
 		List<int> tempColorIDList = new List<int> {0, 1, 2, 3, 4, 5, 6, 7};
+		colorsIDForSaving = new List<int> ();
 
 		// Search in full color list all found colors in game
 		// Remove all found indexes in tempColorIDList
@@ -169,12 +171,17 @@ public class UIBottomManager : MonoBehaviour {
 			{
 				if(cl.Equals(fcl))
 				{
+					colorsIDForSaving.Add(i);
+
 					foreach(int tcIDl in tempColorIDList.ToList())
 					{
 						tempColorIDList.Remove(i);
 					}
 
 					//Debug.Log ("tempColorIDList " + tempColorIDList.Count);
+
+					List<int> distinct = colorsIDForSaving.Distinct().ToList();	// Get distinct elements and convert into a list again.
+					colorsIDForSaving = distinct;
 				}
 
 				i++;
@@ -184,6 +191,13 @@ public class UIBottomManager : MonoBehaviour {
 		}
 
 		tempColorIDList.Sort ();				// Sort tempColorIDList
+		colorsIDForSaving.Sort ();
+		maxColorIDAmountForSaving = colorsIDForSaving.Count;
+
+//		Debug.Log ("maxColorIDAmountForSaving " + maxColorIDAmountForSaving);
+//		for (int xx = 0; xx < colorsIDForSaving.Count; xx++) {
+//			Debug.Log ("IDS " + colorsIDForSaving [xx]);
+//		}
 
 		// Override each element int the old fullColorList with grey,
 		// that aren't allready found in game
@@ -193,20 +207,58 @@ public class UIBottomManager : MonoBehaviour {
 			{
 				if(j == tcIDl)
 				{
-					fullColorList[j] = colorList[0];
-				}
+					fullColorList[j] = new Color(0.5F, 0.5F, 0.5F, 1);
+				} 
 			}
 
 			j++;
 		}
 
-		//Debug.Log ("tempColorIDList " + tempColorIDList.Count);
 
 		// Set old color circles combination 
 		if (lightColorCircleXL_isActive)
 			SwitchToRight ();
 		else
 			SwitchToLeft ();
+	}
+
+	public void SaveColorList()
+	{
+		PlayerPrefs.SetInt ("IDAmount", maxColorIDAmountForSaving);
+
+		for (int i = 0; i < colorsIDForSaving.Count; i++)
+			PlayerPrefs.SetInt ("Color " + i, colorsIDForSaving [i]);
+	}
+
+	public void LoadColorList ()
+	{
+		InitializeFullColorList ();
+
+		List<Color> loadedColorList = new List<Color> ();
+		//loadedColorList.Add(new Color(0.5F, 0.5F, 0.5F, 1));
+
+		maxColorIDAmountForSaving = PlayerPrefs.GetInt ("IDAmount");
+
+		for (int j = 0; j < fullColorList.Count; j++)
+		{
+			for (int i = 0; i < maxColorIDAmountForSaving; i++) 
+			{
+				int colorID = PlayerPrefs.GetInt ("Color " + i);
+
+				if (colorID == j)
+				{
+					loadedColorList.Add(fullColorList[j]);
+//					Debug.Log ("Loaded colorID " + colorID);
+					break;
+				}
+
+//				Debug.Log ("Loaded IDS " + PlayerPrefs.GetInt ("Color " + i));
+			}
+		}
+
+//		Debug.Log ("loadedColorList " + loadedColorList.Count);
+		playerController.foundColors = loadedColorList;
+		FillColorCircle (loadedColorList);
 	}
 
 	/**
@@ -298,5 +350,6 @@ public class UIBottomManager : MonoBehaviour {
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
+		playerController = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
 	}
 }

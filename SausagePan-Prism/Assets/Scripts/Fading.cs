@@ -4,20 +4,24 @@ using System.Collections;
 public class Fading : MonoBehaviour {
 
 	public Texture2D fadeOutTexture;	// Textur that will overlay the screen
-	public float fadeSpeed = 0.1f;			// The fading speed
+	public float fadeSpeed = 0.1f;		// The fading speed
 
 	private int drawDeph = -1000;		// Drawing hierarchy: a low number means it renders on top
 	private float alpha = 1.0f; 		// Texture alpha
 	private int fadeDir = -1; 			// The direction to fade: in = -1 or out = 1
 	private Inventory inventory;
+	private UIBottomManager uIBottomManager;
 
 	/**
 	 * Set fadeDir to the direction parameter making the scene fade in if -1 and out if 1
 	 * */
 	public float BeginFade(int direction)
 	{
-		if (direction == 1)
+		if (direction == 1) 
+		{
 			inventory.SaveInventory ();
+			uIBottomManager.SaveColorList();
+		}
 
 		fadeDir = direction;
 		return (fadeSpeed); 
@@ -49,5 +53,6 @@ public class Fading : MonoBehaviour {
 	void Start()
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 	}
 }

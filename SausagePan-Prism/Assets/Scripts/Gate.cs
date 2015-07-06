@@ -7,11 +7,11 @@ public class Gate : MonoBehaviour {
 	public string gateColor;
 	public GameObject gateinner; 
 
-	Color color;
-	UIManager uIManager;
-	Inventory inventory;
-	SpriteRenderer playerBody;
-	bool finishedLevel = false;
+	private Color color;
+	private UIManager uIManager;
+	private Inventory inventory;
+	private SpriteRenderer playerBody;
+	private bool finishedLevel = false;
 	
 
 	public void OnTriggerEnter2D (Collider2D other)
@@ -108,7 +108,7 @@ public class Gate : MonoBehaviour {
 	{
 		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
-		Application.LoadLevel ("LevelSelection");
+		Application.LoadLevel (Application.loadedLevel - 1);
 	}
 
 	void Update()
