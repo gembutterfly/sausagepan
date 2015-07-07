@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 42f65f9593c86424b9a768a399ec42b1
+timeCreated: 1436263993
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pl_0
+    21300002: pl_1
+    21300004: pl_2
+    21300006: pl_3
+    21300008: pl_4
+    21300010: pl_5
+    21300012: pl_6
+    21300014: pl_7
+    21300016: pl_8
+    21300018: pl_9
+    21300020: pl_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pl_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 593
+        width: 59
+        height: 34
+      alignment: 9
+      pivot: {x: .171591684, y: .401742369}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 574
+        width: 70
+        height: 85
+      alignment: 9
+      pivot: {x: .223198593, y: .602185786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 532
+        width: 54
+        height: 29
+      alignment: 9
+      pivot: {x: .178302407, y: .453920573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 475
+        width: 46
+        height: 58
+      alignment: 9
+      pivot: {x: .340227216, y: .884802461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 321
+        width: 67
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_5
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 318
+        width: 77
+        height: 74
+      alignment: 9
+      pivot: {x: .465291202, y: .135433719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_6
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_7
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 164
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_8
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 129
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_9
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 114
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pl_10
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 15
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

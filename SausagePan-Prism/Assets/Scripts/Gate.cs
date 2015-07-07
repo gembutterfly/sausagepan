@@ -92,7 +92,6 @@ public class Gate : MonoBehaviour {
 				break;
 			case "green": 
 				inventory.AddItem (4);
-				Debug.Log("gateColor " + gateColor);
 				break;
 			case "magenta": 
 				inventory.AddItem (5);
@@ -117,8 +116,8 @@ public class Gate : MonoBehaviour {
 		manager.setCounter (levelNumber);
 		manager.changeLevelValue (levelNumber);
 
-		//Application.LoadLevel ("LevelSelection");
-		Application.LoadLevel (Application.loadedLevel - 1);
+		Application.LoadLevel ("LevelSelection");
+//		Application.LoadLevel (Application.loadedLevel - 1);
 	}
 
 	void Update()
