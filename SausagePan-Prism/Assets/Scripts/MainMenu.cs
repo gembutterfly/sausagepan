@@ -5,7 +5,8 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
 	public int level = 0;
-	GameObject sound;
+
+	private GameObject sound;
 
 	public bool IsStartscreen = false;
 	public float waitingTime = 1.0f;
@@ -59,11 +60,17 @@ public class MainMenu : MonoBehaviour {
 		return (fadeSpeed);
 	}
 
-	void Start () {
+	void Start () 
+	{
 		BeginFade (-1);
+
 		sound = GameObject.Find ("Sound");
+
 		if (IsStartscreen)
 			PlayerPrefs.SetInt ("soundOn", 1);
+
+		if (Application.loadedLevel == 1)
+			PlayerPrefs.DeleteAll ();
 	}
 
 	IEnumerator ChangeLevel () {
@@ -74,7 +81,7 @@ public class MainMenu : MonoBehaviour {
 
 
 	void Update () {
-		if (IsStartscreen)
+		if (IsStartscreen) 
 			Invoke ("loadNewLevel", waitingTime);
 	}
 }

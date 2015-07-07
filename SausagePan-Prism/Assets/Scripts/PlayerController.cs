@@ -234,8 +234,11 @@ public class PlayerController : MonoBehaviour {
 		uIBottomManager.InitializeFullColorList ();
 		uIBottomManager.FillColorCircle (foundColors);
 
-//		if(Application.loadedLevel == 20)
-//			PaintChar (Color.green, true);
+		if (Application.loadedLevel == 20) {
+			PaintChar (Color.green, true);
+		}
+		
+		
 	}
 	
 	// Update is called once per frame
