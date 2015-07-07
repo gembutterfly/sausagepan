@@ -178,7 +178,7 @@ public class UIBottomManager : MonoBehaviour {
 						tempColorIDList.Remove(i);
 					}
 
-					Debug.Log ("tempColorIDList " + tempColorIDList.Count);
+//					Debug.Log ("tempColorIDList " + tempColorIDList.Count);
 
 					List<int> distinct = colorsIDForSaving.Distinct().ToList();	// Get distinct elements and convert into a list again.
 					colorsIDForSaving = distinct;
@@ -194,10 +194,10 @@ public class UIBottomManager : MonoBehaviour {
 		colorsIDForSaving.Sort ();
 		maxColorIDAmountForSaving = colorsIDForSaving.Count;
 
-		Debug.Log ("maxColorIDAmountForSaving " + maxColorIDAmountForSaving);
-		for (int xx = 0; xx < colorsIDForSaving.Count; xx++) {
-			Debug.Log ("IDS " + colorsIDForSaving [xx]);
-		}
+//		Debug.Log ("maxColorIDAmountForSaving " + maxColorIDAmountForSaving);
+//		for (int xx = 0; xx < colorsIDForSaving.Count; xx++) {
+//			Debug.Log ("IDS " + colorsIDForSaving [xx]);
+//		}
 
 		// Override each element int the old fullColorList with grey,
 		// that aren't allready found in game
@@ -222,13 +222,13 @@ public class UIBottomManager : MonoBehaviour {
 			SwitchToLeft ();
 	}
 
-	void OnGUI()
-	{
-		if (GUI.Button (new Rect (200, 100, 100, 50), "Save"))
-			SaveColorList ();
-		if (GUI.Button (new Rect (200, 160, 100, 50), "Load"))
-			LoadColorList ();
-	}
+//	void OnGUI()
+//	{
+//		if (GUI.Button (new Rect (200, 100, 100, 50), "Save"))
+//			SaveColorList ();
+//		if (GUI.Button (new Rect (200, 160, 100, 50), "Load"))
+//			LoadColorList ();
+//	}
 
 	public void DeleteColorList ()
 	{
@@ -260,15 +260,15 @@ public class UIBottomManager : MonoBehaviour {
 				if (colorID == j)
 				{
 					loadedColorList.Add(fullColorList[j]);
-					Debug.Log ("Loaded colorID " + colorID);
+//					Debug.Log ("Loaded colorID " + colorID);
 					break;
 				}
 
-				Debug.Log ("Loaded IDS " + PlayerPrefs.GetInt ("Color " + i));
+//				Debug.Log ("Loaded IDS " + PlayerPrefs.GetInt ("Color " + i));
 			}
 		}
 
-		Debug.Log ("loadedColorList " + loadedColorList.Count);
+//		Debug.Log ("loadedColorList " + loadedColorList.Count);
 		playerController.foundColors = loadedColorList;
 		FillColorCircle (loadedColorList);
 	}
