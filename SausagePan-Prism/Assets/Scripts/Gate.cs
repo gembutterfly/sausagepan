@@ -32,7 +32,7 @@ public class Gate : MonoBehaviour {
 
 	public void LoadNewLevel() 
 	{
-		//inventory.SaveInventory ();
+//		finishedLevel = false;
 		StartCoroutine("ChangeLevel");
 	}
 
