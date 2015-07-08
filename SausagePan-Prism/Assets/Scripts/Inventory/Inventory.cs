@@ -87,7 +87,7 @@ public class Inventory : MonoBehaviour {
 	
 	void Update()
 	{
-		if (Input.GetButtonDown ("Jump")) 
+		if (Input.GetButtonDown ("Inventory")) 
 		{
 			showInventory = !showInventory;
 		}
@@ -131,7 +131,7 @@ public class Inventory : MonoBehaviour {
 		{
 			for(int x = 0; x < slotX; x++)
 			{
-				Rect slotRect = new Rect(x * 60, y * 60, 50, 50);
+				Rect slotRect = new Rect(x + 10, 10 + y * 55, 50, 50);
 				GUI.Box(slotRect, "", skin.GetStyle("Slot"));
 				
 				Item item = inventory[i]; 
