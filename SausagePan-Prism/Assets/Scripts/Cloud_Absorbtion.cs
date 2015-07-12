@@ -20,7 +20,7 @@ public class Cloud_Absorbtion : MonoBehaviour {
 		if (coll.CompareTag("GodRay")) {
 			anim = coll.gameObject.GetComponent<Animator> ();
 			anim.SetBool ("IsBlocked", true);
-			Debug.Log("I know it hit me");
+			//Debug.Log("I know it hit me");
 		}
 	}
 
@@ -30,7 +30,7 @@ public class Cloud_Absorbtion : MonoBehaviour {
 			anim = coll.gameObject.GetComponent<Animator> ();
 			//Debug.Log(anim);
 			anim.SetBool ("IsBlocked", false);
-			Debug.Log("I know it exited me");
+			//Debug.Log("I know it exited me");
 		}
 	}
 
