@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {4.3}Berwertung des Projektes}{7}
 \contentsline {subsection}{\numberline {4.3.1}Alexandra}{7}
 \contentsline {subsection}{\numberline {4.3.2}Bettina}{7}
-\contentsline {subsection}{\numberline {4.3.3}Georg}{7}
+\contentsline {subsection}{\numberline {4.3.3}Georg}{8}
 \contentsline {subsection}{\numberline {4.3.4}Philipp}{8}
-\contentsline {subsection}{\numberline {4.3.5}Sara}{8}
-\contentsline {subsection}{\numberline {4.3.6}Sergej}{8}
+\contentsline {subsection}{\numberline {4.3.5}Sara}{9}
+\contentsline {subsection}{\numberline {4.3.6}Sergej}{9}

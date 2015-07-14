@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d11d2a33d8919e94682dc288e9d42c63
-timeCreated: 1436722705
+timeCreated: 1436805320
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,8 +58,8 @@ TextureImporter:
         y: 94
         width: 73
         height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .848361075, y: .948766589}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: rainbowgame_moth_legs_1
       rect:
@@ -68,8 +68,8 @@ TextureImporter:
         y: 21
         width: 35
         height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .399396181, y: .954579353}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

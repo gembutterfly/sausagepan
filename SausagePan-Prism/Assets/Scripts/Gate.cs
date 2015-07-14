@@ -117,7 +117,7 @@ public class Gate : MonoBehaviour {
 		manager.changeLevelValue (levelNumber);
 
 //		Application.LoadLevel ("LevelSelection");
-		Application.LoadLevel (Application.loadedLevel + 1);
+		Application.LoadLevel (Application.loadedLevel - 1);
 	}
 
 	void Update()

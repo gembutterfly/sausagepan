@@ -8,9 +8,9 @@ public class Inventory : MonoBehaviour {
 	public List<Item> inventory = new List<Item>();
 	public int slotX, slotY;
 	public GUISkin skin;
+	public bool showInventory;
 
 	private ItemDatabase itemDatabase;
-	private bool showInventory;
 	private bool showTooltip;
 	private string tooltip;
 
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour {
 	private bool draggingItem;
 	private Item draggedItem;
 	private int prevIndex;
-	
+
 	public void AddItem(int id)
 	{
 		Debug.Log ("AddItem " + id);
@@ -83,6 +83,15 @@ public class Inventory : MonoBehaviour {
 		{
 			inventory.Add(new Item());
 		}
+
+
+		AddItem (0);
+		AddItem (1);
+		AddItem (2);
+		AddItem (3);
+		AddItem (4);
+		AddItem (5);
+		AddItem (6);
 	}
 	
 	void Update()
@@ -131,11 +140,26 @@ public class Inventory : MonoBehaviour {
 		{
 			for(int x = 0; x < slotX; x++)
 			{
-				Rect slotRect = new Rect(x + 10, 10 + y * 55, 50, 50);
-				GUI.Box(slotRect, "", skin.GetStyle("Slot"));
-				
+				Rect slotRect = new Rect();
 				Item item = inventory[i]; 
-				
+
+				if (Application.loadedLevelName.Equals("Rainbowgame")) 
+				{
+					int new_x = x + 700 + (y * 45);
+					int new_y = 170 + y * 45;
+
+					if (y >= 3)
+						new_x = x + 700 + ((y - 6) * (-45));
+
+					slotRect = new Rect(new_x, new_y, 40, 40); 
+				}
+				else
+				{
+					slotRect = new Rect(x + 10, 10 + y * 55, 50, 50);
+				}
+
+				GUI.Box(slotRect, "");
+
 				if(item.itemName != null)
 				{
 					if (item.itemIcon != null)
@@ -144,7 +168,7 @@ public class Inventory : MonoBehaviour {
 					if(slotRect.Contains(e.mousePosition))
 					{
 						tooltip = CreateTooltip(inventory[i]);
-						showTooltip = true;
+						//showTooltip = true;
 						
 						if(e.button == 0 && e.type == EventType.mouseDrag && !draggingItem)
 						{
