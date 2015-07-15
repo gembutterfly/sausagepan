@@ -5,7 +5,7 @@ public class outro : MonoBehaviour {
 
 	public int outrocount;
 	private int zahl;
-	private int[] time = new int[]{200, 200, 440, 250, 500, 60, 150, 200, 300};
+	private int[] time = new int[]{200, 200, 300, 320, 500, 60, 150, 200, 300};
 
 	public GameObject colorFull;
 	private float x = 1;
