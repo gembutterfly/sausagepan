@@ -69,7 +69,7 @@ public class MainMenu : MonoBehaviour {
 		if (IsStartscreen)
 			PlayerPrefs.SetInt ("soundOn", 1);
 
-		if (Application.loadedLevel == 1)
+		if (Application.loadedLevel == 0)
 			PlayerPrefs.DeleteAll ();
 	}
 

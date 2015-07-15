@@ -75,6 +75,11 @@ public class Inventory : MonoBehaviour {
 			inventory[i] = PlayerPrefs.GetInt("Inventory " + i, -1) >= 0 ? itemDatabase.items[PlayerPrefs.GetInt("Inventory " + i)] : new Item();
 	}
 
+	public void ShowInventory()
+	{
+		showInventory = !showInventory;
+	}
+
 	void Start()
 	{
 		itemDatabase = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
