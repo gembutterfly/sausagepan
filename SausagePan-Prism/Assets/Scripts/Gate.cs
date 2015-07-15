@@ -54,11 +54,7 @@ public class Gate : MonoBehaviour {
 				color = Color.red; 
 				break;
 			case "yellow": 
-<<<<<<< HEAD
-				color = new Color(1, 1, 0); 
-=======
 				color = new Color(1, 1, 0, 1);
->>>>>>> b48ae3d16ae110cc11f34f8b604dbc611702fa2a
 				break;
 			case "green": 
 				color = Color.green; 
