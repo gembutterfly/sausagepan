@@ -83,15 +83,7 @@ public class Inventory : MonoBehaviour {
 		{
 			inventory.Add(new Item());
 		}
-
-
-		AddItem (0);
-		AddItem (1);
-		AddItem (2);
-		AddItem (3);
-		AddItem (4);
-		AddItem (5);
-		AddItem (6);
+		
 	}
 	
 	void Update()
