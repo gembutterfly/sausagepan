@@ -5,7 +5,7 @@ public class outro : MonoBehaviour {
 
 	public int outrocount;
 	private int zahl;
-	private int[] time = new int[]{200, 200, 300, 320, 500, 60, 150, 200, 300};
+	private int[] time = new int[]{200, 200, 200, 100, 200, 320, 130, 270, 100, 100, 700};
 
 	public GameObject colorFull;
 	private float x = 1;
@@ -30,6 +30,8 @@ public class outro : MonoBehaviour {
 	}
 
 	private void changeOpacity(){
+		if (outrocount == 11)
+			x += 0.007f;
 		var help = colorFull.GetComponent<SpriteRenderer> ();
 		help.color = new  Color(1f, 1f, 1f, x);
 		x -= 0.009f;
@@ -37,9 +39,16 @@ public class outro : MonoBehaviour {
 
 	private void nextOutro(){
 		outrocount++;
-		if (outrocount > 9)
+		if (outrocount > 11)
 			Application.LoadLevel ("Credits");
 		else
 			Application.LoadLevel ("outro" + outrocount);
+	}
+
+	public void Skip(){
+		//var go = GameObject.Find ("audio");
+		//AudioSource help = go.GetComponent<AudioSource> ();
+		//help.Stop ();
+		Application.LoadLevel ("Credits");
 	}
 }

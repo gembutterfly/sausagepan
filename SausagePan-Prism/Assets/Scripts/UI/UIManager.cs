@@ -16,10 +16,14 @@ public class UIManager : MonoBehaviour {
 		this.gameObject.AddComponent<GlobalSound>();
 
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
-		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 
-		inventory.LoadInventory ();
-		uIBottomManager.LoadColorList ();
+		if (!(Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection"))) 
+		{
+			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+
+			inventory.LoadInventory ();
+			uIBottomManager.LoadColorList ();
+		}
 	}
 
 	public void Mute()
@@ -45,7 +49,7 @@ public class UIManager : MonoBehaviour {
 
 		// Editor oder bei Fehlschlag der obigen Methoden:
 		// Hauptbildschirm laden
-		Application.LoadLevel ("Startbildschirm");
+		Application.LoadLevel ("Logoanimation");
 	}
 
 	public void RestartLevel() 
