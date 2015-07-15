@@ -11,11 +11,6 @@ public class GameManager : MonoBehaviour {
 	static bool levelFiveClear = false;
 	static bool levelSixClear = false;
 
-
-	//Quizze
-	static bool quizHalfClear = false;
-	static bool quizCompleteClear = false;
-
 	//dazu kommt ein Counter, damit der kleine Mann sich zu nächsten Level
 	//bewegen kann, 
 	static int counter = 0;
@@ -75,23 +70,4 @@ public class GameManager : MonoBehaviour {
 		return value;
 	}
 
-	public void setQuizHalfValue(bool value)
-	{
-		quizHalfClear = value;
-	}
-
-	public void setQuizCompleteValue(bool value)
-	{
-		quizCompleteClear = value;
-	}
-
-	public bool getQuizHalfValue()
-	{
-		return quizHalfClear;
-	}
-
-	public bool getQuizCompleteValue()
-	{
-		return quizCompleteClear;
-	}
 }

@@ -4,11 +4,13 @@ using System.Collections;
 public class QuizzButton : MonoBehaviour {
 
 	public GameManager manager;
+	public SwitchLevel level;
 	public GameObject violettColorTextures;
 	public GameObject violettGreyTextures;
 	public GameObject orangeColorTextures;
 	public GameObject orangeGreyTextures;
-	
+	public Inventory inventory;
+
 	private  SpriteRenderer moth;
 	private static bool isClicked = false;
 	// Use this for initialization
@@ -18,7 +20,7 @@ public class QuizzButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (manager.getQuizHalfValue ()) {
+		if (inventory.InventoryContains (2)) {
 			orangeGreyTextures.SetActive (false);
 			orangeColorTextures.SetActive (true);
 		} else {
@@ -26,7 +28,7 @@ public class QuizzButton : MonoBehaviour {
 			orangeColorTextures.SetActive (false);
 		}
 
-		if (manager.getQuizCompleteValue ()) {
+		if (inventory.InventoryContains (5)) {
 			violettGreyTextures.SetActive (false);
 			violettColorTextures.SetActive (true);
 		} else {
@@ -43,6 +45,7 @@ public class QuizzButton : MonoBehaviour {
 	void OnMouseDown()
 	{
 		isClicked = true;
+		level.goToLevel ("Quizze");
 		//Application.LoadLevel ("Quizze");
 	}
 }
