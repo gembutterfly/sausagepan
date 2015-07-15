@@ -30,7 +30,7 @@ public class UIBottomManager : MonoBehaviour {
 	private bool blackCloudIsActive = false;
 	private bool whiteCloudIsActive = false;
 	
-	private bool lightColorCircleXL_isActive = true;
+	public bool lightColorCircleXL_isActive = true;
 
 	
 	/**
