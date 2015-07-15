@@ -7,6 +7,8 @@ public class SwitchQuestion : MonoBehaviour {
 	public Color correctAns = new Color(.3f, 1.0f, .3f, 1.0f);
 	public Color wrongAns   = new Color(1.0f, .3f, .3f, 1.0f);
 
+	public Inventory inventory;
+
 	public QuizQuestion[] questions;
 	public GameObject buttonA;
 	public GameObject buttonB;
@@ -144,7 +146,17 @@ public class SwitchQuestion : MonoBehaviour {
 			feedback.GetComponent<Text> ().text = "Richtig!";
 			questionText.GetComponent<Text>().text = questions[activeNumber].solution;
 
-			if(!questions[activeNumber].alreadyAnswered) correctlyAnsweredQuestions++;
+			if(!questions[activeNumber].alreadyAnswered) {
+				correctlyAnsweredQuestions++;
+				if(correctlyAnsweredQuestions == 5) {
+					inventory.AddItem(2);
+					feedback.GetComponent<Text> ().text = "Orange gefunden!";
+				}
+				if(correctlyAnsweredQuestions == 9)	{
+					inventory.AddItem(5);
+					feedback.GetComponent<Text> ().text = "Lila gefunden!";
+				}
+			}
 
 			questions[activeNumber].alreadyAnswered = true;
 		}

@@ -33,6 +33,12 @@ public class MainLevelController : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			if(gameManager.getLevelValue (levelNumber - 1))
 			{
+				if(levelNumber == 6)
+				{
+					if(gameManager.getQuizCompleteValue())
+						Application.LoadLevel ("szene5");
+				}
+				else
 				Application.LoadLevel(levelName);
 			}
 			else

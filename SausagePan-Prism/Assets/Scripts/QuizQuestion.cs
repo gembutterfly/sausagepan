@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class QuizQuestion : ScriptableObject {
+public class QuizQuestion {
 
 	public string question;
 	public string answer1;
