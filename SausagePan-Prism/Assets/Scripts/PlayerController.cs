@@ -235,7 +235,7 @@ public class PlayerController : MonoBehaviour {
 		uIBottomManager.FillColorCircle (foundColors);
 
 //		if (Application.loadedLevel == 20) {
-			PaintChar (Color.green, true);
+//			PaintChar (Color.yellow, true);
 //		}
 		
 		

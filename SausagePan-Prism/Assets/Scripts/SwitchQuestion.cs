@@ -7,6 +7,8 @@ public class SwitchQuestion : MonoBehaviour {
 	public Color correctAns = new Color(.3f, 1.0f, .3f, 1.0f);
 	public Color wrongAns   = new Color(1.0f, .3f, .3f, 1.0f);
 
+	public Inventory inventory;
+
 	public QuizQuestion[] questions;
 	public GameObject buttonA;
 	public GameObject buttonB;
@@ -15,6 +17,7 @@ public class SwitchQuestion : MonoBehaviour {
 	public GameObject questionText;
 	public GameObject feedback;
 	public int activeNumber = 0;
+	public int correctlyAnsweredQuestions = 0;
 	public bool questionLocked = false;	// lock, when question answered, unlock when displaying new question
 
 	public void Start() {
@@ -73,11 +76,11 @@ public class SwitchQuestion : MonoBehaviour {
 		questions[5] = new QuizQuestion(
 			"Welche Farbe hat eine gelbe Lampe, wenn du sie durch eine grün verspiegelte Sonnenbrille ansiehst?\n\n" +
 			"Tipp: Welches Licht lässt die Brille hindurch und welches wirft sie zurück?",
-			"A",
-			"B",
-			"C",
-			"D",
-			4,
+			"Gelb",
+			"Rot",
+			"Weiß",
+			"Türkis",
+			2,
 			"Ja, genau! Denn gelbes Licht enthält ja rotes und grünes Licht. Da aber die Sonnenbrille alles grüne Licht durch die " +
 			"Verspiegelung nach außen zurückwirft dringt nur der rote Anteil durch die Brille und damit in dein Auge.");
 
@@ -88,7 +91,7 @@ public class SwitchQuestion : MonoBehaviour {
 			"Türkis",
 			"Gelb",
 			"Weiß",
-			3,
+			1,
 			"Klasse! Würdest du jetzt noch eine grüne Lampe anschalten, dann wäre die Stelle weiß beleuchtet.");
 
 		questions[7] = new QuizQuestion(
@@ -106,8 +109,8 @@ public class SwitchQuestion : MonoBehaviour {
 			"Magenta",
 			"Gelb",
 			"Weiß",
-			3,
-			"So ist es! Du kennst doch Bilder von karibischen Stränden. Da Wasserganz viel rotes Licht schluckt, kommen vom Sonnenlicht " +
+			1,
+			"So ist es! Du kennst doch Bilder von karibischen Stränden. Da Wasser ganz viel rotes Licht schluckt, kommen vom Sonnenlicht " +
 			"fast nur grünes und blaues Licht wieder aus dem Wasser heraus. Deshalb hat klares Meerwasser so einen schönen blau- bis " +
 			"türkisfarbenen Ton.");
 
@@ -142,6 +145,20 @@ public class SwitchQuestion : MonoBehaviour {
 		if (answer == questions [activeNumber].correctAnswer) {
 			feedback.GetComponent<Text> ().text = "Richtig!";
 			questionText.GetComponent<Text>().text = questions[activeNumber].solution;
+
+			if(!questions[activeNumber].alreadyAnswered) {
+				correctlyAnsweredQuestions++;
+				if(correctlyAnsweredQuestions == 5) {
+					inventory.AddItem(2);
+					feedback.GetComponent<Text> ().text = "Orange gefunden!";
+				}
+				if(correctlyAnsweredQuestions == 9)	{
+					inventory.AddItem(5);
+					feedback.GetComponent<Text> ().text = "Lila gefunden!";
+				}
+			}
+
+			questions[activeNumber].alreadyAnswered = true;
 		}
 
 		else {
