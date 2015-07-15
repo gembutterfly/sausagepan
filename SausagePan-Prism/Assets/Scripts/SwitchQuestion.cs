@@ -15,6 +15,7 @@ public class SwitchQuestion : MonoBehaviour {
 	public GameObject questionText;
 	public GameObject feedback;
 	public int activeNumber = 0;
+	public int correctlyAnsweredQuestions = 0;
 	public bool questionLocked = false;	// lock, when question answered, unlock when displaying new question
 
 	public void Start() {
@@ -142,6 +143,10 @@ public class SwitchQuestion : MonoBehaviour {
 		if (answer == questions [activeNumber].correctAnswer) {
 			feedback.GetComponent<Text> ().text = "Richtig!";
 			questionText.GetComponent<Text>().text = questions[activeNumber].solution;
+
+			if(!questions[activeNumber].alreadyAnswered) correctlyAnsweredQuestions++;
+
+			questions[activeNumber].alreadyAnswered = true;
 		}
 
 		else {

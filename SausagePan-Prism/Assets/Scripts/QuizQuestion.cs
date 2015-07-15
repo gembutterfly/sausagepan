@@ -10,6 +10,7 @@ public class QuizQuestion : MonoBehaviour {
 	public string answer4;
 	public int    correctAnswer;
 	public string solution;
+	public bool   alreadyAnswered;
 
 	public QuizQuestion(string question,
 	                    string answer1,
@@ -25,5 +26,6 @@ public class QuizQuestion : MonoBehaviour {
 		this.answer4 = answer4;
 		this.correctAnswer = correctAnswer;
 		this.solution = solution;
+		this.alreadyAnswered = false;
 	}
 }
