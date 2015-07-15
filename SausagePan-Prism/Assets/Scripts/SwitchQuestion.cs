@@ -74,11 +74,11 @@ public class SwitchQuestion : MonoBehaviour {
 		questions[5] = new QuizQuestion(
 			"Welche Farbe hat eine gelbe Lampe, wenn du sie durch eine grün verspiegelte Sonnenbrille ansiehst?\n\n" +
 			"Tipp: Welches Licht lässt die Brille hindurch und welches wirft sie zurück?",
-			"A",
-			"B",
-			"C",
-			"D",
-			4,
+			"Gelb",
+			"Rot",
+			"Weiß",
+			"Türkis",
+			2,
 			"Ja, genau! Denn gelbes Licht enthält ja rotes und grünes Licht. Da aber die Sonnenbrille alles grüne Licht durch die " +
 			"Verspiegelung nach außen zurückwirft dringt nur der rote Anteil durch die Brille und damit in dein Auge.");
 
@@ -89,7 +89,7 @@ public class SwitchQuestion : MonoBehaviour {
 			"Türkis",
 			"Gelb",
 			"Weiß",
-			3,
+			1,
 			"Klasse! Würdest du jetzt noch eine grüne Lampe anschalten, dann wäre die Stelle weiß beleuchtet.");
 
 		questions[7] = new QuizQuestion(
@@ -107,8 +107,8 @@ public class SwitchQuestion : MonoBehaviour {
 			"Magenta",
 			"Gelb",
 			"Weiß",
-			3,
-			"So ist es! Du kennst doch Bilder von karibischen Stränden. Da Wasserganz viel rotes Licht schluckt, kommen vom Sonnenlicht " +
+			1,
+			"So ist es! Du kennst doch Bilder von karibischen Stränden. Da Wasser ganz viel rotes Licht schluckt, kommen vom Sonnenlicht " +
 			"fast nur grünes und blaues Licht wieder aus dem Wasser heraus. Deshalb hat klares Meerwasser so einen schönen blau- bis " +
 			"türkisfarbenen Ton.");
 
