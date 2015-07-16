@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class SwitchOnLamps : MonoBehaviour {
 
 	public Image ink;
-	public GameObject help;
-	public GameObject minigame;
+//	public GameObject help;
+//	public GameObject minigame;
 
 	// Use this for initialization
 	void Start () {
@@ -29,13 +29,13 @@ public class SwitchOnLamps : MonoBehaviour {
 			ink.enabled = true;
 	}
 
-	public void SwitchToMinigame() {
-		help.SetActive(false);
-		minigame.SetActive(true);
-	}
-
-	public void SwitchToHelp() {
-		help.SetActive(true);
-		minigame.SetActive(false);
-	}
+//	public void SwitchToMinigame() {
+//		help.SetActive(false);
+//		minigame.SetActive(true);
+//	}
+//
+//	public void SwitchToHelp() {
+//		help.SetActive(true);
+//		minigame.SetActive(false);
+//	}
 }
