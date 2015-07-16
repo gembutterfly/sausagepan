@@ -9,13 +9,12 @@ public class MainLevelController : MonoBehaviour {
 	public int levelNumber;
 
 	private GameManager gameManager;
-	private Inventory inventory;
+	public Inventory inventory;
 	public SpriteRenderer nextPosition;
 	// Use this for initialization
 	void Start () {
 		colorTextures.SetActive (false);
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
-		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 		nextPosition.enabled = false;
 		
 	}
@@ -36,17 +35,21 @@ public class MainLevelController : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			if(gameManager.getLevelValue (levelNumber - 1))
 			{
-				Debug.Log (gameManager.getLevelValue (levelNumber - 1));
 				if(levelNumber == 6)
 				{
-					Debug.Log ("enter new second");
-					Debug.Log (inventory.InventoryContains(2));
-					Debug.Log(inventory.InventoryContains(5));
-					if(inventory.InventoryContains(2) && inventory.InventoryContains(5)){
-						Debug.Log ("enter new szene");
-						Application.LoadLevel ("szene5");}
+					foreach(Item item in inventory.inventory)
+					{
+						Debug.Log (item.itemID);
+						Debug.Log (item.itemName);
+					}
+
+					//Debug.Log ("enter new second");
+					//Debug.Log (inventory.inventory [1].itemName.Equals ("orange_crystal"));
+					//Debug.Log(inventory.inventory [6].itemName.Equals ("magenta_crystal"));
+					/*if(inventory.inventory[2].itemName.Equals("orange_crystal") && inventory.inventory [5].itemName.Equals ("magenta_crystal"))
+						Application.LoadLevel ("szene5");
 					else
-						return;
+						return;*/
 				}
 				else
 					Application.LoadLevel(levelName);
