@@ -21,7 +21,7 @@ public class MothScript : MonoBehaviour{
 	private Color colorMoth2;
 	private Color colorMoth1Comp;
 
-	public void OnTriggerEnter2D (Collider2D other)
+	public void IsTriggered ()
 	{
 		colorMoth1 = moth1.transform.GetChild (0).GetComponent<Image> ().color;
 		colorMoth2 = moth2.transform.GetChild (0).GetComponent<Image> ().color;
@@ -78,10 +78,8 @@ public class MothScript : MonoBehaviour{
 	 * */
 	public void Retry()
 	{
-		animMoth1.SetBool ("flying", false);
-		animMoth1.SetBool ("pushBack", false);
-		animMoth2.SetBool ("flying", false);
-		animMoth2.SetBool ("pushBack", false);
+		retryButton.SetActive (false);
+		FightButtonMessage ();
 
 		for (int i = 0; i < 3; i++) 
 		{
@@ -89,9 +87,18 @@ public class MothScript : MonoBehaviour{
 			moth2.transform.GetChild(i).GetComponent<Image>().color = new Color (1, 1, 1, 1);
 		}
 
-		retryButton.SetActive (false);
-		FightButtonMessage ();
+		ResetAnimations ();
+	}
+
+	public void ResetAnimations()
+	{
+		animMoth1.SetBool ("flying", false);
+		animMoth1.SetBool ("pushBack", false);
+		animMoth2.SetBool ("flying", false);
+		animMoth2.SetBool ("pushBack", false);
+
 		overlayImage.GetComponent<Image> ().enabled = false;
+
 	}
 
 	// Use this for initialization
@@ -112,7 +119,7 @@ public class MothScript : MonoBehaviour{
 	void RetryButtonMessage()
 	{
 		retryButton.SetActive (true);
-		retryButton.GetComponentInChildren<Text>().text = "Wiederholen";
+		retryButton.transform.GetChild (0).GetComponent<Text>().text = "Wiederholen";
 	}
 
 	/**
@@ -121,7 +128,7 @@ public class MothScript : MonoBehaviour{
 	void FightButtonMessage()
 	{
 		fightButton.SetActive (true);
-		fightButton.GetComponentInChildren<Text> ().text = "Kampf";
+		fightButton.transform.GetChild (0).GetComponent<Text>().text = "Fliegen";
 	}
 
 	/**

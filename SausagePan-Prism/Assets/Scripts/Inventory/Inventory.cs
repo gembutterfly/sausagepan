@@ -75,6 +75,11 @@ public class Inventory : MonoBehaviour {
 			inventory[i] = PlayerPrefs.GetInt("Inventory " + i, -1) >= 0 ? itemDatabase.items[PlayerPrefs.GetInt("Inventory " + i)] : new Item();
 	}
 
+	public void ShowInventory()
+	{
+		showInventory = !showInventory;
+	}
+
 	void Start()
 	{
 		itemDatabase = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
@@ -83,15 +88,6 @@ public class Inventory : MonoBehaviour {
 		{
 			inventory.Add(new Item());
 		}
-
-
-		AddItem (0);
-		AddItem (1);
-		AddItem (2);
-		AddItem (3);
-		AddItem (4);
-		AddItem (5);
-		AddItem (6);
 	}
 	
 	void Update()
@@ -141,6 +137,7 @@ public class Inventory : MonoBehaviour {
 			for(int x = 0; x < slotX; x++)
 			{
 				Rect slotRect = new Rect();
+				Rect itemRect = new Rect();
 				Item item = inventory[i]; 
 
 				if (Application.loadedLevelName.Equals("Rainbowgame")) 
@@ -152,23 +149,25 @@ public class Inventory : MonoBehaviour {
 						new_x = x + 700 + ((y - 6) * (-45));
 
 					slotRect = new Rect(new_x, new_y, 40, 40); 
+					itemRect = new Rect(new_x, new_y, 30, 30);
 				}
 				else
 				{
 					slotRect = new Rect(x + 10, 10 + y * 55, 50, 50);
+					itemRect = new Rect(x + 15, 15 + y * 55, 40, 40);
 				}
 
-				GUI.Box(slotRect, "");
+				GUI.Box(slotRect, "", skin.GetStyle("Slot"));
 
 				if(item.itemName != null)
 				{
 					if (item.itemIcon != null)
-						GUI.DrawTexture(slotRect, inventory[i].itemIcon);
+						GUI.DrawTexture(itemRect, inventory[i].itemIcon);
 					
 					if(slotRect.Contains(e.mousePosition))
 					{
 						tooltip = CreateTooltip(inventory[i]);
-						//showTooltip = true;
+//						showTooltip = true;
 						
 						if(e.button == 0 && e.type == EventType.mouseDrag && !draggingItem)
 						{
@@ -190,6 +189,15 @@ public class Inventory : MonoBehaviour {
 				else 
 				{
 					if (slotRect.Contains(e.mousePosition))
+					{
+						if (e.type == EventType.mouseUp && draggingItem)
+						{
+							inventory[i] = draggedItem;
+							draggingItem = false;
+							draggedItem = null;
+						}
+					} 
+					else
 					{
 						if (e.type == EventType.mouseUp && draggingItem)
 						{

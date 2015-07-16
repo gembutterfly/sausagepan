@@ -21,6 +21,7 @@ public class UIBottomManager : MonoBehaviour {
 	// Help menu
 	public GameObject helpMenu;
 
+	private Inventory inventory;
 	private GameObject player;
 	private List<int> colorsIDForSaving;
 	private int maxColorIDAmountForSaving;
@@ -30,7 +31,7 @@ public class UIBottomManager : MonoBehaviour {
 	private bool blackCloudIsActive = false;
 	private bool whiteCloudIsActive = false;
 	
-	private bool lightColorCircleXL_isActive = true;
+	public bool lightColorCircleXL_isActive;
 
 	
 	/**
@@ -61,6 +62,14 @@ public class UIBottomManager : MonoBehaviour {
 	public void HelpMenu()
 	{
 		helpMenu.SetActive (true);				// Activate the helpMenu GameObject 
+	}
+
+	/**
+	 * Open inventory
+	 * */
+	public void ShowInventory()
+	{
+		inventory.ShowInventory ();
 	}
 
 	/**
@@ -222,14 +231,6 @@ public class UIBottomManager : MonoBehaviour {
 			SwitchToLeft ();
 	}
 
-//	void OnGUI()
-//	{
-//		if (GUI.Button (new Rect (200, 100, 100, 50), "Save"))
-//			SaveColorList ();
-//		if (GUI.Button (new Rect (200, 160, 100, 50), "Load"))
-//			LoadColorList ();
-//	}
-
 	public void DeleteColorList ()
 	{
 		PlayerPrefs.DeleteAll ();
@@ -271,6 +272,25 @@ public class UIBottomManager : MonoBehaviour {
 //		Debug.Log ("loadedColorList " + loadedColorList.Count);
 		playerController.foundColors = loadedColorList;
 		FillColorCircle (loadedColorList);
+	}
+
+	public void ChangeColorCircles()
+	{
+		lightColorCircleXL_isActive = !lightColorCircleXL_isActive;
+	}
+
+	void OnGUI()
+	{		
+		if (lightColorCircleXL_isActive) 
+		{
+			LightColorCircleXL ();
+			ColorColorCircleXS ();
+		} 
+		else 
+		{
+			ColorColorCircleXL ();
+			LightColorCircleXS ();
+		}
 	}
 
 	/**
@@ -362,6 +382,7 @@ public class UIBottomManager : MonoBehaviour {
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
+		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 		playerController = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
 	}
 }

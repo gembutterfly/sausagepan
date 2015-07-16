@@ -25,7 +25,6 @@ public class GodRay : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Player")) {
 			ColorPlayer(LightColor());
 		}
-
 	}
 
 	// Return color of godray
@@ -53,6 +52,9 @@ public class GodRay : MonoBehaviour {
 			break;
 		case "cyan":
 			color = Color.cyan;
+			break;
+		case "violet": 
+			color = new Color (0.64F, 0, 0.94F, 1); 
 			break;
 		default: 
 			color = Color.black;

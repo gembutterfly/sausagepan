@@ -10,6 +10,7 @@ public class HelpScript : MonoBehaviour {
 	public GameObject moth2;
 	public GameObject backToTextBTN;
 
+	private MothScript mothScript;
 	/**
 	 * Show minigame in help
 	 * */
@@ -19,8 +20,8 @@ public class HelpScript : MonoBehaviour {
 		helpText.SetActive (false);
 		backToTextBTN.SetActive (true);
 
-//		moth1.GetComponent<Animator> ().enabled = true;
-//		moth2.GetComponent<Animator> ().enabled = true;
+		// Call function that will reset moth1 and moth2
+		mothScript.ResetAnimations ();
 	}
 
 	/**
@@ -34,8 +35,7 @@ public class HelpScript : MonoBehaviour {
 		backToTextBTN.SetActive (false);
 
 		// Call function that will reset moth1 and moth2
-		moth1.GetComponent<MothScript> ().Retry ();
-		moth2.GetComponent<MothScript> ().Retry ();
+		mothScript.ResetAnimations ();
 	}
 
 	/**
@@ -46,5 +46,13 @@ public class HelpScript : MonoBehaviour {
 		helpText.SetActive (true);
 		minigame.SetActive (false);
 		backToTextBTN.SetActive (false);
+
+		// Call function that will reset moth1 and moth2
+		mothScript.ResetAnimations ();
+	}
+
+	void Start()
+	{
+		mothScript = GameObject.Find ("HelpManager").GetComponent<MothScript> ();
 	}
 }

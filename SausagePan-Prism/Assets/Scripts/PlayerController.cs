@@ -134,57 +134,52 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	/**
-	 * Convert a (color) string to their complementary color.
-	 * 
-	 * Check if player has the complementary color of an enemy.
-	 * In case of 
-	 * 		true: enemy will be destroyed
-	 * 		false: player will be pushed back
+	 * Convert a color to their complementary color and set it on the colorMoth1Comp variable
 	 * */
-	public bool DamageCheckRGB(string enemyColor) 
+	public bool FindComplementaryColor(Color enemyColor)
 	{
-		Color comp;
+		Color enemyComplementaryColor = new Color();
 
-		switch (enemyColor) 
-		{
-			case "magenta": 
-				comp = Color.yellow;
-				break;
-			case "green":
-				comp = Color.red;
-				break;
-			case "yellow":
-				comp = Color.magenta;
-				break;
-			case "Red":
-				comp = Color.green;
-				break;
-			case "white":
-				comp = Color.black;
-				break;
-			case "black":
-				comp = Color.white;
-				break;
-			default:
-				comp = Color.black;
-				break;
+		// Red -> Green
+		if (enemyColor == new Color (1, 0, 0, 1)) {
+			enemyComplementaryColor = new Color (0, 1, 0, 1);
+		} 
+		
+		// Green -> Red
+		if (enemyColor == new Color (0, 1, 0, 1)) {
+			enemyComplementaryColor = new Color (1, 0, 0, 1);
+		} 
+		
+		// Blue -> Orange
+		if (enemyColor == new Color (0, 0, 1, 1)) {
+			enemyComplementaryColor = new Color (1, 0.5F, 0, 1);
+		} 
+		
+		// Orange -> Blue
+		if (enemyColor == new Color (1, 0.5F, 0, 1)) {
+			enemyComplementaryColor = new Color (0, 0, 1, 1);
+		} 
+		
+		// Violet -> Yellow
+		if (enemyColor == new Color (0.64F, 0, 0.94F, 1)) {
+			enemyComplementaryColor = new Color (1, 1, 0, 1);
+		} 
+		
+		// Yellow -> Violet
+		if (enemyColor == new Color (1, 1, 0, 1)) {
+			enemyComplementaryColor = new Color (0.64F, 0, 0.94F, 1);
 		}
 
-//		Debug.Log ("Recent color: " + mix);
-//		Debug.Log ("Complementary: " + comp);
-//		Debug.Log ("Enemy: " + enemyColor);
-
-		if (comp.Equals (mix)) 
+		if (enemyComplementaryColor.Equals (mixColor)) 
 		{
-			// Object destroyed
 			return true;
-		}
+		} 
 		else 
 		{
-			// Object not destroyed
 			PushBackPlayer();
-			enabled = false;	
 			Invoke("PlayerControllerIsAble", 2);
+			enabled = false;	
+
 			return false;
 		}
 	}
@@ -233,13 +228,6 @@ public class PlayerController : MonoBehaviour {
 
 		uIBottomManager.InitializeFullColorList ();
 		uIBottomManager.FillColorCircle (foundColors);
-
-//		if (Application.loadedLevel == 20) {
-//			PaintChar (Color.green, true);
-//		}
-//		if(Application.loadedLevelName == "Level6")
-		
-		
 	}
 	
 	// Update is called once per frame

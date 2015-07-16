@@ -14,7 +14,7 @@ public class switchExpl : MonoBehaviour {
 
 	private Sprite[] order;
 
-	private int wait = 100;
+	private int wait = 200;
 	private int next = 0;
 	// Use this for initialization
 	void Start () {
@@ -27,7 +27,7 @@ public class switchExpl : MonoBehaviour {
 			SpriteRenderer help = GetComponent<SpriteRenderer> ();
 
 			help.sprite = order[next];
-			wait = 100;
+			wait = 200;
 			next++;
 		}
 		wait--;

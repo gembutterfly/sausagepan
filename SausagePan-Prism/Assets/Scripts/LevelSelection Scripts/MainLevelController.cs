@@ -7,12 +7,15 @@ public class MainLevelController : MonoBehaviour {
 	public GameObject grayTextures;
 	public GameObject colorTextures;
 	public int levelNumber;
+
 	private GameManager gameManager;
+	private Inventory inventory;
 	public SpriteRenderer nextPosition;
 	// Use this for initialization
 	void Start () {
 		colorTextures.SetActive (false);
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 		nextPosition.enabled = false;
 		
 	}
@@ -33,7 +36,20 @@ public class MainLevelController : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			if(gameManager.getLevelValue (levelNumber - 1))
 			{
-				Application.LoadLevel(levelName);
+				Debug.Log (gameManager.getLevelValue (levelNumber - 1));
+				if(levelNumber == 6)
+				{
+					Debug.Log ("enter new second");
+					Debug.Log (inventory.InventoryContains(2));
+					Debug.Log(inventory.InventoryContains(5));
+					if(inventory.InventoryContains(2) && inventory.InventoryContains(5)){
+						Debug.Log ("enter new szene");
+						Application.LoadLevel ("szene5");}
+					else
+						return;
+				}
+				else
+					Application.LoadLevel(levelName);
 			}
 			else
 				return;

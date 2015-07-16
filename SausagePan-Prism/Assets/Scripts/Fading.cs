@@ -20,7 +20,9 @@ public class Fading : MonoBehaviour {
 		if (direction == 1) 
 		{
 			inventory.SaveInventory ();
-			uIBottomManager.SaveColorList();
+
+			if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) 
+				uIBottomManager.SaveColorList();
 		}
 
 		fadeDir = direction;
@@ -53,6 +55,8 @@ public class Fading : MonoBehaviour {
 	void Start()
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
-		uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+
+		if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) 
+			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 	}
 }

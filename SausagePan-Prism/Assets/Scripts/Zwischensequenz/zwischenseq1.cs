@@ -19,7 +19,7 @@ public class zwischenseq1 : MonoBehaviour {
 	
 	private Sprite[] order;
 	
-	private int wait = 100;
+	private int wait = 200;
 	private int next = 0;
 
 	public GameObject lastScreen;
@@ -38,7 +38,7 @@ public class zwischenseq1 : MonoBehaviour {
 				SpriteRenderer help = explanation.GetComponent<SpriteRenderer> ();
 				
 				help.sprite = order[next];
-				wait = 100;
+				wait = 200;
 				next++;
 			}
 			wait--;
@@ -58,7 +58,7 @@ public class zwischenseq1 : MonoBehaviour {
 	private void nextScene(){
 		scenecount++;
 		if (scenecount > 4)
-			Application.LoadLevel ("Level2");
+			Application.LoadLevel ("LevelSelection");
 		else
 			Application.LoadLevel ("szene" + scenecount);
 	}
@@ -67,6 +67,6 @@ public class zwischenseq1 : MonoBehaviour {
 		/*var go = GameObject.Find ("audio");
 		AudioSource help = go.GetComponent<AudioSource> ();
 		help.Stop ();*/
-		Application.LoadLevel ("Level2");
+		Application.LoadLevel ("LevelSelection");
 	}
 }
