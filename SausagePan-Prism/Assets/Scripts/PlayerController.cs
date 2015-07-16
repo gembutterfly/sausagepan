@@ -127,10 +127,11 @@ public class PlayerController : MonoBehaviour {
 	 **/
 	public void PushBackPlayer()
 	{
-		int new_x_position = (int)(0.01f * char2D.position.x * pushPower);
-		int new_y_position = 0;
-
-		char2D.AddForce(new Vector2(new_x_position, new_y_position), ForceMode2D.Impulse);
+		if (lookingRight) {
+			char2D.AddForce (new Vector2 (pushPower * 1000 * Time.deltaTime, 0));
+		} else {
+			char2D.AddForce (new Vector2 ((-1) * pushPower * 1000 * Time.deltaTime, 0));
+		}
 	}
 
 	/**
@@ -177,7 +178,7 @@ public class PlayerController : MonoBehaviour {
 		else 
 		{
 			PushBackPlayer();
-			Invoke("PlayerControllerIsAble", 2);
+			Invoke("PlayerControllerIsAble", 1);
 			enabled = false;	
 
 			return false;
