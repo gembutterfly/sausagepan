@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HelpScript_Lvl2 : MonoBehaviour {
+public class HelpScript_Lvl1 : MonoBehaviour {
 
 	public GameObject minigame;
 	public GameObject helpText;

@@ -8,11 +8,11 @@ public class GlobalSound : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		soundButton = GameObject.Find ("Sound");
-		int soundOn = PlayerPrefs.GetInt ("soundOn");
-
-		if (soundOn == 1)
-			soundButton.SetActive(true);
-		else
-			soundButton.SetActive(false);
+//		int soundOn = PlayerPrefs.GetInt ("soundOn");
+//
+//		if (soundOn == 1)
+//			soundButton.SetActive(true);
+//		else
+//			soundButton.SetActive(false);
 	}
 }

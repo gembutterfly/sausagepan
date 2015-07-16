@@ -42,7 +42,7 @@ public class UIBottomManager : MonoBehaviour {
 		LightColorCircleXL();					// Call function that set additive colors in the big color circles
 		ColorColorCircleXS ();					// Call function that set subtractive colors in the small color circles
 
-		lightColorCircleXL_isActive = true;		// Set the big additive color circles true 
+		lightColorCircleXL_isActive = true;
 	}
 
 	/**
@@ -223,7 +223,6 @@ public class UIBottomManager : MonoBehaviour {
 			j++;
 		}
 
-
 		// Set old color circles combination 
 		if (lightColorCircleXL_isActive)
 			SwitchToRight ();
@@ -277,10 +276,7 @@ public class UIBottomManager : MonoBehaviour {
 	public void ChangeColorCircles()
 	{
 		lightColorCircleXL_isActive = !lightColorCircleXL_isActive;
-	}
 
-	void OnGUI()
-	{		
 		if (lightColorCircleXL_isActive) 
 		{
 			LightColorCircleXL ();

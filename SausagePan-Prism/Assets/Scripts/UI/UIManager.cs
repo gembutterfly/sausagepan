@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour {
 	public void Start() 
 	{
 		sound = GameObject.Find ("Sound");
+//		sound.SetActive (false);
 		this.gameObject.AddComponent<GlobalSound>();
 
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
