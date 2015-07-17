@@ -16,10 +16,33 @@ public class QuizzButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		moth = GameObject.Find ("Quiz/moth_show").GetComponent<SpriteRenderer> ();
+		orangeGreyTextures.SetActive (true);
+		orangeColorTextures.SetActive (false);
+
+		violettGreyTextures.SetActive (true);
+		violettColorTextures.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		foreach (Item item in inventory.inventory) 
+		{
+			if (item.itemName != null)
+			{
+				if(item.itemName.Equals("orange_crystal"))
+				{
+					orangeGreyTextures.SetActive (false);
+					orangeColorTextures.SetActive (true);
+				}
+
+				if(item.itemName.Equals ("violet_crystal"))
+				{
+					violettGreyTextures.SetActive (false);
+					violettColorTextures.SetActive (true);
+				}
+			}
+		}
+		/*
 		if (manager.getHalfQuestionsValue()) {
 			orangeGreyTextures.SetActive (false);
 			orangeColorTextures.SetActive (true);
@@ -34,7 +57,7 @@ public class QuizzButton : MonoBehaviour {
 		} else {
 			violettGreyTextures.SetActive (true);
 			violettColorTextures.SetActive (false);
-		}
+		}**/
 
 		if (isClicked)
 			moth.enabled = false;
