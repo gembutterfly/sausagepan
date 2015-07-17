@@ -56,7 +56,8 @@ public class Fading : MonoBehaviour {
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
-		if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) 
+		if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) {
 			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+		}
 	}
 }
