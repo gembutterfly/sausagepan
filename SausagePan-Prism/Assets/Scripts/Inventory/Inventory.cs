@@ -39,6 +39,8 @@ public class Inventory : MonoBehaviour {
 				}
 
 				break;
+			} else {
+				if(inventory[i].itemName == itemDatabase.items[id].itemName) return;
 			}
 		}
 	}
