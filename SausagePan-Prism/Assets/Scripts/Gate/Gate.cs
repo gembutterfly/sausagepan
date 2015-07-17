@@ -5,44 +5,34 @@ using System.Collections;
 public class Gate : MonoBehaviour {
 
 	public string gateColor;
-	public GameObject gateinner;
-
-	private GameManager manager;
 	public int levelNumber;
 
+	private Animator animGate;
+	private GameManager manager;
 	private Color color;
 	private UIManager uIManager;
-	private Inventory inventory;
 	private SpriteRenderer playerBody;
-	private bool finishedLevel = false;
-	
+
 
 	public void OnTriggerEnter2D (Collider2D other)
 	{
 		if (other.CompareTag ("Player")) 
 		{
-			Debug.Log(playerBody.color);
-			Debug.Log(color);
 			if(playerBody.color.Equals(color))
-			{
-				gateinner.SetActive(true);
-				finishedLevel = true;
-				AddItemToInventory();
-			}
+				animGate.enabled = true;
 		}
-	}
+	}		
 
-	public void LoadNewLevel() 
+	public void NewLevel()
 	{
-//		finishedLevel = false;
-		StartCoroutine("ChangeLevel");
+		StartCoroutine ("ChangeLevel");
 	}
 
 	// Use this for initialization
 	void Start () 
 	{
 		playerBody = GameObject.FindGameObjectWithTag ("Body").GetComponent<SpriteRenderer>();
-		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		animGate = GameObject.Find("Gate").GetComponent<Animator> ();
 
 		// Convert gate color(string) to a color
 		switch (gateColor) 
@@ -74,61 +64,20 @@ public class Gate : MonoBehaviour {
 	}
 
 	/**
-	 * Add item into inventory and finish level
-	 * */
-	void AddItemToInventory()
-	{
-		switch (gateColor) 
-		{
-			case "blue": 
-				inventory.AddItem (0); 
-				break;
-			case "red": 
-				inventory.AddItem (1);
-				break;
-			case "orange": 
-				inventory.AddItem (2); 
-				break;
-			case "yellow":
-				inventory.AddItem (3);
-				break;
-			case "green": 
-				inventory.AddItem (4);
-				break;
-			case "magenta": 
-				inventory.AddItem (5);
-				break;
-			case "cyan": 
-				inventory.AddItem (6);
-				break;
-			default: 
-				inventory.AddItem (7);
-				break;
-		}
-	}
-
-	/**
 	 * Load level selection
 	 * */
 	IEnumerator ChangeLevel () 
 	{
+		Debug.Log ("ChangeLevel");
 		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
 
 		manager.setCounter (levelNumber);
 		manager.changeLevelValue (levelNumber);
 
-//		Application.LoadLevel ("LevelSelection");
-//		Application.LoadLevel (Application.loadedLevel - 1);
 		if (levelNumber == 1)
 			Application.LoadLevel ("szene1");
 		else
 			Application.LoadLevel ("LevelSelection");
-	}
-
-	void Update()
-	{
-		if (finishedLevel)
-			Invoke ("LoadNewLevel", 2);
 	}
 }

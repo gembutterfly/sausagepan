@@ -5,6 +5,9 @@ using System.Linq;
 
 public class PlayerController : MonoBehaviour {
 
+	// Player textures
+	public List<GameObject> playerTextures = new List<GameObject> ();
+
 	public float maxSpeed = 4;									// Speed of Player
 	public float pushPower = -550;								// A push power that will influence the player
 	public float jumpForce = 550;								// A variable for players jump power
@@ -46,10 +49,7 @@ public class PlayerController : MonoBehaviour {
 	 * */
 	public void PaintChar(Color newColor, bool additive)
 	{
-		GameObject bodypart = GameObject.Find ("blackBuddy/textures/head/head_side");
-		SpriteRenderer sprite = bodypart.GetComponent<SpriteRenderer> ();
-
-		oldColor = sprite.color;								// Get old color of figure
+		oldColor = playerTextures [0].GetComponent<SpriteRenderer> ().color;	// Get old color of figure
 		
 		// Determine mixed color
 		if (additive)											
@@ -60,19 +60,11 @@ public class PlayerController : MonoBehaviour {
 		FoundNewColor (newColor);								// Call a function that will check the new collected color and maybe it will be added to foundColors							
 		FoundNewColor (mixColor);								// Call a function that will check the new mixed color and maybe it will be added to foundColors
 
-		sprite.color = mixColor;								// Paint player with the mixed color
 
-		bodypart = GameObject.Find ("blackBuddy/textures/body");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = mixColor;
-		
-		bodypart = GameObject.Find ("blackBuddy/textures/foot_back");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = mixColor;
-		
-		bodypart = GameObject.Find ("blackBuddy/textures/foot_front");
-		sprite = bodypart.GetComponent<SpriteRenderer> ();
-		sprite.color = mixColor;
+		for (int i = 0; i < playerTextures.Count; i++) 
+		{
+			playerTextures[i].GetComponent<SpriteRenderer>().color = mixColor;
+		}
 	}
 	
 	/**
@@ -185,6 +177,18 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	public void CollectingItem()
+	{
+		anim.SetBool ("collecting", true);
+
+		Invoke ("ResetCollectingItemAnimation", 1);
+
+	}
+
+	void ResetCollectingItemAnimation()
+	{
+		anim.SetBool ("collecting", false);
+	}
 	/**
 	 * Reset player controller
 	 **/
@@ -229,6 +233,8 @@ public class PlayerController : MonoBehaviour {
 
 		uIBottomManager.InitializeFullColorList ();
 		uIBottomManager.FillColorCircle (foundColors);
+
+//		PaintChar (new Color (0, 1, 0, 1), true);
 	}
 	
 	// Update is called once per frame
@@ -270,3 +276,4 @@ public class PlayerController : MonoBehaviour {
 		
 	}
 }
+
