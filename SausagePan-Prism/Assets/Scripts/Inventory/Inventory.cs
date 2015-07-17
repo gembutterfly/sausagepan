@@ -149,7 +149,7 @@ public class Inventory : MonoBehaviour {
 						new_x = x + 700 + ((y - 6) * (-45));
 
 					slotRect = new Rect(new_x, new_y, 40, 40); 
-					itemRect = new Rect(new_x, new_y, 30, 30);
+					itemRect = new Rect(new_x + 5, new_y + 5, 30, 30);
 				}
 				else
 				{

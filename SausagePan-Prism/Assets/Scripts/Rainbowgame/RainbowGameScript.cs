@@ -17,6 +17,14 @@ public class RainbowGameScript : MonoBehaviour {
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
+		inventory.AddItem (0);
+		inventory.AddItem (1);
+		inventory.AddItem (2);
+		inventory.AddItem (3);
+		inventory.AddItem (4);
+		inventory.AddItem (5);
+		inventory.AddItem (6);
+
 		excl.SetActive(true);
 		button.SetActive(true);
 		light_full.SetActive(false);
@@ -32,12 +40,13 @@ public class RainbowGameScript : MonoBehaviour {
 			inventory.inventory [3].itemName.Equals ("green_crystal") &&
 			inventory.inventory [4].itemName.Equals ("cyan_crystal") &&
 			inventory.inventory [5].itemName.Equals ("blue_crystal") &&
-			inventory.inventory [6].itemName.Equals ("magenta_crystal")) 
+			inventory.inventory [6].itemName.Equals ("violet_crystal")) 
 		{
 			excl.SetActive (false);
 			button.SetActive (false);
 			light_full.SetActive (true);
 			inventory.showInventory = false;
+			Invoke ("next", 3);
 
 		} else 
 		{
@@ -59,5 +68,10 @@ public class RainbowGameScript : MonoBehaviour {
 	void ResetMothBubble()
 	{
 		mothBubble.SetActive (false);
+	}
+
+	void next()
+	{
+		Application.LoadLevel ("Outro1");
 	}
 }

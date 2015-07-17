@@ -64,9 +64,9 @@ public class zwischenseq1 : MonoBehaviour {
 	}
 
 	public void Skip(){
-		/*var go = GameObject.Find ("audio");
+		var go = GameObject.Find ("audio2");
 		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();*/
+		help.Stop ();
 		Application.LoadLevel ("LevelSelection");
 	}
 }
