@@ -8,6 +8,8 @@ public class SwitchQuestion : MonoBehaviour {
 	public Color wrongAns   = new Color(1.0f, .3f, .3f, 1.0f);
 
 	public Inventory inventory;
+	//es tut mir leid, aber Inventory wollte bei der anderen Methode leider nicht helfen
+	public GameManager manager;
 
 	public QuizQuestion[] questions;
 	public GameObject buttonA;
@@ -151,10 +153,14 @@ public class SwitchQuestion : MonoBehaviour {
 				if(correctlyAnsweredQuestions == 5) {
 					inventory.AddItem(2);
 					feedback.GetComponent<Text> ().text = "Orange gefunden!";
+					//erster bool für orange
+					manager.setHalfQuestionsValue(true);
 				}
 				if(correctlyAnsweredQuestions == 9)	{
 					inventory.AddItem(5);
 					feedback.GetComponent<Text> ().text = "Lila gefunden!";
+					//zweiter für violett
+					manager.setAllQuestionsValue(true);
 				}
 			}
 

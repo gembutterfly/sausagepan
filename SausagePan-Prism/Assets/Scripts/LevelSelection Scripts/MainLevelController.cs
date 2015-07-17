@@ -43,6 +43,12 @@ public class MainLevelController : MonoBehaviour {
 						Debug.Log (item.itemName);
 					}
 
+					if(gameManager.getHalfQuestionsValue() && gameManager.getAllQuestionsValue())
+					{
+						Application.LoadLevel("szene5");
+					}
+					else
+						return;
 					//Debug.Log ("enter new second");
 					//Debug.Log (inventory.inventory [1].itemName.Equals ("orange_crystal"));
 					//Debug.Log(inventory.inventory [6].itemName.Equals ("magenta_crystal"));

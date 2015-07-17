@@ -20,7 +20,7 @@ public class QuizzButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (inventory.InventoryContains (2)) {
+		if (manager.getHalfQuestionsValue()) {
 			orangeGreyTextures.SetActive (false);
 			orangeColorTextures.SetActive (true);
 		} else {
@@ -28,7 +28,7 @@ public class QuizzButton : MonoBehaviour {
 			orangeColorTextures.SetActive (false);
 		}
 
-		if (inventory.InventoryContains (5)) {
+		if (manager.getAllQuestionsValue()) {
 			violettGreyTextures.SetActive (false);
 			violettColorTextures.SetActive (true);
 		} else {
