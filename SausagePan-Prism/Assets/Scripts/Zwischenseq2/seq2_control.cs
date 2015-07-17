@@ -53,9 +53,9 @@ public class seq2_control : MonoBehaviour {
 	}
 	
 	public void Skip(){
-		/*var go = GameObject.Find ("audio");
+		var go = GameObject.Find ("audio3");
 		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();*/
+		help.Stop ();
 		Application.LoadLevel ("Level5");
 	}
 }
