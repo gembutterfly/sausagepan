@@ -68,7 +68,6 @@ public class Gate : MonoBehaviour {
 	 * */
 	IEnumerator ChangeLevel () 
 	{
-		Debug.Log ("ChangeLevel");
 		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
 

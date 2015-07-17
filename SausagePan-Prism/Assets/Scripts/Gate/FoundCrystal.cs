@@ -17,9 +17,10 @@ public class FoundCrystal : MonoBehaviour {
 	{
 		if (other.CompareTag ("Player")) 
 		{
-			Invoke ("LoadNewLevel", 3);
-			foundItemMessage.SetActive(true);
+			Invoke ("LoadNewLevel", 4);
+	
 			animGate.enabled = false;
+			foundItemMessage.SetActive(true);
 			gateCrystal.SetActive(false);
 			gateinner.SetActive(true);
 			playerController.CollectingItem();

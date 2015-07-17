@@ -3,11 +3,11 @@ using System.Collections;
 
 public class GlobalSound : MonoBehaviour {
 
-	GameObject soundButton;
+//	GameObject soundButton;
 
 	// Use this for initialization
 	void Start () {
-		soundButton = GameObject.Find ("Sound");
+//		soundButton = GameObject.Find ("Sound");
 //		int soundOn = PlayerPrefs.GetInt ("soundOn");
 //
 //		if (soundOn == 1)
