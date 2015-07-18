@@ -4,30 +4,14 @@ using System.Collections;
 public class MainLevelController : MonoBehaviour {
 
 	public string levelName;
-	public GameObject grayTextures;
-	public GameObject colorTextures;
 	public int levelNumber;
 
 	private GameManager gameManager;
-	public Inventory inventory;
-	public SpriteRenderer nextPosition;
+	private Inventory inventory;
 	// Use this for initialization
 	void Start () {
-		colorTextures.SetActive (false);
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
-		nextPosition.enabled = false;
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-		if (gameManager.getLevelValue (levelNumber)) {
-			grayTextures.SetActive(false);
-			colorTextures.SetActive(true);
-			nextPosition.enabled = true;
-		}
-		
+		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 	}
 
 	void OnMouseDown()
@@ -37,31 +21,22 @@ public class MainLevelController : MonoBehaviour {
 			{
 				if(levelNumber == 6)
 				{
-					foreach(Item item in inventory.inventory)
+					int counter = 0;
+					for(int x=0; x < inventory.inventory.Count; x++)
 					{
-						Debug.Log (item.itemID);
-						Debug.Log (item.itemName);
+						if(inventory.inventory[x].itemName != null)
+							counter++;
 					}
 
-					if(gameManager.getHalfQuestionsValue() && gameManager.getAllQuestionsValue())
-					{
-						Application.LoadLevel("szene5");
-					}
-					else
-						return;
-					//Debug.Log ("enter new second");
-					//Debug.Log (inventory.inventory [1].itemName.Equals ("orange_crystal"));
-					//Debug.Log(inventory.inventory [6].itemName.Equals ("magenta_crystal"));
-					/*if(inventory.inventory[2].itemName.Equals("orange_crystal") && inventory.inventory [5].itemName.Equals ("magenta_crystal"))
-						Application.LoadLevel ("szene5");
-					else
-						return;*/
+					Debug.Log ("counter " + counter);
+
+					if(counter == 7)
+						Application.LoadLevel (levelName);
+					else return;
 				}
-				else
-					Application.LoadLevel(levelName);
+
+				Application.LoadLevel (levelName);
 			}
-			else
-				return;
 
 		}
 	}

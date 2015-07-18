@@ -2,67 +2,24 @@
 using System.Collections;
 
 public class QuizzButton : MonoBehaviour {
-
-	public GameManager manager;
+	
 	public SwitchLevel level;
-	public GameObject violettColorTextures;
-	public GameObject violettGreyTextures;
-	public GameObject orangeColorTextures;
-	public GameObject orangeGreyTextures;
-	public Inventory inventory;
+	public MeshRenderer meshRenderer;
 
-	private  SpriteRenderer moth;
+	public GameObject moth;
 	private static bool isClicked = false;
 	// Use this for initialization
 	void Start () {
-		moth = GameObject.Find ("Quiz/moth_show").GetComponent<SpriteRenderer> ();
-		orangeGreyTextures.SetActive (true);
-		orangeColorTextures.SetActive (false);
+		meshRenderer.sortingOrder = 6;
 
-		violettGreyTextures.SetActive (true);
-		violettColorTextures.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		foreach (Item item in inventory.inventory) 
-		{
-			if (item.itemName != null)
-			{
-				if(item.itemName.Equals("orange_crystal"))
-				{
-					orangeGreyTextures.SetActive (false);
-					orangeColorTextures.SetActive (true);
-				}
-
-				if(item.itemName.Equals ("violet_crystal"))
-				{
-					violettGreyTextures.SetActive (false);
-					violettColorTextures.SetActive (true);
-				}
-			}
-		}
-		/*
-		if (manager.getHalfQuestionsValue()) {
-			orangeGreyTextures.SetActive (false);
-			orangeColorTextures.SetActive (true);
-		} else {
-			orangeGreyTextures.SetActive (true);
-			orangeColorTextures.SetActive (false);
-		}
-
-		if (manager.getAllQuestionsValue()) {
-			violettGreyTextures.SetActive (false);
-			violettColorTextures.SetActive (true);
-		} else {
-			violettGreyTextures.SetActive (true);
-			violettColorTextures.SetActive (false);
-		}**/
-
 		if (isClicked)
-			moth.enabled = false;
+			moth.SetActive (false);
 		else
-			moth.enabled = true;
+			moth.SetActive (true);
 	}
 
 	void OnMouseDown()
@@ -71,4 +28,5 @@ public class QuizzButton : MonoBehaviour {
 		level.goToLevel ("Quizze");
 		//Application.LoadLevel ("Quizze");
 	}
+
 }

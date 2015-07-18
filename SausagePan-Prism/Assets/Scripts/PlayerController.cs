@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour {
 		uIBottomManager.InitializeFullColorList ();
 		uIBottomManager.FillColorCircle (foundColors);
 
-		PaintChar (new Color (0, 1, 1, 1), true);
+//		PaintChar (new Color (0, 1, 1, 1), true);
 	}
 	
 	// Update is called once per frame
