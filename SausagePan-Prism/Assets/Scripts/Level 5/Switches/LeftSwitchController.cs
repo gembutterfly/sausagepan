@@ -5,22 +5,18 @@ public class LeftSwitchController : MonoBehaviour {
 	
 	public Transform prism;
 	public float speed = 8;
+	public float minValue;
 	
 	// Use this for initialization
 	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
 	}
 
 	void OnMouseDrag()
 	{
 		if(Input.GetMouseButton(0))
 		{
-			prism.position += Vector3.left * speed * Time.deltaTime;
-			Debug.Log("Enter left");
+			if(prism.position.x >= minValue)
+				prism.position += Vector3.left * speed * Time.deltaTime;
 		}
 	}
 
