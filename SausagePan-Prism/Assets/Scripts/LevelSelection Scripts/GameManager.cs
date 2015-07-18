@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
 	static int counter = 0;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
