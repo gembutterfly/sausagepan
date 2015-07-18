@@ -13,8 +13,12 @@ public class UIManager : MonoBehaviour {
 	public void Start() 
 	{
 		sound = GameObject.Find ("Sound");
-//		sound.SetActive (false);
-		this.gameObject.AddComponent<GlobalSound>();
+		int soundOn = PlayerPrefs.GetInt ("soundOn");
+
+		if (soundOn == 1)
+			sound.SetActive(true);
+		else
+			sound.SetActive(false);
 
 		if (  !( Application.loadedLevelName.Equals ("Startbildschirm") 
 		      || Application.loadedLevelName.Equals ("Credits")
