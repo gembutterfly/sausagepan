@@ -49,7 +49,8 @@ public class UIManager : MonoBehaviour {
 		      || Application.loadedLevelName.Equals ("outro8")
 		      || Application.loadedLevelName.Equals ("outro9")
 		      || Application.loadedLevelName.Equals ("outro10")
-		      || Application.loadedLevelName.Equals ("outro11")))
+		      || Application.loadedLevelName.Equals ("outro11")
+		      || Application.loadedLevelName.Equals ("Quizze")))
 			inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
 		if (  !( Application.loadedLevelName.Equals ("Rainbowgame") 
@@ -83,7 +84,8 @@ public class UIManager : MonoBehaviour {
 		      || Application.loadedLevelName.Equals ("outro8")
 		      || Application.loadedLevelName.Equals ("outro9")
 		      || Application.loadedLevelName.Equals ("outro10")
-		      || Application.loadedLevelName.Equals ("outro11"))) 
+		      || Application.loadedLevelName.Equals ("outro11")
+		      || Application.loadedLevelName.Equals ("Quizze"))) 
 		{
 			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 
