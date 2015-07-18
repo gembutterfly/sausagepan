@@ -13,7 +13,7 @@ public class InkChar : MonoBehaviour {
 		case "blue": col = Color.blue; break;
 		case "red": col = Color.red; break;
 		case "white": col = Color.white; break;
-		case "yellow": col = Color.yellow; break;
+		case "yellow": col = new Color(1, 1, 0, 1); break;
 		case "green": col = Color.green; break;
 		case "magenta": col = Color.magenta; break;
 		case "cyan": col = Color.cyan; break;
