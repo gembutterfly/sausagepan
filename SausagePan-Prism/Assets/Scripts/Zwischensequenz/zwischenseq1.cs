@@ -4,7 +4,7 @@ using System.Collections;
 public class zwischenseq1 : MonoBehaviour {
 	public int scenecount;
 	private int zahl;
-	private int[] time = new int[]{180, 150, 1000, 300};
+	private int[] time = new int[]{180, 150, 2000, 300};
 
 	public GameObject explanation;
 	public Sprite expl2;
