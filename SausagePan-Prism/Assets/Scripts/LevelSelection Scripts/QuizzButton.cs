@@ -4,21 +4,22 @@ using System.Collections;
 public class QuizzButton : MonoBehaviour {
 	
 	public SwitchLevel level;
-	
-	private  SpriteRenderer moth;
+	public MeshRenderer meshRenderer;
+
+	public GameObject moth;
 	private static bool isClicked = false;
 	// Use this for initialization
 	void Start () {
-		moth = GameObject.Find ("Quiz/moth_show").GetComponent<SpriteRenderer> ();
+		meshRenderer.sortingOrder = 6;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (isClicked)
-			moth.enabled = false;
+			moth.SetActive (false);
 		else
-			moth.enabled = true;
+			moth.SetActive (true);
 	}
 
 	void OnMouseDown()
@@ -27,4 +28,5 @@ public class QuizzButton : MonoBehaviour {
 		level.goToLevel ("Quizze");
 		//Application.LoadLevel ("Quizze");
 	}
+
 }

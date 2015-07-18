@@ -26,6 +26,8 @@ public class WorldController : MonoBehaviour {
 //		inventory.AddItem (2);
 //		inventory.AddItem (5);
 
+		inventory.LoadInventory ();
+
 		for (int x=0; x < colorTextures.Count; x++) 
 		{
 			colorTextures[x].SetActive(false);
