@@ -18,6 +18,7 @@ public class WorldController : MonoBehaviour {
 		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 
+		inventory.LoadInventory ();
 		/*inventory.AddItem (0);
 		inventory.AddItem (3);
 		inventory.AddItem (1);
