@@ -16,13 +16,9 @@ public class intro : MonoBehaviour {
 	public GameObject eyes;
 	public GameObject hitSound;
 
-	private Fading fading;
-
 	// Use this for initialization
 	void Start () {
 		zahl = time [introcount - 1];
-
-		fading = GameObject.Find ("Main Camera").GetComponent<Fading> ();
 	}
 	
 	// Update is called once per frame

@@ -21,7 +21,7 @@ public class Inventory : MonoBehaviour {
 
 	public void AddItem(int id)
 	{
-		Debug.Log ("AddItem " + id);
+//		Debug.Log ("AddItem " + id);
 		for(int i = 0; i < inventory.Count; i++)
 		{
 			if(inventory[i].itemName == null)
@@ -199,17 +199,8 @@ public class Inventory : MonoBehaviour {
 							draggedItem = null;
 						}
 					} 
-					else
-					{
-						if (e.type == EventType.mouseUp && draggingItem)
-						{
-							inventory[i] = draggedItem;
-							draggingItem = false;
-							draggedItem = null;
-						}
-					}
 				}
-				
+
 				if(tooltip == "")
 				{
 					showTooltip = false;

@@ -6,7 +6,6 @@ public class RainbowGameScript : MonoBehaviour {
 
 	public GameObject excl;
 	public GameObject light_full;
-	public GameObject button;
 	public GameObject mothBubble;
 	public GameObject help;
 
@@ -17,15 +16,7 @@ public class RainbowGameScript : MonoBehaviour {
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
-//		inventory.LoadInventory ();
-
-		inventory.AddItem (0);
-		inventory.AddItem (1);
-		inventory.AddItem (2);
-		inventory.AddItem (3);
-		inventory.AddItem (4);
-		inventory.AddItem (5);
-		inventory.AddItem (6);
+		inventory.LoadInventory ();
 
 		excl.SetActive(true);
 		light_full.SetActive(false);
@@ -33,6 +24,7 @@ public class RainbowGameScript : MonoBehaviour {
 		inventory.showInventory = true;
 
 		Invoke("Evidence", 10);
+		Invoke ("Check1", 10);
 	}
 
 	public void ShowHelp()
@@ -56,26 +48,53 @@ public class RainbowGameScript : MonoBehaviour {
 
 	void next()
 	{
+		StartCoroutine ("ChangeLevel");
+	}
+
+	IEnumerator ChangeLevel () 
+	{
+		float fadeTime = GameObject.Find("UIManager").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		
 		Application.LoadLevel ("Outro1");
 	}
 
-	void Update()
+	void Check1()
 	{
-		if (inventory.inventory [0].itemName.Equals ("red_crystal") &&
-		    inventory.inventory [1].itemName.Equals ("orange_crystal") &&
-		    inventory.inventory [2].itemName.Equals ("yellow_crystal") &&
-		    inventory.inventory [3].itemName.Equals ("green_crystal") &&
-		    inventory.inventory [4].itemName.Equals ("cyan_crystal") &&
-		    inventory.inventory [5].itemName.Equals ("blue_crystal") &&
-		    inventory.inventory [6].itemName.Equals ("violet_crystal")) 
+		bool invenotryNotNull = false;
+
+		for (int i = 0; i < inventory.inventory.Count; i++) 
 		{
-			excl.SetActive (false);
-			button.SetActive (false);
-			light_full.SetActive (true);
-			inventory.showInventory = false;
-			Invoke ("next", 3);
-			
-		} 
+			if (inventory.inventory [i].itemName != null) 
+				invenotryNotNull = true;
+			else
+				invenotryNotNull = false;
+		}
+
+		if (invenotryNotNull) 
+		{
+			if (inventory.inventory [0].itemName.Equals ("red_crystal") &&
+				inventory.inventory [1].itemName.Equals ("orange_crystal") &&
+				inventory.inventory [2].itemName.Equals ("yellow_crystal") &&
+				inventory.inventory [3].itemName.Equals ("green_crystal") &&
+				inventory.inventory [4].itemName.Equals ("cyan_crystal") &&
+				inventory.inventory [5].itemName.Equals ("blue_crystal") &&
+				inventory.inventory [6].itemName.Equals ("violet_crystal")) 
+			{
+				excl.SetActive (false);
+				light_full.SetActive (true);
+				inventory.showInventory = false;
+				Invoke ("next", 2);
+				
+			} else {
+				Invoke ("Check2", 2);
+			}
+		}
+	}
+
+	void Check2 ()
+	{
+		Invoke ("Check1", 1);
 	}
 
 	void Evidence()

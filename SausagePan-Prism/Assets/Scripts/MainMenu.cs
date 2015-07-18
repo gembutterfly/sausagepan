@@ -76,7 +76,7 @@ public class MainMenu : MonoBehaviour {
 	IEnumerator ChangeLevel () {
 		float fadeTime = BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
-		Application.LoadLevel (level);
+		Application.LoadLevel ("intro");
 	}
 
 
