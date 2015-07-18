@@ -58,11 +58,13 @@ public class RainbowGameScript : MonoBehaviour {
 	public void ShowHelp()
 	{
 		help.SetActive (true);
+		inventory.showInventory = false;
 	}
 
 	public void HideHelp()
 	{
 		help.SetActive (false);
+		inventory.showInventory = true;
 	}
 
 	void ResetMothBubble()
