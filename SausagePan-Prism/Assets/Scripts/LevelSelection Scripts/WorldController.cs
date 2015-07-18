@@ -18,13 +18,13 @@ public class WorldController : MonoBehaviour {
 		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 
-		inventory.AddItem (0);
-		inventory.AddItem (3);
-		inventory.AddItem (1);
-		inventory.AddItem (4);
-		inventory.AddItem (6);
-		inventory.AddItem (2);
-		inventory.AddItem (5);
+//		inventory.AddItem (0);
+//		inventory.AddItem (3);
+//		inventory.AddItem (1);
+//		inventory.AddItem (4);
+//		inventory.AddItem (6);
+//		inventory.AddItem (2);
+//		inventory.AddItem (5);
 
 		for (int x=0; x < colorTextures.Count; x++) 
 		{

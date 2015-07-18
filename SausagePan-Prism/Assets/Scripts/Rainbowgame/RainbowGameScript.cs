@@ -17,6 +17,8 @@ public class RainbowGameScript : MonoBehaviour {
 	{
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
+//		inventory.LoadInventory ();
+
 		inventory.AddItem (0);
 		inventory.AddItem (1);
 		inventory.AddItem (2);
@@ -26,33 +28,11 @@ public class RainbowGameScript : MonoBehaviour {
 		inventory.AddItem (6);
 
 		excl.SetActive(true);
-		button.SetActive(true);
 		light_full.SetActive(false);
 		mothBubble.SetActive (false);
 		inventory.showInventory = true;
-	}
-	
-	public void CheckColors()
-	{
-		if (inventory.inventory [0].itemName.Equals ("red_crystal") &&
-			inventory.inventory [1].itemName.Equals ("orange_crystal") &&
-			inventory.inventory [2].itemName.Equals ("yellow_crystal") &&
-			inventory.inventory [3].itemName.Equals ("green_crystal") &&
-			inventory.inventory [4].itemName.Equals ("cyan_crystal") &&
-			inventory.inventory [5].itemName.Equals ("blue_crystal") &&
-			inventory.inventory [6].itemName.Equals ("violet_crystal")) 
-		{
-			excl.SetActive (false);
-			button.SetActive (false);
-			light_full.SetActive (true);
-			inventory.showInventory = false;
-			Invoke ("next", 3);
 
-		} else 
-		{
-			mothBubble.SetActive (true);
-			Invoke("ResetMothBubble", 3);
-		}
+		Invoke("Evidence", 10);
 	}
 
 	public void ShowHelp()
@@ -70,10 +50,37 @@ public class RainbowGameScript : MonoBehaviour {
 	void ResetMothBubble()
 	{
 		mothBubble.SetActive (false);
+
+		Invoke("Evidence", 20);
 	}
 
 	void next()
 	{
 		Application.LoadLevel ("Outro1");
+	}
+
+	void Update()
+	{
+		if (inventory.inventory [0].itemName.Equals ("red_crystal") &&
+		    inventory.inventory [1].itemName.Equals ("orange_crystal") &&
+		    inventory.inventory [2].itemName.Equals ("yellow_crystal") &&
+		    inventory.inventory [3].itemName.Equals ("green_crystal") &&
+		    inventory.inventory [4].itemName.Equals ("cyan_crystal") &&
+		    inventory.inventory [5].itemName.Equals ("blue_crystal") &&
+		    inventory.inventory [6].itemName.Equals ("violet_crystal")) 
+		{
+			excl.SetActive (false);
+			button.SetActive (false);
+			light_full.SetActive (true);
+			inventory.showInventory = false;
+			Invoke ("next", 3);
+			
+		} 
+	}
+
+	void Evidence()
+	{
+		mothBubble.SetActive (true);
+		Invoke("ResetMothBubble", 10);
 	}
 }
