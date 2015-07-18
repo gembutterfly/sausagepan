@@ -40,7 +40,7 @@ public class outro : MonoBehaviour {
 	private void nextOutro(){
 		outrocount++;
 		if (outrocount > 11)
-			Application.LoadLevel ("Credits");
+			StartCoroutine ("ChangeLevel");
 		else
 			Application.LoadLevel ("outro" + outrocount);
 	}
@@ -49,6 +49,14 @@ public class outro : MonoBehaviour {
 //		var go = GameObject.Find ("audio");
 //		AudioSource help = go.GetComponent<AudioSource> ();
 //		help.Stop ();
-		Application.LoadLevel ("Credits");
+		StartCoroutine ("ChangeLevel");
+	}
+
+	IEnumerator ChangeLevel () 
+	{
+		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		
+		Application.LoadLevel ("Credits"); 
 	}
 }
