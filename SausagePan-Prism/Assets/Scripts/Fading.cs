@@ -19,9 +19,13 @@ public class Fading : MonoBehaviour {
 	{
 		if (direction == 1) 
 		{
-			inventory.SaveInventory ();
+			if (!(Application.loadedLevelName.Equals ("Startbildschirm") || Application.loadedLevelName.Equals ("Credits")))
+				inventory.SaveInventory ();
 
-			if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) 
+			if (!( Application.loadedLevelName.Equals ("Rainbowgame") 
+			    || Application.loadedLevelName.Equals ("LevelSelection")
+			    || Application.loadedLevelName.Equals ("Credits")
+			    || Application.loadedLevelName.Equals ("Startbildschirm"))) 
 				uIBottomManager.SaveColorList();
 		}
 
@@ -54,9 +58,13 @@ public class Fading : MonoBehaviour {
 
 	void Start()
 	{
-		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		if (!(Application.loadedLevelName.Equals ("Startbildschirm") || Application.loadedLevelName.Equals ("Credits")))
+			inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
-		if (!Application.loadedLevelName.Equals ("Rainbowgame") || Application.loadedLevelName.Equals ("LevelSelection")) {
+		if (!( Application.loadedLevelName.Equals ("Rainbowgame") 
+		    || Application.loadedLevelName.Equals ("LevelSelection")
+		    || Application.loadedLevelName.Equals ("Credits")
+		    || Application.loadedLevelName.Equals ("Startbildschirm"))) {
 			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
 		}
 	}
