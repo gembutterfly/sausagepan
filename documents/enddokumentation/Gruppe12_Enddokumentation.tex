@@ -7,13 +7,14 @@
 \usepackage{xcolor}
 \usepackage{geometry}
 \usepackage{ngerman}
+\usepackage{textcomp}
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \renewcommand{\chaptername}{}
 \usepackage{titlesec} 
 \titleformat{\chapter}{\bfseries\Huge}{\thechapter.\quad}{0em}{}
 \geometry{a4paper, top=15mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=10mm}
-\pagestyle{empty} %keine Kopf-/Fußzeile
+%\pagestyle{empty} %keine Kopf-/Fußzeile
 \author{Sausage Pan}
 \begin{document}
 	%Farbdefinierung
@@ -34,34 +35,52 @@
 		\includegraphics[width=160mm]{header2}
 	\end{center}
 	%Eigentlicher Inhalt :D
-	\tableofcontents
-	\clearpage
-	\chapter{Einführung}
-	\section{Gruppe}
+	\par\bigskip
+	\Eins{Inhaltsverzeichnis}\\
+	\Text
+	\begin{enumerate}
+		\item Gruppe
+		\item Spielkonzept
+		\subitem 2.1 Handlung
+		\subitem 2.2 Spielmechanik
+		\subitem 2.3 Steuerung
+		\subitem 2.4 Didaktische Überlegung
+		\item Technische Umsetzung
+		\item Planung
+		\subitem 4.1 Aufgabenverteilung
+		\subitem 4.2 Zeitplan
+		\subitem 4.3 Kostenabschätzung
+		\subitem 4.4 Fazit
+		\item Evaluation innerhalb der Zielgruppe
+		\item Statements der Gruppenmitglieder
+		\subitem 6.1 Alexandra
+		\subitem 6.2 Bettina
+		\subitem 6.3 Georg
+		\subitem 6.4 Philipp
+		\subitem 6.5 Sara
+		\subitem 6.6 Sergej
+	\end{enumerate}	
+		\clearpage
+		\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	\Eins{1. Gruppe}\\\par\medskip\Text
 	Wir sind Gruppe 12 des Projektes Medienpsychologie und -didaktik 2015. Unser Gruppenchef ist Georg Eckert. 
-	Philipp Roscher ist unser Protokollant. Weitere Mitglieder sind Bettina Blasberg, Sara Groß, Alexandra Krien und Sergej 				Sinakow.
+	Philipp Roscher ist unser Protokollant. Weitere Mitglieder sind Bettina Blasberg, Sara Groß, Alexandra Krien und Sergej Sinakow.\\\par\smallskip
 
-	\section{Konzept}
-	\subsection{Setting}
-		Das Spiel bewegt sich in einer fiktiven Welt. Der Spieler übernimmt dabei die
-	Rolle eines namenlosen Helden, welcher weder hinsichtlich des Alters, Geschlechts
-	etc. spezifiziert wird.
-	Ausgangssituation für das Spiel ist, dass in Folge eines Missgeschickes der Regenbogen
-	in Fragmente zerspringt. Als Resultat wird die Welt in ein einheitliches
-	Grau getaucht.
-	Aufgabe ist es nun, diese Fragmente wieder einzusammeln um letztendlich den
-	Regenbogen neu zusammensetzen zu können. Diese Fragmente finden sich in den
-	einzelnen Level wieder, die als Jump'n'Run angelegt werden.
-	Der Spieler soll dabei ein grundlegendes Verständnis für die Farbenlehre erhalten.
-	Jedes Level fokussiert sich dabei auf ein anderes Teilthema.
-	Als unterstützende Hilfe steht dem Spieler stets eine Art Mentor zur Verfügung, welcher um Hilfe gebeten
-	werden kann. So wollen wir möglicherweise aufkommenden Frust eindämpfen.
-	Weiterhin existieren einige Zwischenlevel, die andere Spielmechaniken nutzen. Diese treten in Form von kleinen
-	Puzzles bzw. Quiz auf.
-	Der Spielfortschritt wird anhand der Übersichtskarte angezeigt. Diese ist am Anfang komplett grau. Nachdem eine
-	Farbe in einem Level gewonnen wurde, erscheint diese schließlich auch wieder auf der Karte.
-
-	\subsection{Spielmechaniken}
+	\Eins{2. Spielkonzept}\\\par\medskip\Text
+	Unser Spiel trägt den Namen \enquote{PRISMA}. Es soll interessierten Kindern im Alter von ca. 10/11 Jahren ein grundlegendes Verständnis für die Farbenlehre vermittelt werden. Es ist kein besonderes Vorwissen nötig, da es in jedem Level ein Hilfemenü gibt, dass dem Spieler alles wichtige erklärt.\\
+	Jedes Level fokussiert sich dabei auf ein anderes Teilthema.\\
+	Außerdem existieren einige Minispiele in den Leveln, die zusätzlich zur schriftlichen Erklärung dem Spieler die Möglichkeit geben das eben gelernte auszuprobieren.\\
+	Der Spielfortschritt wird anhand der Übersichtskarte angezeigt. Diese ist am Anfang komplett grau. Nachdem eine Farbe in einem Level gewonnen wurde, erscheint diese auch auf der Karte.\\
+	Über die Übersichtskarte hat man außerdem Zugriff zum Quiz, welches zur weiteren Festigung des Gelernten dient.\\\par\smallskip
+	
+	\Zwei{2.1 Handlung}\\\par\medskip\Text
+	Das Spiel bewegt sich in einer fiktiven Welt. Der Spieler übernimmt dabei die Rolle eines namenlosen Helden, welcher weder hinsichtlich des Alters, Geschlechts etc. spezifiziert wird.\\
+	Ausgangssituation für das Spiel ist, dass in Folge eines Missgeschickes der Regenbogen in Fragmente zerspringt. Als Resultat wird die Welt in ein einheitliches Grau getaucht.\\
+	Aufgabe ist es nun, diese Fragmente wieder einzusammeln um letztendlich den	Regenbogen neu zusammensetzen zu können. Diese Fragmente finden sich in den einzelnen Level, die als Jump'n'Run angelegt werden, als auch im Quiz.\\
+	Erst wenn man alle Fragmente gesammelt hat, kann man das letzte Level betreten um dort den Berg zu erklimmen und ganz oben den Regenbogen erneut erstrahlen zu lassen und die gesamte Welt wieder in Farben zu tauchen.\\\par\smallskip
+	
+	\Zwei{2.2 Spielmechaniken}\\\par\medskip\Text
 	Das Spiel wird mit 9 Grundmechaniken auskommen. Die ersten zwei sind genretypisch laufen und
 	springen. Dazu kommt das Verschieben von Gegenständen. Die Farblehre wird durch die Prinzipien
 	der additiven und subtraktiven Farbmischung, sowie der Brechung von Licht vermittelt.\\
@@ -76,13 +95,38 @@
 	\item Besiegen von Gegnern durch Sprünge bei vorherigem Einfärben mit der Komplementärfarbe
 	\item Verdeckung durch Gegenstände, welche vor Lichtstrahlen geschoben werden
 	\end{itemize}
-
-	\subsection{Steuerung}
+	\par\smallskip
+	
+	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	
+	\Zwei{2.3 Steuerung}\\\par\medskip\Text
 	Gespielt wird mit Maus und Tastatur.
-	Innerhalb der Level kann sich der Spieler über die Pfeiltasten bewegen.
+	Innerhalb der Level kann sich der Spieler über die Pfeiltasten bewegen. Das Quiz und die Minispiele werden über Mausklicks gesteuert.\\\par\smallskip
+	
+	\Zwei{2.4 Didaktische Überlegungen}\\\par\medskip\Text
+	Für uns war es wichtig das Spiel möglichst intuitiv zu halten und nach Möglichkeit wissen zu vermitteln ohne dass der Spieler überhaupt merkt, dass es gerade lernt. Es ist dadurch auch möglich durch die Level zu laufen ohne die Hilfe zu nutzen, einfach nur durch ausprobieren und praktisches Lernen.\\
+	Das Quiz soll noch einmal sicher Stellen, dass man auch wirklich etwas gelernt hat und nicht nur so lange rumprobiert hat, bis es zufällig funktioniert hat.\\
+	Unser Spiel lässt sich der Lerntheorie Konstruktivismus zuordnen.\\
+	Das Wissen wird Schrittweise vermittelt und durch Anwendung an einfacheren Situationen getestet. Im letzten Level wird noch einmal alles bisher gelernte Kombiniert und so an einer großen, komplexeren Situation angewandt.\\\par\smallskip
+	
+	\Eins{3. Technische Umsetzung}\\\par\medskip\Text
+	Wir haben zum Großteil mit der Entwicklungsumgebung \textit{Unity} gearbeitet, in Version 5.1. Hiermit ist das Eigentliche Spiel programmiert programmiert und zusammengesetzt worden.\\
+	Bilder und Grafiken haben wir selbst erstellt mit Hilfe von Programmen wie \textit{Paint Tool Sai}, \textit{Adobe Photoshop} und \textit{Inkscape}.\\
+	Das Layout des Spiels ist stark davon beeinflusst, dass unser Spiel größtenteils ein 2D-Side-scroller ist. Untergründe sind komplett schwarz gehalten, als auch fliegende Plattformen. Bäume, Gräser und andere Details im Hintergrund sind in verschiedenen Grau-Abstufungen.\\
+	Die einzig Farbigen Elemente sind die Lichtstrahlen und Flüssigkeiten, durch die der Spieler sich auch einfärben kann. So ist es leicht zu unterscheiden, was \enquote{aktive} und was \enquote{passive} Elemente sind.\\
+	Die Musik haben wir aus kommerziell frei nutzbaren Quellen im Internet gezogen.\\\par\smallskip
+	% % % % %Quellenverzeichnis % % % % % % %
+	
+	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
 
-	\chapter{Planung}
-	\section{Arbeitspakete}
+	\Eins{4. Planung}\\\par\medskip\Text
+	
+	\Zwei{4.1 Aufgabenverteilung}\\\par\medskip\Text
+	\begin{center}
 	\begin{tabular}{l|l|l|l}\hline
 	ID & Arbeitspaket & Inhalt & Haupterantwortlicher\\\hline
 	1 & Spielmechanik & Bewegung Spieler (laufen/springen/interagieren) & Georg\\
@@ -118,11 +162,15 @@
 	8 & Präsentation & Folien & Bettina\\
 	&& Präsentation & Georg\\\hline
 	\end{tabular}\
+	\end{center}
 	
 	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
 
-	\section{Zeitplan}
-	\begin{tabular}{l|l|l}\hline
+	\Zwei{4.2 Zeitplan}\\\par\medskip\Text
+\begin{center}
+		\begin{tabular}{l|l|l}\hline
  	 KW & Datum & Ziele\\\hline
 	17 & 22.04. (3.DS) & \textbf{Gruppentreffen mit dem Tutor}\\
 	& 24.05. & Zeitplan, Corporate Design, erste Entwürfe\\\hline
@@ -141,76 +189,110 @@
 	25 & & individuelles Arbeiten, AP 3+2\\\hline
 	26 & & individuelles Arbeiten, AP 5 (+6?)\\\hline
 	27 & & Dokumentation, Erklärung\\\hline
-	28 & & Vorbereitung Präsentation und Abgabe, AP 8\\
+	28 & & Vorbereitung Präsentation und Abgabe, AP 8\\\hline
 	\end{tabular}
+	\end{center}
+	\par\bigskip
+	Wir haben es im Großen und Ganzen gut geschafft uns an den Zeitplan zu halten. Unsere Arbeitsteilung war gut kalkuliert und paralleles Arbeiten war dadurch problemlos möglich.\\
+	Leider hatten wir ab und an durch Unity selbst Probleme, da war größtenteils das Erste mal damit gearbeitet haben und so hat sich gerade zum Ende hin der Zeitplan etwas nach hinten verschoben. Durch regelmäßige Gruppentreffen in der Uni (zwei bis drei mal die Woche) haben wir das jedoch gut ausgeglichen und so über Probleme gemeinsam diskutiert und eine Lösung gefunden.\\
+	Insgesamt lässt sich also sagen, dass wir uns soweit möglich an den Zeitplan halten konnten und mit der Arbeitseinteilung zufrieden sind.\\\par\smallskip
+	
+	
+	\Zwei{4.3 Kostenabschätzung}\\\par\medskip\Text
+	\begin{center}
+	\begin{tabular}{l|r|r}\hline
+		 & pro Person & gesamt\\\hline
+		Einarbeitung Unity Engine & 10h & 60h\\\hline
+		Ideenfindung & 2h & 12h\\\hline
+		Ausarbeitung Spielkonzep & 5h & 30h\\\hline
+		Implementierung Spielmechanik & 10h & 60h\\\hline
+		Leveldesign & 5h & 30h\\\hline
+		Levelimplementierung & 10h & 60h\\\hline
+		Gruppentreffen & 24h & 144h\\\hline
+		Dokumentation & 2h & 12h\\\hline\hline
+		Summe & 68h & 408h\\\hline
+	\end{tabular}
+	\par\bigskip
+	\begin{tabular}{l|r|r}\hline
+		Kosten & 30€/h/Person & 12.240,00\texteuro \\\hline
+		Mehrwertsteuer& 19\% & 2325,60\texteuro \\\hline
+		Gesamt & & 14.565,60\texteuro \\\hline
+	\end{tabular}
+	\end{center}\par\smallskip
+	
+	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	
+	\Zwei{4.4 Fazit}\\\par\medskip\Text
+	%erreichte Ziele
+	%was konnte umgesetzt werden, was nicht?
+	Wir sind als Gruppe mit viel Elan und hohem Anspruch an das Projekt gegangen. Wir wollten ein Spiel kreieren das sowohl optisch als auch inhaltlich möglichst ansprechend ist.\\
+	Es ist entsprechend viel Zeit in das erstellen der Grafiken und Zeichnungen gegangen, aber auch über das eigentliche Gameplay würde immer wieder diskutiert, unter der Bemühung es so gut wie möglich zu machen. Dadurch sind auch in späten Entwicklungsphasen manchmal noch gute Ideen aufgekommen und eingebaut worden.\\
+	So blieb außerdem das Arbeiten an dem Projekt durchgehend spannend und vor allem sind wir alle zufrieden mit dem Ergebnis. Der Aufwand hat sich, unserer Meinung nach, definitiv gelohnt und wir sind froh die Möglichkeit zu so einem Projekt gehabt zu haben.\\
+	Wir haben es zwar leider nicht geschafft unsere optionalen Ziele umzusetzen, aber damit hatten wir schon größtenteils gerechnet. Diese Ziele wären auch für das eigentliche Spiel nicht von großer Bedeutung gewesen, sondern eher als zusätzlicher Spaß am Spiel (und am Programmieren).
+	Insgesamt lässt sich also sagen dass wir alles Wichtige erreicht haben, das wir uns vorgenommen hatten, und entsprechend mit unserem Ergebnis zufrieden sind.\\\par\smallskip
+	
+	\Eins{5. Evaluation innerhalb der Zielgruppe}\\\par\medskip\Text
+	% % % %Hier kommt noch die Evaluation rein % % % %
 
 	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	
+	\Eins{6. Statements der Gruppenmitglieder}\\\par\medskip\Text
+	\Zwei{6.1 Alexandra}\\\par\medskip\Text
+	Das Projekt zur Veranstaltung Medienpsychologie und -didaktik, war für mich eine interessante neue Erfahrung. Zum ersten Mal beschäftigte ich mich mit der Realisierung eines größeren Spiele-Projektes. \\
+	Besonders schwierig war dabei die Festlegung der Zielgruppe, da für uns schnell feststand, dass wir kein typisches Lernspiel für Schüler, sondern eines für Interessierte machen wollten.\\
+	Schade war es dabei, dass dies von den Verantwortlichen nicht so wahrgenommen wurde und man darauf beharrte den Lerninhalt an den Schulstoff anzupassen. Dies stand aber in keinerlei Relation zu unserem Konzept.\\
+	Ebenso möchte ich erwähnen, dass in der Vorlesung gesagt wurde, dass man diesen Jahr intuitive und eben keine klassischen Lernspiele erwarten würde. Ohne anmassend zu klingen möchte ich meinen, dass wir die einzige Gruppe waren, die sich dies zu 	Herzen nahm. Genau dafür wurden wir wiederum kritisiert. Hier ist eindeutig ein klarer Rahmen für das Projekt notwendig, denn uns hat die Kritik sehr irritiert.\\
+	Dies äußerte sich auch im generellen Projektplan. Eine gesamte Ausarbeitung sämtlicher Level zu verlangen, bevor man sich überhaupt mit der Engine beschäftigt hat beziehungsweise erste Funktionalitäten herstellen konnte sehe ich als sehr fragwürdig an.\\
+	Dennoch hatte das Projekt auch seine positiven Seiten. Da wir uns als Gruppenmitglieder bereits größtenteils vorher gut kannten, waren Absprachen und Zusammenarbeit kein Problem. Selten gab es Diskussionen zum Konzept, wir fanden immer einen Kompromiss oder schafften es unsere Ideen zu kombinieren. Man kann daher sagen dass jeder einzelne großen Anteil am 	letztendlichen Ergebniss hat, mit welchem wir auch sehr zufrieden sind.\\
+	Da die wenigen Probleme die wir hatten meist unsere eigenen waren, haben wir unseren Tutor kaum beansprucht. Von daher ist es schwierig ein Urteil über seine Arbeit zu fällen. Auf jeden Fall war er aber immer ein Ansprechpartner für uns und konnte das Feedback des Lehrstuhls zu unserer Arbeit gut vermitteln.\\\par\smallskip
 
-	\chapter{Spielbeschreibung}
-	Das Spiel wird gesteuert über die linke und rechte Pfeiltaste oder \enquote{A} und \enquote{D} zum Laufen. Mit der Leertaste kann man springen und mit der Maus Menübuttons anklicken (linke Maustaste).\\
-	Der Spieler muss so durchs Level laufen, dass er am Ende dieselbe Farbe hat wie das Tor zum Verlassen des Levels. Nur dann kann das Tor passiert und zum nächsten Level weitergegangen werden. Dabei bekommt er für jedes geschafft Level einen der verlorengegangenen Farbkristalle zurück.\\
-	Zum Einfärben der Spielfigur gibt es je nach Level verschiedene Möglichkeiten.\\
-	Im ersten Level wird auf die subtraktive Farbmischung eingegangen, also Färben über Pigmente und Flüssigkeiten. Daher muss die Spielfigur zu Beginn erst weiß gefärbt werden, damit ein einfärben und mischen möglich wird. Sollte man erneut \enquote{alle} Farben einsammeln färbt man sich entsprechend wieder schwarz.\\
-	Im zweiten Level wird die additive Farbmischung erklärt. Hier wird sich also durch Licht eingefärbt und genau entgegengesetzt zur subtraktiven Farbmischung bildet schwarz die Ausgangsfarbe und weiß ist die Kombination aller Farben.\\
-	Das Dritte Level vertieft die Kenntnisse aus Level zwei durch Ergänzung von farbigen Wolken, die das Licht teilweise oder ganz reflektieren. Man kann durch das Klicken auf die Windmühlen die Wolken bewegen und muss so dafür sorgen, dass nur an den richtigen Stellen und in der richtigen Farbe das Licht bis zum Boden durchdringt.\\
-	Im vierten Level werden Komplementärfarben erklärt und der Spieler muss sich in die jeweilige Gegenfarbe der Gegner einfärben um diese zu besiegen.\\
-	Im fünften Level wird zusätzlich mit Prismen gearbeitet, die das einfallende Licht in seine Spektralfarben zerlegt. Man muss die Prismen an bestimmten Stellen platzieren und so auf die gewünschten Farben kommen.\\
-	Das sechste Level dient als Zusammenfassung und Wiederholung aller vorangegangenen Level. Am Ende erklimmt der Spieler den Berg um dort den Regenbogen wieder zusammensetzten zu können. Nachdem der Spieler den Regenbogen repariert hat, ist das Spiel gewonnen.\\
-	Außerdem gibt es ein zusätzliches Quiz, dass über die Levelauswahl und den Startbildschirm erreichbar ist. Die Fragen müssen alle einmal richtig beantwortet werden um die verbliebenen zwei Farbkristalle zu erhalten.\\
-	In den Levels als auch auf dem Startbildschirm ist außerdem eine Hilfestellung in Form eines Mini-Spiels verlinkt. Diese dienen dazu, dass der Spieler die verschiedenen Funktionen ausprobieren und ein Gefühl dafür bekommen kann.\\
-	Des weiterem findet sich in allen Leveln auch eine schriftliche Hilfestellung, um den Spieler bei eventuellen Problemen zu unterstützen.\\
-
-	\chapter{Evaluation}
-	\section{Evaluation des Zeitplans}
-
-	\section{Evaluation Ergebnis}
-
-	\section{Berwertung des Projektes}
-	\subsection{Alexandra}
-			Das Projekt zur Veranstaltung Medienpsychologie und -didaktik, war für mich eine interessante neue Erfahrung. 			Zum ersten Mal beschäftigte ich mich mit der Realisierung eines größeren Spiele-Projektes. \\
-	Besonders schwierig war dabei die Festlegung der Zielgruppe, da für uns schnell feststand, dass wir kein typisches Lernspiel 			für Schüler, sondern eines für Interessierte machen wollten.\\
-	Schade war es dabei, dass dies von den Verantwortlichen nicht so wahrgenommen wurde und man darauf beharrte den 				Lerninhalt an den Schulstoff anzupassen. Dies stand aber in keinerlei Relation zu unserem Konzept.\\
-	Ebenso möchte ich erwähnen, dass in der Vorlesung gesagt wurde, dass man diesen Jahr intuitive und eben keine klassischen 			Lernspiele erwarten würde. Ohne anmassend zu klingen möchte ich meinen, dass wir die einzige Gruppe waren, die sich dies zu 	Herzen nahm. Genau dafür wurden wir wiederum kritisiert. Hier ist eindeutig ein klarer Rahmen für das Projekt notwendig, 			denn uns hat die Kritik sehr irritiert.\\
-	Dies äußerte sich auch im generellen Projektplan. Eine gesamte Ausarbeitung sämtlicher Level zu verlangen, bevor man sich 			überhaupt mit der Engine beschäftigt hat beziehungsweise erste Funktionalitäten herstellen konnte sehe ich als sehr 				fragwürdig an.\\
-	Dennoch hatte das Projekt auch seine positiven Seiten. Da wir uns als Gruppenmitglieder bereits größtenteils vorher gut 			kannten, waren Absprachen und Zusammenarbeit kein Problem. Selten gab es Diskussionen zum Konzept, wir fanden immer 			einen Kompromiss oder schafften es unsere Ideen zu kombinieren. Man kann daher sagen dass jeder einzelne großen Anteil am 	letztendlichen Ergebniss hat, mit welchem wir auch sehr zufrieden sind.\\
-	Da die wenigen Probleme die wir hatten meist unsere eigenen waren, haben wir unseren Tutor kaum beansprucht. Von daher 			ist es schwierig ein Urteil über seine Arbeit zu fällen. Auf jeden Fall war er aber immer ein Ansprechpartner für uns und konnte 			das Feedback des Lehrstuhls zu unserer Arbeit gut vermitteln.\\
-
-	\subsection{Bettina}
+	\Zwei{6.2 Bettina}\\\par\medskip\Text
 	Ich fand es gut, dass man von Anfang an aussuchen konnte, wenn man mit in der Gruppe haben wollte. Dadurch war das Suchen nicht so schwierig. Unsere Gruppe war gut organisiert und wir waren auch sehr einstimmig in unseren Entscheidungen. Man verspürte dadurch auch wenig Stress und jeder konnte selbstständig arbeiten, denn die Aufgaben waren klar eingeteilt. Das regelmäßige Treffen half auch bei, die Motivation nicht zu verlieren und an den Projekt zu arbeiten.\\
 	Die Unity Engine war für unsere Spielidee auch sehr praktisch. Denn so konnten wir unsere Arbeit aufteilen und übers Git zu einem Projekt verbinden. Auch konnte man sich gut in diese reinarbeiten und dadurch viel effizienter am Projekt reinarbeiten.\\
 	Die Treffen mit den Tutor waren auch sehr hilfreich. Florian war immer nett und auch begeistert von unserem Spiel. Seine Kritik war immer sehr konstruktiv und behandelte die Schwachstellen innerhalb unseres Projektes und gab uns auch Tipps wie wir diese behandeln konnte. Jedoch waren wir eher selbstständig am Arbeiten und die Treffen waren nur da, um zu sehen, was als nächstes in der Projektphase kommt.\\
 	Dennoch lief nicht alles gut. Zwar hatten wir eine gute Spielidee, aber bei der Präsentation unseres Konzeptes ging alles schief. Wir hatten keine Kritik bezüglich den Stil unseres Spiels, aber eher der Vermittlung des Inhalts. Es habe zu wenig Text und keine Andeutung darauf, dass es ein Lernspiel ist. Wir hatten zwar erklärt, dass unser Spiel eher intuitiv ist und dass es ein Hilfefenster gibt, wo der Inhalt des jeweiligen Levels erklärt wird. Das Hilfefenster wurde komplett ignoriert und somit erhielten wir Kritik wegen des fehlenden Textes, denn ohne diese könnte man nicht das Spiel verstehen.\\
 	Eigentlich hatten wir von den Vorlesungen verstanden, dass man versuchen sollte, ein Spiel zu bauen, wo es nur wenig Text gibt und dass das Prinzip dahinter nicht  sehr an das Lernen angedeutet ist. Wir haben uns wirklich angestrengt, alles über Bilder und Animationen deutlich zu erklären. Das andere war das Lernen dahinter. Wir hatten nicht vor, mit unserem Lernspiel irgendeinen Fach oder Thema aus dem Lernplan von Schulen zu ersetzen. Es sollte einfach erklären, wie die Farben im Umfeld funktionieren und somit als Ergänzung dienen. Diese sollte auch nur von Leuten gespielt werden, die auch ein Interesse an Farben haben.\\
-	Insgesamt war aber das ganze Praktikum ganz in Ordnung. Ich war in einer tollen Gruppe, wo alle selbständig gearbeitet haben und die Aufgabenteilung vernünftig war. Der Stress war nicht zu viel und auch nicht so wenig, und es hat auch richtig Spaß gemacht, am Spiel zu arbeiten. Ich bin zufrieden mit dem Ergebnis und mit der Zusammenarbeit meines Teams.\\
+	
+	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	
+	Insgesamt war aber das ganze Praktikum ganz in Ordnung. Ich war in einer tollen Gruppe, wo alle selbständig gearbeitet haben und die Aufgabenteilung vernünftig war. Der Stress war nicht zu viel und auch nicht so wenig, und es hat auch richtig Spaß gemacht, am Spiel zu arbeiten. Ich bin zufrieden mit dem Ergebnis und mit der Zusammenarbeit meines Teams.\\\par\smallskip
 
-	\subsection{Georg}
+	\Zwei{6.3 Georg}\\\par\medskip\Text
 	Die Projektarbeit, geprägt durch ein angenehmes Gruppenklima, ging vor allem zu Anfang in großen Schritten voran. Wir erzielten schnell größere Fortschritte und die Gruppenmitglieder halfen sich wenn Probleme auftraten. Durch regelmäßige Gruppentreffen und eine klare Aufgabenverteilung war ein stetiger Fortschritt deutlich sichtbar.\\
 	Zu Beginn stellte sich die Frage, welche Engine zu nutzen sei. Flash wäre eine angenehme Plattform mit unzähligen Ressourcen gewesen. Da Flash jedoch immer mehr in den Hintergrund tritt und auf lange Sicht verschwinden soll, entschieden wir uns eine zukunftsweisende Alternative zu suchen. Zuerst fiel unser Augenmerk auf HTML5, beziehungsweise das Spiel-Framework Phaser, welches auf HTML5 aufbaut. Der Entwicklungsaufwand wäre jedoch ein zu hoher gewesen, weshalb wir uns letztendlich für die moderne Multiplattform-Spielengine Unity entschieden.\\
 	Die Einarbeitung in die Engine resultierte in verschiedenen, zum Teil recht guten, Prototypen. Einer davon wurde als Basis für die weitere, gemeinsame Entwicklung genutzt. Jedes Teammitglied bekam die Aufgabe eine Spielmechanik zu entwickeln und ein Level des Spiels zu entwickeln. Da die Mechaniken zuerst fertig gestellt werden sollten, konnten sie dann auch in anderen Levels verwendet werden. So flossen die Ideen aller Teammitgleider in das Spiel ein.\\
 	Ein Hindernis in der Durchführung war die etwas unstete Auslegung der Aufgabenstellung. In der Einführungsveranstaltung der Vorlesung wurde darauf hingewiesen, dass entgegen zu den Projekten der Vorjahre, keine Lernsoftware, sondern Lernspiele entstehen sollten und der spielerische Aspekt im Vordergrund stehen sollte. Zudem wurde in der Vorlesung auch das intuitive Lernen als eine Variante der Didaktik vorgestellt. Während des Projektes wurden uns allerdings immer wieder Einschränkungen aufgezwungen die dieser anfänglichen Weisung widersprachen.\\
 	Trotz allem war das Projekt eine großartige Möglichkeit didaktische Theorie in die Praxis umzusetzen. Das Projekt bot eine ausgewogene Mischung aus kreativem Freiraum und einem Rahmen, der durch den Lehrstuhl vorgegeben war.\\
-	Unser Tutor war freundlich und vermittelte stets zufriedenstellend zwischen dem Team und den Lehrenden. Die Kommunikation und die Treffen waren stets unkompliziert und reibungslos.\\
+	Unser Tutor war freundlich und vermittelte stets zufriedenstellend zwischen dem Team und den Lehrenden. Die Kommunikation und die Treffen waren stets unkompliziert und reibungslos.\\\par\smallskip
 
-	\subsection{Philipp}
+	\Zwei{6.4 Philipp}\\\par\medskip\Text
 	Die Projektarbeit fand ich im Großen und Ganzen eine schöne Erfahrung, die sowohl Einblicke in das Thema Didaktik, aber auch in Richtung Game Development gewährt hat.\\
 	Von meinen Mitstreitern, die ich vorher kaum kannte, wurde ich besonders in Sachen fachlicher Kompetenz wie auch Teamfähigkeit sehr positiv überrascht, wodurch sich die Arbeit am Projekt trotz häufiger Treffen als sehr angenehm und wenig stressend gestaltete. Auch unser Tutor stand uns immer für Fragen zur Verfügung und konnte seine Hinweise und Verbesserungsvorschläge gut vermitteln.\\
 	Nach anfänglicher Einarbeitungsphase in die Unity Engine waren schnell die ersten Entwürfe zu unserer Spielidee entstanden. Die nächsten Arbeiten erledigten sich sehr flott und konnten durch die levelartige Struktur gut auf mehrere Teammitglieder aufgeteilt werden, wodurch wir zum Termin der Zwischenpräsentation schon einen sehr gut funktionierenden Prototypen vorweisen konnten. Leider kam es zu dieser Präsentation zu einiger Kritik, die aus meiner bzw. unserer Sicht nicht vollkommen berechtigt oder nachvollziehbar war, da wir uns subjektiv sehr nah an den Vorstellungen des Lehrstuhls bewegten. Allerdings ließ sich auch diese Hürde überwinden und so konnten wir ein Spiel erreichen, das besser an die Wünsche angepasst wurde und auch aus unserer Sicht ein zufriedenstellendes Ergebnis darstellte.\\
-	Alles in allem hat mir das Spiel sowohl geholfen, Erfahrungen im Game Development zu sammeln, als auch den Lehrstoff der Medienpsychologie und Mediendidaktik anwenden zu können.\\
+	Alles in allem hat mir das Spiel sowohl geholfen, Erfahrungen im Game Development zu sammeln, als auch den Lehrstoff der Medienpsychologie und Mediendidaktik anwenden zu können.\\\par\smallskip
 	
-	\subsection{Sara}
+	\clearpage
+	\marginpar{\vspace{3.0mm} \color{orange}\rule{0.8mm}{53.3mm} \\[3mm] \color{hellorange}\rule{0.8mm}{170mm}}
+	\par\bigskip
+	
+	\Zwei{6.5 Sara}\\\par\medskip\Text
 	Das Arbeiten in der Gruppe war angenehm und ein gutes Zusammenspiel.\\
 	Die Arbeitsteilung gelang uns ohne große Probleme. Wir haben uns meist mehrmals wöchentlich getroffen und gemeinsam an dem Projekt geplant und gearbeitet. Bei Problemen haben wir uns gegenseitig unterstützt und so immer eine gemeinsame Lösung gefunden.\\
 	Der Tutor hat uns gut beraten und mit seiner konstruktiven Kritik dazu veranlagt das Spielkonzept immer weiter zu verbessern. Fragen hatten wir kaum an ihn, aber er war immer engagiert uns bestmöglich zu unterstützen.\\
 	Generell wäre es jedoch besser gewesen, jede Woche ein Treffen zu haben und nicht nur nach den Teilzeilen. So hätte der Tutor näher mit verfolgen können wie der aktuelle Stand ist und uns so auch Hinweise und eventuelle Verbesserungsvorschläge geben können wenn uns vielleicht gar nicht bewusst war, dass wir diese benötigten.\\
 	Außerdem war es sehr verwirrend, dass erst in der Vorlesung gesagt wurde, dass ein intuitives Lernspiel anstrebenswert sei und dann bei der Konzeptpräsentation genau das an unserem Spiel kritisiert wurde.\\
-	Alles in allem war das Projekt spannend und eine hilfreiche Erfahrung, die uns erfolgreich Didaktik auf einem praktischem Weg näher gebracht hat.\\
+	Alles in allem war das Projekt spannend und eine hilfreiche Erfahrung, die uns erfolgreich Didaktik auf einem praktischem Weg näher gebracht hat.\\\par\smallskip
 
-	\subsection{Sergej}
+	\Zwei{6.6 Sergej}\\\par\medskip\Text
 	Auf Grund der Möglichkeit, Gruppenmitglieder selbst auswählen zu dürfen, war ein angenehmes Arbeitsklima dem entsprechendes vorhanden. Jeder hatte sich ideenreich, bei der Realisierung des Projekts, beteiligt. Durch gute Organisation wurden neue Ideen von allen überdacht und mit einer zahlreiche Ideenvielfalt optimiert. Dies hat zur Folge, dass alles, was von uns entwickelt wurde, auch die Zustimmung jedes einzelnen trägt. Auf Grund dieses guten Zusammenspiels, innerhalb der Gruppe, wurden Probleme schnell und intern gelöst. Somit haben bzw. mussten wir nicht so oft unseren Tutor in Anspruch nehmen. Nichtsdestotrotz war er engagiert und stand uns immer zur Seite.\\
 	Am Anfang des Projekts mussten wir uns vorher entscheiden, womit wir überhaupt unser Spiel entwickeln. Zur Auswahl standen das Framework Phaser (HTML 5), die Plattform zur Programmierung und Darstellung multimedialer und interaktiver Inhalte – Flash – sowie die Spiele Engine Unity. Flash ist für uns als erstes herausgefallen, da die Entwicklung mit Flash immer weiter zurück geht und wir sehr viel an Flexibilität verloren hätten (Entwicklung nur in der Fakultät möglich gewesen). Danach hatten wir uns für das Framework Phaser entschieden, aber dann mussten wir feststellen, dass der Entwicklungsaufwand mit HTML 5 zu groß gewesen wäre. Somit ist es Unity geworden, da die Engine diese Jahr kostenlos wurde, leicht zu handhaben und eine zukunftsorientierte Spiele Engine ist.\\ 
 	Die Entwicklungsphase ist ohne größere Probleme verlaufen und wir konnten zu Anfang schnell Erfolge erzielen.\\ 
 	Dann kam der Moment, an dem unser ganzes Spielkonzept in Frage gestellt wurde. In der Vorlesung wurde uns ausdrücklich gesagt, dass die Verantwortlichen dieses Jahr neue Wege gehen möchten – weg von reinem Text und mehr hin zu interaktiven und intuitiven Spielen. Wir fanden ein Spielkonzept, dass genau diesen Ansprüchen gerecht wird. Bei der Vorstellung des Konzepts wurde  genau dies wiederum kritisiert – unser Spiel war zu interaktiv und intuitiv.\\
-	Unterm Strich war das Praktikum eine tolle Erfahrung. Das Team hat gut harmoniert, was sehr selten ist. Ich konnte viele neue Erfahrungen gewinnen und es hat mir Spaß gemacht unser Spiel mit zu entwickeln und das Endergebnis zu sehen.\\
-	\\
-	\Fusszeile
+	Unterm Strich war das Praktikum eine tolle Erfahrung. Das Team hat gut harmoniert, was sehr selten ist. Ich konnte viele neue Erfahrungen gewinnen und es hat mir Spaß gemacht unser Spiel mit zu entwickeln und das Endergebnis zu sehen.\\\par\smallskip
 \end{document}

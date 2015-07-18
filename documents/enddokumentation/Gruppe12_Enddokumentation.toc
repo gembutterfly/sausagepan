@@ -1,20 +1,21 @@
 \contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung}{3}
 \contentsline {section}{\numberline {1.1}Gruppe}{3}
-\contentsline {section}{\numberline {1.2}Konzept}{3}
-\contentsline {subsection}{\numberline {1.2.1}Setting}{3}
+\contentsline {section}{\numberline {1.2}Spielkonzept}{3}
+\contentsline {subsection}{\numberline {1.2.1}Handlung}{3}
 \contentsline {subsection}{\numberline {1.2.2}Spielmechaniken}{3}
-\contentsline {subsection}{\numberline {1.2.3}Steuerung}{3}
-\contentsline {chapter}{\numberline {2}Planung}{4}
-\contentsline {section}{\numberline {2.1}Arbeitspakete}{4}
-\contentsline {section}{\numberline {2.2}Zeitplan}{5}
-\contentsline {chapter}{\numberline {3}Spielbeschreibung}{6}
-\contentsline {chapter}{\numberline {4}Evaluation}{7}
-\contentsline {section}{\numberline {4.1}Evaluation des Zeitplans}{7}
-\contentsline {section}{\numberline {4.2}Evaluation Ergebnis}{7}
-\contentsline {section}{\numberline {4.3}Berwertung des Projektes}{7}
-\contentsline {subsection}{\numberline {4.3.1}Alexandra}{7}
-\contentsline {subsection}{\numberline {4.3.2}Bettina}{7}
-\contentsline {subsection}{\numberline {4.3.3}Georg}{8}
-\contentsline {subsection}{\numberline {4.3.4}Philipp}{8}
-\contentsline {subsection}{\numberline {4.3.5}Sara}{9}
-\contentsline {subsection}{\numberline {4.3.6}Sergej}{9}
+\contentsline {subsection}{\numberline {1.2.3}Steuerung}{4}
+\contentsline {subsection}{\numberline {1.2.4}Didaktische \IeC {\"U}berlegungen}{4}
+\contentsline {chapter}{\numberline {2}Technische Umsetzung}{5}
+\contentsline {chapter}{\numberline {3}Planung}{6}
+\contentsline {section}{\numberline {3.1}Aufgabenverteilung}{6}
+\contentsline {section}{\numberline {3.2}Zeitplan}{7}
+\contentsline {section}{\numberline {3.3}Kostenabsch\IeC {\"a}tzung}{7}
+\contentsline {section}{\numberline {3.4}Fazit}{7}
+\contentsline {chapter}{\numberline {4}Evaluation innerhalb der Zielgruppe}{9}
+\contentsline {chapter}{\numberline {5}Statements der Gruppenmitglieder}{10}
+\contentsline {section}{\numberline {5.1}Alexandra}{10}
+\contentsline {section}{\numberline {5.2}Bettina}{10}
+\contentsline {section}{\numberline {5.3}Georg}{11}
+\contentsline {section}{\numberline {5.4}Philipp}{11}
+\contentsline {section}{\numberline {5.5}Sara}{12}
+\contentsline {section}{\numberline {5.6}Sergej}{12}
