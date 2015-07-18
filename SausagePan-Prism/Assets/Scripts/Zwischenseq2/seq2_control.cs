@@ -47,7 +47,7 @@ public class seq2_control : MonoBehaviour {
 	private void nextScene(){
 		scenecount++;
 		if (scenecount > 8)
-			Application.LoadLevel ("Level5");
+			StartCoroutine ("ChangeLevel");
 		else
 			Application.LoadLevel ("szene" + scenecount);
 	}
@@ -56,6 +56,14 @@ public class seq2_control : MonoBehaviour {
 		var go = GameObject.Find ("audio3");
 		AudioSource help = go.GetComponent<AudioSource> ();
 		help.Stop ();
-		Application.LoadLevel ("Level5");
+		StartCoroutine ("ChangeLevel");
+	}
+
+	IEnumerator ChangeLevel () 
+	{
+		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		
+		Application.LoadLevel ("Level5"); 
 	}
 }

@@ -58,7 +58,7 @@ public class zwischenseq1 : MonoBehaviour {
 	private void nextScene(){
 		scenecount++;
 		if (scenecount > 4)
-			Application.LoadLevel ("LevelSelection");
+			StartCoroutine ("ChangeLevel");
 		else
 			Application.LoadLevel ("szene" + scenecount);
 	}
@@ -67,6 +67,14 @@ public class zwischenseq1 : MonoBehaviour {
 		var go = GameObject.Find ("audio2");
 		AudioSource help = go.GetComponent<AudioSource> ();
 		help.Stop ();
-		Application.LoadLevel ("LevelSelection");
+		StartCoroutine ("ChangeLevel");
+	}
+
+	IEnumerator ChangeLevel () 
+	{
+		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		
+		Application.LoadLevel ("LevelSelection"); 
 	}
 }

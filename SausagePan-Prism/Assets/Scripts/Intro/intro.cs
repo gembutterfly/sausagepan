@@ -54,7 +54,7 @@ public class intro : MonoBehaviour {
 		var go = GameObject.Find ("audio");
 		AudioSource help = go.GetComponent<AudioSource> ();
 		help.Stop ();
-		Application.LoadLevel ("Level1");
+		StartCoroutine ("ChangeLevel");
 	}
 
 	private void changeOpacity(){
@@ -76,8 +76,16 @@ public class intro : MonoBehaviour {
 	private void nextIntro(){
 		introcount++;
 		if (introcount > 9)
-			Application.LoadLevel ("Level1");
+			StartCoroutine ("ChangeLevel");
 		else
 			Application.LoadLevel ("intro" + introcount);
+	}
+
+	IEnumerator ChangeLevel () 
+	{
+		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		
+		Application.LoadLevel ("Level1");
 	}
 }

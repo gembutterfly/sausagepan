@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour {
 
 		uIBottomManager.InitializeFullColorList ();
 		uIBottomManager.FillColorCircle (foundColors);
-
+		
 		//PaintChar (new Color (0, 1, 1, 1), true);
 	}
 	
@@ -276,4 +276,3 @@ public class PlayerController : MonoBehaviour {
 		
 	}
 }
-

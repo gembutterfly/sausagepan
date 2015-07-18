@@ -22,7 +22,7 @@ public class RightSwitchController : MonoBehaviour {
 		if(Input.GetMouseButton(0))
 		{
 			prism.position += Vector3.right * speed * Time.deltaTime;
-			Debug.Log ("Enter right");
+//			Debug.Log ("Enter right");
 		}
 	}
 
