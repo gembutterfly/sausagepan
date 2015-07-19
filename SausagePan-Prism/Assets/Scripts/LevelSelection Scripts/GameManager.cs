@@ -16,7 +16,11 @@ public class GameManager : MonoBehaviour {
 	static int counter = 0;
 	// Use this for initialization
 	void Start () {
-
+//		levelTwoClear = true;
+//		levelThreeClear = true;
+//		levelFourClear = true;
+//		levelFiveClear = true;
+//		levelSixClear = true;
 	}
 	
 	// Update is called once per frame
