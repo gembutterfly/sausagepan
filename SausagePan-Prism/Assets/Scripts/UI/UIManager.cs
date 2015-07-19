@@ -9,16 +9,21 @@ public class UIManager : MonoBehaviour {
 	private GameObject sound;
 	private Inventory inventory;
 	private UIBottomManager uIBottomManager;
+	private AudioSource audioSource;
 
 	public void Start() 
 	{
+		audioSource = GameObject.Find ("Main Camera").GetComponent<AudioSource> ();
 		sound = GameObject.Find ("Sound");
 		int soundOn = PlayerPrefs.GetInt ("soundOn");
 
-		if (soundOn == 1)
-			sound.SetActive(true);
-		else
-			sound.SetActive(false);
+		if (soundOn == 1) {
+			sound.SetActive (true);
+			audioSource.volume = 1;
+		} else {
+			sound.SetActive (false);
+			audioSource.volume = 0;
+		}
 
 		if (  !( Application.loadedLevelName.Equals ("Startbildschirm") 
 		      || Application.loadedLevelName.Equals ("Credits")
@@ -96,14 +101,14 @@ public class UIManager : MonoBehaviour {
 
 	public void Mute()
 	{
-		AudioListener.volume = 0;
+		audioSource.volume = 0;
 		sound.SetActive (false);
 		PlayerPrefs.SetInt ("soundOn", 0);
 	}
 
 	public void Sound()
 	{
-		AudioListener.volume = 1;
+		audioSource.volume = 1;
 		sound.SetActive(true);
 		PlayerPrefs.SetInt ("soundOn", 1);
 	}
