@@ -29,4 +29,9 @@ public class QuizzButton : MonoBehaviour {
 		//Application.LoadLevel ("Quizze");
 	}
 
+	public void setClicked(bool value)
+	{
+		isClicked = value;
+	}
+
 }
