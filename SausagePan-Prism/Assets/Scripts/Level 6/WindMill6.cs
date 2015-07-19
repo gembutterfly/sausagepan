@@ -7,8 +7,10 @@ public class WindMill6 : MonoBehaviour {
 	private Animator animMill;
 	private bool isClicked = false;
 	private int cloudSet;
+	private Level6 l6;
 	
 	void Start () {
+		l6 = GameObject.Find ("UIManager").GetComponent<Level6>();
 		if (name == "Windmill1") {
 			animCloud = GameObject.Find ("Cloud_blue").GetComponent<Animator> ();
 			cloudSet = 1;
@@ -35,22 +37,40 @@ public class WindMill6 : MonoBehaviour {
 		
 		if (isClicked == true) {
 			isClicked = false;
-			if(cloudSet == 2)
+			if(cloudSet == 2) {
 				animCloud.SetTrigger ("cloudOut");
-			else
+				Invoke("DeactivateRedCloud", 0.3f);
+			} else {
 				animCloud.SetTrigger ("cloudIn");
+				Invoke("ActivateBlueCloud", 1.2f);
+			}
 		} else {
 			isClicked = true;
-			if(cloudSet == 1)
+			if(cloudSet == 1) {
 				animCloud.SetTrigger ("cloudOut");
-			else
+				Invoke("DeactivateBlueCloud", 0.3f);
+			} else {
 				animCloud.SetTrigger ("cloudIn");
+				Invoke("ActivateRedCloud", 1.0f);
+			}
 		}
 
 		if(cloudSet == 2)
 			animMill.SetBool ("IsClicked", isClicked);
 		else
 			animMill.SetBool ("IsClicked", !isClicked);
-		
-	} 
+	}
+
+	void ActivateRedCloud() {
+		l6.SetCloud(2, true);
+	}
+	void DeactivateRedCloud() {
+		l6.SetCloud(2, false);
+	}
+	void ActivateBlueCloud() {
+		l6.SetCloud(1, true);
+	}
+	void DeactivateBlueCloud() {
+		l6.SetCloud(1, false);
+	}
 }
