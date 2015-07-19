@@ -10,8 +10,9 @@ public class Level6 : MonoBehaviour {
 	}
 
 	public void Start() {
-		GameObject.Find ("blackBuddy").GetComponent<PlayerController>().enabled = false;
-		Invoke ("ActivatePlayerController", 6);
+//		GameObject.Find ("blackBuddy").GetComponent<PlayerController>().enabled = false;
+//		GameObject.Find ("Main Camera").GetComponent<Animator>().SetTrigger("panCamera");
+//		Invoke ("ActivatePlayerController", 6);
 	}
 
 	public void ActivatePlayerController() {		

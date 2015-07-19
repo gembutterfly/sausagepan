@@ -76,6 +76,8 @@ public class Gate : MonoBehaviour {
 
 		if (levelNumber == 1)
 			Application.LoadLevel ("szene1");
+		else if (levelNumber == 6)
+			Application.LoadLevel ("Rainbowgame");
 		else
 			Application.LoadLevel ("LevelSelection");
 	}
