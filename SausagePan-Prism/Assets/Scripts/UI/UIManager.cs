@@ -32,6 +32,11 @@ public class UIManager : MonoBehaviour {
 		}
 
 		sound = GameObject.Find ("Sound");
+
+		if (Application.loadedLevelName.Equals ("Startbildschirm")) {
+			PlayerPrefs.SetInt ("soundOn", 1);
+		}
+
 		int soundOn = PlayerPrefs.GetInt ("soundOn");
 		
 		if (soundOn == 1) {
