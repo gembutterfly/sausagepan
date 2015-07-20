@@ -20,7 +20,7 @@ public class GoToRainbowGame : MonoBehaviour {
 
 	public void OnTriggerEnter2D(Collider2D other) {
 		if (other.CompareTag ("Player")) {
-			Invoke ("LoadNewLevel", 4);
+			Invoke ("LoadNewLevel", 2);
 
 			playerController.enabled = false;
 		}

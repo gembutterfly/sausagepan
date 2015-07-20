@@ -4,6 +4,7 @@ using System.Collections;
 public class Level6 : MonoBehaviour {
 	public GameObject helpLevel6;
 	public GameObject mainCamera;
+	public GameObject board;
 
 	public GameObject ray_magenta_0;
 	public GameObject ray_magenta_1;
@@ -14,15 +15,22 @@ public class Level6 : MonoBehaviour {
 
 	private bool redCloud = false;
 	private bool blueCloud = false;
+	private bool cameraPanDone = false;
 
 	public void ShowHelpMenu() {
 		helpLevel6.SetActive(true);
 	}
 
 	public void Start() {
-//		GameObject.Find ("blackBuddy").GetComponent<PlayerController>().enabled = false;
-//		mainCamera.GetComponent<Animator>().SetTrigger("panCamera");
-//		Invoke ("ActivatePlayerController", 6);
+		GameObject.Find ("blackBuddy").GetComponent<PlayerController>().enabled = false;
+	}
+
+	public void Update() {
+		if (board.activeSelf == false && !cameraPanDone) {
+			cameraPanDone = true;
+			mainCamera.GetComponent<Animator>().SetTrigger("panCamera");
+			Invoke ("ActivatePlayerController", 6);
+		}
 	}
 
 	public void ActivatePlayerController() {		

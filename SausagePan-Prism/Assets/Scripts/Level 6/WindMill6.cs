@@ -42,13 +42,13 @@ public class WindMill6 : MonoBehaviour {
 				Invoke("DeactivateRedCloud", 0.3f);
 			} else {
 				animCloud.SetTrigger ("cloudIn");
-				Invoke("ActivateBlueCloud", 1.2f);
+				Invoke("ActivateBlueCloud", 1.4f);
 			}
 		} else {
 			isClicked = true;
 			if(cloudSet == 1) {
 				animCloud.SetTrigger ("cloudOut");
-				Invoke("DeactivateBlueCloud", 0.3f);
+				Invoke("DeactivateBlueCloud", 0.1f);
 			} else {
 				animCloud.SetTrigger ("cloudIn");
 				Invoke("ActivateRedCloud", 1.0f);
