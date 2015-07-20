@@ -61,6 +61,6 @@ public class seq2_control : MonoBehaviour {
 		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
 		
-		Application.LoadLevel ("Level5"); 
+		Application.LoadLevel ("Level6"); 
 	}
 }

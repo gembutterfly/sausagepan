@@ -15,8 +15,12 @@ public class audio_intro : MonoBehaviour {
 		audioSource = GameObject.Find ("audio").GetComponent<AudioSource> ();
 		sound = GameObject.Find ("Sound");
 
+		if (Application.loadedLevelName.Equals ("intro")) {
+			PlayerPrefs.SetInt ("soundOn", 1);
+		}
+
 		int soundOn = PlayerPrefs.GetInt ("soundOn");
-		
+
 		if (soundOn == 1) {
 			sound.SetActive (true);
 			SoundONSelection ();

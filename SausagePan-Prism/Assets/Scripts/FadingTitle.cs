@@ -8,20 +8,31 @@ public class FadingTitle : MonoBehaviour {
 	public Image background;
 	public Image crystal;
 
-	private float duration = 7f;
+	private float duration = 5f;
 	private GameObject parent;
+	private float startTime;
+	private float currentTime;
+
+	void Start () {
+		startTime = Time.time;
+	}
 
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Time.time > duration)
+		currentTime = Time.time-startTime;
+		if (currentTime > duration) {
+			if (Application.loadedLevelName.Equals("Level6")) {
+				GameObject.Find ("UIManager").GetComponent<Level6>().panCamera();
+			}
 			Destroy (gameObject);
+		}
 
 		Color myColor = title.color;
 		Color bgColor = background.color;
 		Color crystalColor = Color.white;
 
-		float ratio = Time.time / duration;
+		float ratio = currentTime / duration;
 
 		myColor.a = Mathf.Lerp (1, 0, ratio);
 		bgColor.a = Mathf.Lerp (1, 0, ratio);
