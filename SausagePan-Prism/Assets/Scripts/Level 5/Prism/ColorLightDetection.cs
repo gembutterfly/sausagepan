@@ -30,28 +30,31 @@ public class ColorLightDetection : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D colorRay)
 	{
-		if (colorRay.CompareTag ("Cyan")) {
-			redRay.SetActive (false);
-			blueRay.SetActive(true);
-			greenRay.SetActive (true);
-			
-			cyanRayEvent.cutRay(shortValue);
-		}
+		if(colorRay != null)
+		{
+			if (colorRay.CompareTag ("Cyan")) {
+				redRay.SetActive (false);
+				blueRay.SetActive(true);
+				greenRay.SetActive (true);
+				
+				cyanRayEvent.cutRay(shortValue);
+			}
 
-		if (colorRay.CompareTag ("Magenta")) {
-			greenRay.SetActive(false);
-			blueRay.SetActive(true);
-			redRay.SetActive (true);
-			
-			magentaRayEvent.cutRay(shortValue);
-		}
+			if (colorRay.CompareTag ("Magenta")) {
+				greenRay.SetActive(false);
+				blueRay.SetActive(true);
+				redRay.SetActive (true);
+				
+				magentaRayEvent.cutRay(shortValue);
+			}
 
-		if (colorRay.CompareTag ("Yellow")) {
-			blueRay.SetActive(false);
-			redRay.SetActive(true);
-			greenRay.SetActive (true);
-			
-			yellowRayEvent.cutRay(shortValue);
+			if (colorRay.CompareTag ("Yellow")) {
+				blueRay.SetActive(false);
+				redRay.SetActive(true);
+				greenRay.SetActive (true);
+				
+				yellowRayEvent.cutRay(shortValue);
+			}
 		}
 	}
 	
