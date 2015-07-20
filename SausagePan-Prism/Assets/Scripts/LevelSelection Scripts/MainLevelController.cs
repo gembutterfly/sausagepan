@@ -11,6 +11,7 @@ public class MainLevelController : MonoBehaviour {
 
 	private GameManager gameManager;
 	private Inventory inventory;
+
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
