@@ -10,7 +10,7 @@ public class Control : MonoBehaviour {
 	void Start () 
 	{
 		if (Application.loadedLevelName == "Level1") 
-			Invoke("Show", 4);
+			Invoke("Show", 7);
 		else
 			Hide ();
 	}
