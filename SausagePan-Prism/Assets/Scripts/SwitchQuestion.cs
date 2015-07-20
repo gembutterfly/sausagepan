@@ -18,9 +18,39 @@ public class SwitchQuestion : MonoBehaviour {
 	public int correctlyAnsweredQuestions = 0;
 	public bool questionLocked = false;	// lock, when question answered, unlock when displaying new question
 
+	public bool[] answeredQ;
+
+	// Buttons which open new questions
+	public GameObject buttonQ1;
+	public GameObject buttonQ2;
+	public GameObject buttonQ3;
+	public GameObject buttonQ4;
+	public GameObject buttonQ5;
+	public GameObject buttonQ6;
+	public GameObject buttonQ7;
+	public GameObject buttonQ8;
+	public GameObject buttonQ9;
+	public GameObject[] Qbuttons;
+
 	private Inventory inventory;
 
 	public void Start() {
+
+		// Add all question buttons into one array for simple access
+		Qbuttons = new GameObject[9];
+		Qbuttons[0] = buttonQ1;
+		Qbuttons[1] = buttonQ2;
+		Qbuttons[2] = buttonQ3;
+		Qbuttons[3] = buttonQ4;
+		Qbuttons[4] = buttonQ5;
+		Qbuttons[5] = buttonQ6;
+		Qbuttons[6] = buttonQ7;
+		Qbuttons[7] = buttonQ8;
+		Qbuttons[8] = buttonQ9;
+
+		// create array for remembering which questions have already been answered & reset
+		answeredQ = new bool[9] {false, false, false, false, false, false, false, false, false};
+
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 
 		questionLocked = false;
@@ -145,6 +175,8 @@ public class SwitchQuestion : MonoBehaviour {
 			questionLocked = true;
 
 		if (answer == questions [activeNumber].correctAnswer) {
+			answeredQ[activeNumber] = true;
+			Qbuttons[activeNumber].GetComponentInChildren<Image> ().color = correctAns;
 			feedback.GetComponent<Text> ().text = "Richtig!";
 			questionText.GetComponent<Text>().text = questions[activeNumber].solution;
 
