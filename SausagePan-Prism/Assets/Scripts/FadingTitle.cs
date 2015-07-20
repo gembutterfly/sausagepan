@@ -14,8 +14,12 @@ public class FadingTitle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Time.time > duration)
+		if (Time.time > duration) {
+			if (Application.loadedLevelName.Equals("Level6")) {
+				GameObject.Find ("UIManager").GetComponent<Level6>().panCamera();
+			}
 			Destroy (gameObject);
+		}
 
 		Color myColor = title.color;
 		Color bgColor = background.color;
