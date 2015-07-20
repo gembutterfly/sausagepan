@@ -17,6 +17,7 @@ public class seq2_control : MonoBehaviour {
 
 	private int wait = 200;
 	private int next = 0;
+	private audio_intro audioIntro;
 
 	// Use this for initialization
 	void Start () {
@@ -46,17 +47,13 @@ public class seq2_control : MonoBehaviour {
 
 	private void nextScene(){
 		scenecount++;
-		if (scenecount > 8)
+		if (scenecount > 8) {
+			audioIntro = GameObject.Find ("audio").GetComponent<audio_intro> ();
+			audioIntro.Skip ();
 			StartCoroutine ("ChangeLevel");
+		}
 		else
 			Application.LoadLevel ("szene" + scenecount);
-	}
-	
-	public void Skip(){
-		var go = GameObject.Find ("audio3");
-		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();
-		StartCoroutine ("ChangeLevel");
 	}
 
 	IEnumerator ChangeLevel () 

@@ -10,6 +10,8 @@ public class outro : MonoBehaviour {
 	public GameObject colorFull;
 	private float x = 1;
 
+	private audio_intro audioIntro;
+
 	// Use this for initialization
 	void Start () {
 		zahl = time [outrocount - 1];	
@@ -39,17 +41,13 @@ public class outro : MonoBehaviour {
 
 	private void nextOutro(){
 		outrocount++;
-		if (outrocount > 11)
+		if (outrocount > 11){
+			audioIntro = GameObject.Find ("audio").GetComponent<audio_intro> ();
+			audioIntro.Skip ();
 			StartCoroutine ("ChangeLevel");
+		}
 		else
 			Application.LoadLevel ("outro" + outrocount);
-	}
-
-	public void Skip(){
-		var go = GameObject.Find ("audio4");
-		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();
-		StartCoroutine ("ChangeLevel");
 	}
 
 	IEnumerator ChangeLevel () 

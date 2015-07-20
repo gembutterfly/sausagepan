@@ -14,88 +14,32 @@ public class UIManager : MonoBehaviour {
 	public void Start() 
 	{
 		audioSource = GameObject.Find ("Main Camera").GetComponent<AudioSource> ();
+
+		if (!(Application.loadedLevelName.Equals ("Startbildschirm") || Application.loadedLevelName.Equals ("Credits"))) 
+		{
+			inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+			inventory.LoadInventory ();
+		}
+
+		if (  !( Application.loadedLevelName.Equals ("Rainbowgame") 
+		      || Application.loadedLevelName.Equals ("Startbildschirm")
+		      || Application.loadedLevelName.Equals ("Credits")
+		      || Application.loadedLevelName.Equals ("LevelSelection")
+		      || Application.loadedLevelName.Equals ("Quizze"))) 
+		{
+			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
+			uIBottomManager.LoadColorList ();
+		}
+
 		sound = GameObject.Find ("Sound");
 		int soundOn = PlayerPrefs.GetInt ("soundOn");
-
+		
 		if (soundOn == 1) {
 			sound.SetActive (true);
 			audioSource.volume = 1;
 		} else {
 			sound.SetActive (false);
 			audioSource.volume = 0;
-		}
-
-		if (  !( Application.loadedLevelName.Equals ("Startbildschirm") 
-		      || Application.loadedLevelName.Equals ("Credits")
-		      || Application.loadedLevelName.Equals ("intro")
-		      || Application.loadedLevelName.Equals ("intro2")
-		      || Application.loadedLevelName.Equals ("intro3")
-		      || Application.loadedLevelName.Equals ("intro4")
-		      || Application.loadedLevelName.Equals ("intro5")
-		      || Application.loadedLevelName.Equals ("intro6")
-		      || Application.loadedLevelName.Equals ("intro7")
-		      || Application.loadedLevelName.Equals ("intro8")
-		      || Application.loadedLevelName.Equals ("intro9")
-		      || Application.loadedLevelName.Equals ("szene1")
-		      || Application.loadedLevelName.Equals ("szene2")
-		      || Application.loadedLevelName.Equals ("szene3")
-		      || Application.loadedLevelName.Equals ("szene4")
-		      || Application.loadedLevelName.Equals ("szene5")
-		      || Application.loadedLevelName.Equals ("szene6")
-		      || Application.loadedLevelName.Equals ("szene7")
-		      || Application.loadedLevelName.Equals ("szene8")
-		      || Application.loadedLevelName.Equals ("outro1")
-		      || Application.loadedLevelName.Equals ("outro2")
-		      || Application.loadedLevelName.Equals ("outro3")
-		      || Application.loadedLevelName.Equals ("outro4")
-		      || Application.loadedLevelName.Equals ("outro5")
-		      || Application.loadedLevelName.Equals ("outro6")
-		      || Application.loadedLevelName.Equals ("outro7")
-		      || Application.loadedLevelName.Equals ("outro8")
-		      || Application.loadedLevelName.Equals ("outro9")
-		      || Application.loadedLevelName.Equals ("outro10")
-		      || Application.loadedLevelName.Equals ("outro11")
-		      || Application.loadedLevelName.Equals ("Quizze")))
-			inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
-
-		if (  !( Application.loadedLevelName.Equals ("Rainbowgame") 
-		      || Application.loadedLevelName.Equals ("Startbildschirm")
-		      || Application.loadedLevelName.Equals ("Credits")
-		      || Application.loadedLevelName.Equals ("LevelSelection")
-		      || Application.loadedLevelName.Equals ("intro")
-		      || Application.loadedLevelName.Equals ("intro2")
-		      || Application.loadedLevelName.Equals ("intro3")
-		      || Application.loadedLevelName.Equals ("intro4")
-		      || Application.loadedLevelName.Equals ("intro5")
-		      || Application.loadedLevelName.Equals ("intro6")
-		      || Application.loadedLevelName.Equals ("intro7")
-		      || Application.loadedLevelName.Equals ("intro8")
-		      || Application.loadedLevelName.Equals ("intro9")
-		      || Application.loadedLevelName.Equals ("szene1")
-		      || Application.loadedLevelName.Equals ("szene2")
-		      || Application.loadedLevelName.Equals ("szene3")
-		      || Application.loadedLevelName.Equals ("szene4")
-		      || Application.loadedLevelName.Equals ("szene5")
-		      || Application.loadedLevelName.Equals ("szene6")
-		      || Application.loadedLevelName.Equals ("szene7")
-		      || Application.loadedLevelName.Equals ("szene8")
-		      || Application.loadedLevelName.Equals ("outro1")
-		      || Application.loadedLevelName.Equals ("outro2")
-		      || Application.loadedLevelName.Equals ("outro3")
-		      || Application.loadedLevelName.Equals ("outro4")
-		      || Application.loadedLevelName.Equals ("outro5")
-		      || Application.loadedLevelName.Equals ("outro6")
-		      || Application.loadedLevelName.Equals ("outro7")
-		      || Application.loadedLevelName.Equals ("outro8")
-		      || Application.loadedLevelName.Equals ("outro9")
-		      || Application.loadedLevelName.Equals ("outro10")
-		      || Application.loadedLevelName.Equals ("outro11")
-		      || Application.loadedLevelName.Equals ("Quizze"))) 
-		{
-			uIBottomManager = GameObject.Find ("UIBottomManager").GetComponent<UIBottomManager> ();
-
-			inventory.LoadInventory ();
-			uIBottomManager.LoadColorList ();
 		}
 	}
 

@@ -7,8 +7,6 @@ public class SwitchQuestion : MonoBehaviour {
 	public Color correctAns = new Color(.3f, 1.0f, .3f, 1.0f);
 	public Color wrongAns   = new Color(1.0f, .3f, .3f, 1.0f);
 
-	public Inventory inventory;
-
 	public QuizQuestion[] questions;
 	public GameObject buttonA;
 	public GameObject buttonB;
@@ -20,7 +18,11 @@ public class SwitchQuestion : MonoBehaviour {
 	public int correctlyAnsweredQuestions = 0;
 	public bool questionLocked = false;	// lock, when question answered, unlock when displaying new question
 
+	private Inventory inventory;
+
 	public void Start() {
+		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+
 		questionLocked = false;
 		questions = new QuizQuestion[10];
 		questions[0] = new QuizQuestion(
@@ -150,15 +152,13 @@ public class SwitchQuestion : MonoBehaviour {
 				correctlyAnsweredQuestions++;
 				if(correctlyAnsweredQuestions == 5) {
 					inventory.AddItem(2);
-					feedback.GetComponent<Text> ().text = "Orange gefunden!";
-
 					inventory.SaveInventory();
+					feedback.GetComponent<Text> ().text = "Orange gefunden!";
 				}
 				if(correctlyAnsweredQuestions == 9)	{
 					inventory.AddItem(5);
-					feedback.GetComponent<Text> ().text = "Lila gefunden!";
-
 					inventory.SaveInventory();
+					feedback.GetComponent<Text> ().text = "Lila gefunden!";
 				}
 
 			}

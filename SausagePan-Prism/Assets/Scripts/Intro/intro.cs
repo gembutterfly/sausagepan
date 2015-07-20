@@ -50,13 +50,6 @@ public class intro : MonoBehaviour {
 
 	}
 
-	public void Skip(){
-		var go = GameObject.Find ("audio");
-		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();
-		StartCoroutine ("ChangeLevel");
-	}
-
 	private void changeOpacity(){
 		var help = colorFull.GetComponent<SpriteRenderer> ();
 		help.color = new  Color(1f, 1f, 1f, x);

@@ -25,6 +25,8 @@ public class zwischenseq1 : MonoBehaviour {
 	public GameObject lastScreen;
 	public Sprite last;
 
+	private audio_intro audioIntro;
+
 	// Use this for initialization
 	void Start () {
 		zahl = time [scenecount - 1];
@@ -57,24 +59,20 @@ public class zwischenseq1 : MonoBehaviour {
 
 	private void nextScene(){
 		scenecount++;
-		if (scenecount > 4)
+		if (scenecount > 4) {
+			audioIntro = GameObject.Find ("audio").GetComponent<audio_intro> ();
+			audioIntro.Skip ();
 			StartCoroutine ("ChangeLevel");
+		}
 		else
 			Application.LoadLevel ("szene" + scenecount);
-	}
-
-	public void Skip(){
-		var go = GameObject.Find ("audio2");
-		AudioSource help = go.GetComponent<AudioSource> ();
-		help.Stop ();
-		StartCoroutine ("ChangeLevel");
 	}
 
 	IEnumerator ChangeLevel () 
 	{
 		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
-		
+
 		Application.LoadLevel ("LevelSelection"); 
 	}
 }
