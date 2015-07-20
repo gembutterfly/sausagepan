@@ -8,7 +8,7 @@ public class FadingTitle : MonoBehaviour {
 	public Image background;
 	public Image crystal;
 
-	private float duration = 7f;
+	private float duration = 5f;
 	private GameObject parent;
 	private float startTime;
 	private float currentTime;
