@@ -8,10 +8,12 @@ public class QuizzButton : MonoBehaviour {
 
 	public GameObject moth;
 	private static bool isClicked = false;
+
+	public GameObject whiteLine;
 	// Use this for initialization
 	void Start () {
 		meshRenderer.sortingOrder = 6;
-
+		whiteLine.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -20,6 +22,16 @@ public class QuizzButton : MonoBehaviour {
 			moth.SetActive (false);
 		else
 			moth.SetActive (true);
+	}
+
+	void OnMouseOver()
+	{
+		whiteLine.SetActive (true);
+	}
+
+	void OnMouseExit()
+	{
+		whiteLine.SetActive (false);
 	}
 
 	void OnMouseDown()

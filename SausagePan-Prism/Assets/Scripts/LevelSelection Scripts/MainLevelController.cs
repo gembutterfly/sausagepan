@@ -1,24 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MainLevelController : MonoBehaviour {
 
 	public string levelName;
 	public int levelNumber;
 
-	private GameObject moth;
+	public GameObject moth;
 	private QuizzButton button;
 
 	private GameManager gameManager;
 	private Inventory inventory;
 
+	public GameObject whiteLine; 
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
-		moth = GameObject.Find ("Quiz/Moth");
+		moth.SetActive (false);
 		button = GameObject.Find ("Quiz/Quiz-Button").GetComponent<QuizzButton> ();
+		whiteLine.SetActive (false);
 	}
+
+	void OnMouseEnter()
+	{
+		whiteLine.SetActive (true);
+	}
+
+	void OnMouseOver()
+	{
+		whiteLine.SetActive (true);
+	}
+
+	void OnMouseExit()
+	{
+		whiteLine.SetActive (false);
+	}
+
 
 	void OnMouseDown()
 	{
@@ -37,11 +56,13 @@ public class MainLevelController : MonoBehaviour {
 					Debug.Log ("counter " + counter);
 
 					if(counter == 7)
+					{
+						moth.SetActive(false);
 						Application.LoadLevel (levelName);
+					}
 					else 
 					{
 						moth.SetActive(true);
-						button.setClicked(false);
 						return;
 					}
 				}
