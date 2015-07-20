@@ -96,7 +96,8 @@ public class Inventory : MonoBehaviour {
 	{
 		if (Input.GetButtonDown ("Inventory")) 
 		{
-			showInventory = !showInventory;
+			if (!Application.loadedLevelName.Equals("Startbildschirm"))
+				showInventory = !showInventory;
 		}
 	}
 	

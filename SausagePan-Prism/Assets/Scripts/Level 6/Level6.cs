@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Level6 : MonoBehaviour {
+	public GameObject helpMenu;
 	public GameObject helpLevel6;
 	public GameObject mainCamera;
 	public GameObject board;
@@ -15,9 +16,9 @@ public class Level6 : MonoBehaviour {
 
 	private bool redCloud = false;
 	private bool blueCloud = false;
-	private bool cameraPanDone = false;
 
 	public void ShowHelpMenu() {
+		helpMenu.SetActive(true);
 		helpLevel6.SetActive(true);
 	}
 
@@ -25,12 +26,9 @@ public class Level6 : MonoBehaviour {
 		GameObject.Find ("blackBuddy").GetComponent<PlayerController>().enabled = false;
 	}
 
-	public void Update() {
-		if (board.activeSelf == false && !cameraPanDone) {
-			cameraPanDone = true;
-			mainCamera.GetComponent<Animator>().SetTrigger("panCamera");
-			Invoke ("ActivatePlayerController", 6);
-		}
+	public void panCamera() {
+		mainCamera.GetComponent<Animator>().SetTrigger("panCamera");
+		Invoke ("ActivatePlayerController", 6);
 	}
 
 	public void ActivatePlayerController() {		
