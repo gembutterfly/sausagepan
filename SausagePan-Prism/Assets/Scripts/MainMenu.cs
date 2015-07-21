@@ -76,7 +76,13 @@ public class MainMenu : MonoBehaviour {
 	IEnumerator ChangeLevel () {
 		float fadeTime = BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
-		Application.LoadLevel ("intro");
+
+		if (Application.loadedLevelName.Equals ("Logoanimation")) {
+			Application.LoadLevel ("Startbildschirm");
+		
+		} else {
+			Application.LoadLevel ("intro");
+		}
 	}
 
 

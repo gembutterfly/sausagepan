@@ -16,6 +16,8 @@ public class intro : MonoBehaviour {
 	public GameObject eyes;
 	public GameObject hitSound;
 
+	private audio_intro audioIntro;
+
 	// Use this for initialization
 	void Start () {
 		zahl = time [introcount - 1];
@@ -68,8 +70,11 @@ public class intro : MonoBehaviour {
 
 	private void nextIntro(){
 		introcount++;
-		if (introcount > 9)
+		if (introcount > 9){
+			audioIntro = GameObject.Find ("audio").GetComponent<audio_intro> ();
+			audioIntro.Skip ();
 			StartCoroutine ("ChangeLevel");
+		}
 		else
 			Application.LoadLevel ("intro" + introcount);
 	}
